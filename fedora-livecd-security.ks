@@ -66,7 +66,9 @@ ngrep
 nmap
 nmap-frontend
 p0f
+sing
 scanssh
+scapy
 socat
 tcpdump
 tiger
@@ -221,9 +223,15 @@ cat >> /home/liveuser/.config/openbox/menu.xml << OBDONE
   <item label="p0f">
     <action name="Execute"><command>gnome-terminal -e "sh -c 'p0f -h; bash'"</command></action>
   </item>
+  <item label="sing">
+    <action name="Execute"><command>gnome-terminal -e "sh -c 'sing; bash'"</command></action>
+  </item>
   <item label="scanssh">
     <action name="Execute"><command>gnome-terminal -e "sh -c 'scanssh; bash'"</command></action>
   </item>
+  <item label="scapy">                                                        
+    <action name="Execute"><command>gnome-terminal -e "sh -c 'scapy; bash'"</command></action>                                                                
+  </item> 
   <item label="socat">
     <action name="Execute"><command>gnome-terminal -e "sh -c 'socat; bash'"</command></action>
   </item>
