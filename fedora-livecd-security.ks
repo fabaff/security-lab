@@ -4,7 +4,7 @@
 #   A fully functional live OS based on Fedora for use in security auditing, forensics research, and penetration testing.
 # Maintainers:
 #   Luke Macken
-#   Adam Miller <maxamillion [AT] gmail.com>
+#   Adam Miller <maxamillion [AT] fedoraproject.org>
 # Acknowledgements:
 #   Fedora LiveCD Xfce Spin team - some work here was inherited, many thanks!
 
