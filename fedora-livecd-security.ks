@@ -5,6 +5,7 @@
 # Maintainers:
 #   Luke Macken
 #   Adam Miller <maxamillion [AT] fedoraproject.org>
+#   Joerg Simon
 # Acknowledgements:
 #   Fedora LiveCD Xfce Spin team - some work here was inherited, many thanks!
 
@@ -15,7 +16,7 @@
 generic-logos
 
 firefox
-
+midori
 cups-pdf
 gnome-bluetooth
 alsa-plugins-pulseaudio
@@ -28,6 +29,7 @@ wget
 irssi
 mutt
 yum-utils
+cnetworkmanager
 
 gdm
 Thunar 
@@ -217,8 +219,8 @@ cat >> /home/liveuser/.config/openbox/menu.xml << OBDONE
   <item label="nessus">
     <action name="Execute"><command>gnome-terminal -e "sh -c 'nessus; bash'"</command></action>
   </item>
-  <item label="nmap">
-    <action name="Execute"><command>gnome-terminal -e "sh -c 'nmapfe; bash'"</command></action>
+  <item label="zenmap">
+    <action name="Execute"><command>gnome-terminal -e "sh -c 'zenmap-root; bash'"</command></action>
   </item>
   <item label="p0f">
     <action name="Execute"><command>gnome-terminal -e "sh -c 'p0f -h; bash'"</command></action>
@@ -230,7 +232,7 @@ cat >> /home/liveuser/.config/openbox/menu.xml << OBDONE
     <action name="Execute"><command>gnome-terminal -e "sh -c 'scanssh; bash'"</command></action>
   </item>
   <item label="scapy">                                                        
-    <action name="Execute"><command>gnome-terminal -e "sh -c 'scapy; bash'"</command></action>                                                                
+    <action name="Execute"><command>gnome-terminal -e "su -c 'scapy; bash'"</command></action>                                                                
   </item> 
   <item label="socat">
     <action name="Execute"><command>gnome-terminal -e "sh -c 'socat; bash'"</command></action>
@@ -335,7 +337,7 @@ cat >> /home/liveuser/.config/openbox/menu.xml << OBDONE
 
 <menu id="id-menu" label="Intrusion Detection">
   <item label="aide">
-    <action name="Execute"><command>gnome-terminal -e "sh -c 'aide; bash'"</command></action>
+    <action name="Execute"><command>gnome-terminal -e "su -c 'aide; bash'"</command></action>
   </item>
   <item label="snort">
     <action name="Execute"><command>gnome-terminal -e "sh -c 'snort; bash'"</command></action>
@@ -375,6 +377,14 @@ cat >> /home/liveuser/.config/openbox/menu.xml << OBDONE
     <action name="Execute">
       <command>firefox</command>
     </action>
+  </item>
+  <item label="Midori">
+    <action name="Execute">
+      <command>midori</command>
+    </action>
+  </item>
+  <item label="cNetworkManager">
+    <action name="Execute"><command>gnome-terminal -e "su -c 'cnetworkmanager -d; bash'"</command></action>
   </item>
   <separator />
   <menu id="applications-menu" label="Applications" execute="/usr/share/openbox/xdg-menu applications"/>
@@ -417,9 +427,11 @@ cat >> /etc/gdm/custom.conf << FOE
 [daemon]
 TimedLoginEnable=true
 TimedLogin=liveuser
-TimedLoginDelay=60
+TimedLoginDelay=30
 FOE
-
+#last thing to do
+chown -R liveuser:liveuser /home/liveuser
+restorecon -R /home/liveuser
 EOF
 
 %end
