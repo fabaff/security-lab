@@ -16,6 +16,7 @@
 generic-logos
 
 firefox
+
 midori
 cups-pdf
 gnome-bluetooth
@@ -145,6 +146,8 @@ tor
 # Useful tools
 lsof
 ntop
+scrot
+mc
 
 # Other necessary components
 yum-fastestmirror
@@ -171,7 +174,7 @@ sed -i -e 's/Fedora/Generic/g' /etc/fedora-release
 
 # create /etc/sysconfig/desktop (needed for installation)
 
-cat > /etc/sysconfig/desktop <<EOF
+cat >> /etc/sysconfig/desktop <<EOF
 PREFERRED=/usr/bin/openbox
 EOF
 
@@ -187,8 +190,6 @@ cat >> /home/liveuser/.config/openbox/autostart.sh << OBDONE
 OBDONE
 
 cat >> /etc/rc.d/init.d/livesys << EOF
-chown -R liveuser:liveuser /home/liveuser
-restorecon -R /home/liveuser
 
 # rc.xml
 cp /etc/xdg/openbox/rc.xml /home/liveuser/.config/openbox
@@ -384,7 +385,13 @@ cat >> /home/liveuser/.config/openbox/menu.xml << OBDONE
     </action>
   </item>
   <item label="cNetworkManager">
-    <action name="Execute"><command>gnome-terminal -e "su -c 'cnetworkmanager -d; bash'"</command></action>
+    <action name="Execute"><command>gnome-terminal -e "su -c 'cnetworkmanager -h; bash'"</command></action>
+  </item>
+  <item label="MidnightCommander">
+    <action name="Execute"><command>gnome-terminal -e "su -c 'mc; bash'"</command></action>
+  </item>
+  <item label="Screenshot">
+    <action name="Execute"><command>gnome-terminal -e "su -c 'scrot -h; bash'"</command></action>
   </item>
   <separator />
   <menu id="applications-menu" label="Applications" execute="/usr/share/openbox/xdg-menu applications"/>
@@ -422,7 +429,7 @@ OBDONE
 
 # disable screensaver locking
 gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t bool /apps/gnome-screensaver/lock_enabled false >/dev/null
-# set up timed auto-login for after 60 seconds
+# set up timed auto-login for after 30 seconds
 cat >> /etc/gdm/custom.conf << FOE
 [daemon]
 TimedLoginEnable=true
