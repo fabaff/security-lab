@@ -75,6 +75,7 @@ scapy
 socat
 tcpdump
 tiger
+unicornscan
 wireshark-gnome
 xprobe2
 nbtscan
@@ -243,6 +244,9 @@ cat >> /home/liveuser/.config/openbox/menu.xml << OBDONE
   </item>
   <item label="tiger">
     <action name="Execute"><command>gnome-terminal -e "sh -c 'tiger; bash'"</command></action>
+  </item>
+  <item label="unicornscan">
+    <action name="Execute"><command>gnome-terminal -e "sh -c 'unicornscan; bash'"</command></action>
   </item>
   <item label="wireshark">
     <action name="Execute"><command>gnome-terminal -e "sh -c 'wireshark; bash'"</command></action>
