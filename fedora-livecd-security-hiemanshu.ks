@@ -154,9 +154,6 @@ mc
 
 # Other necessary components
 screen
-openbox
-obconf
-obmenu
 desktop-backgrounds-basic
 feh
 vim-enhanced
