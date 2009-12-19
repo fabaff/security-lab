@@ -169,6 +169,8 @@ PolicyKit-gnome
 
 %post
 sed -i -e 's/Fedora/Generic/g' /etc/fedora-release
+#Add the menu rpm, this hack is till package has been approved
+rpm -ivh security-menu-1.0-4.fc12.noarch.rpm
 
 # disable screensaver locking
 gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t bool /apps/gnome-screensaver/lock_enabled false >/dev/null
