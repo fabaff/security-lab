@@ -1,19 +1,25 @@
 # Filename:
-#   fedora-livecd-security.ks
+#   fedora-livecd-security-hiemanshu.ks
 # Description:
 #   A fully functional live OS based on Fedora for use in security auditing, forensics research, and penetration testing.
 # Maintainers:
-#   Luke Macken
-#   Adam Miller <maxamillion [AT] fedoraproject.org>
-#   Joerg Simon
+# Hiemanshu Sharma <hiemanshu [AT] fedoraproject <dot> org>
 # Acknowledgements:
 #   Fedora LiveCD Xfce Spin team - some work here was inherited, many thanks!
+
+repo --name=MyRepo --baseurl=file:///repo
 
 %include fedora-live-base.ks
 
 %packages
 -fedora-logos
+-fedora-release
+-fedora-release-notes
+generic-release-notes
+generic-release
 generic-logos
+
+security-menu
 
 firefox
 yum-presto
@@ -162,15 +168,10 @@ gnome-terminal
 PolicyKit-gnome
 
 # make sure debuginfo doesn't end up on the live image
--*debuginfo
-
-
+-\*debug
 %end
 
 %post
-sed -i -e 's/Fedora/Generic/g' /etc/fedora-release
-#Add the menu rpm, this hack is till package has been approved
-rpm -ivh security-menu-1.0-4.fc12.noarch.rpm
 
 # disable screensaver locking
 gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t bool /apps/gnome-screensaver/lock_enabled false >/dev/null
