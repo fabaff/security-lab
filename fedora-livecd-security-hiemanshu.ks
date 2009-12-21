@@ -38,8 +38,6 @@ irssi
 mutt
 yum-utils
 cnetworkmanager
-
-gdm
 Thunar 
 gtk-xfce-engine
 thunar-volman
@@ -174,18 +172,13 @@ PolicyKit-gnome
 
 %post
 
-# disable screensaver locking
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults -s -t bool /apps/gnome-screensaver/lock_enabled false >/dev/null
-# set up timed auto-login for after 30 seconds
-cat >> /etc/gdm/custom.conf << FOE
-[daemon]
-TimedLoginEnable=true
-TimedLogin=liveuser
-TimedLoginDelay=30
+# set up auto-login for liveuser
+cat >> /etc/slim.conf << FOE
+auto_login              yes
+default_user    liveuser
 FOE
 
 # create /etc/sysconfig/desktop (needed for installation)
-
 cat >> /etc/sysconfig/desktop <<EOF
 PREFERRED=/usr/bin/startlxde
 DISPLAYMANAGER=/usr/bin/slim-dynwm
