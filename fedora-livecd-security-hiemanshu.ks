@@ -3,9 +3,10 @@
 # Description:
 #   A fully functional live OS based on Fedora for use in security auditing, forensics research, and penetration testing.
 # Maintainers:
-# Hiemanshu Sharma <hiemanshu [AT] fedoraproject <dot> org>
+#  Hiemanshu Sharma <hiemanshu [AT] fedoraproject <dot> org>
 # Acknowledgements:
 #   Fedora LiveCD Xfce Spin team - some work here was inherited, many thanks!
+#   Fedora LXDE Spin - Copied over stuff to make LXDE Default
 
 repo --name=MyRepo --baseurl=file:///repo
 
@@ -182,6 +183,33 @@ TimedLoginEnable=true
 TimedLogin=liveuser
 TimedLoginDelay=30
 FOE
+
+# create /etc/sysconfig/desktop (needed for installation)
+
+cat >> /etc/sysconfig/desktop <<EOF
+PREFERRED=/usr/bin/startlxde
+DISPLAYMANAGER=/usr/bin/slim-dynwm
+EOF
+
+cat >> /etc/rc.d/init.d/livesys << EOF
+# disable screensaver locking and make sure gamin gets started
+rm -f /etc/xdg/lxsession/LXDE/autostart
+cat >> /etc/xdg/lxsession/LXDE/autostart << FOE
+/usr/libexec/gam_server
+@lxde-settings-daemon
+@pulseaudio -D
+@lxpanel --profile LXDE
+@pcmanfm -d
+FOE
+
+# Show harddisk install on the desktop
+sed -i -e 's/NoDisplay=true/NoDisplay=false/' /usr/share/applications/liveinst.desktop
+mkdir /home/liveuser/Desktop
+cp /usr/share/applications/liveinst.desktop /home/liveuser/Desktop
+
+# Add autostart for parcellite
+cp /usr/share/applications/fedora-parcellite.desktop /etc/xdg/autostart
+
 #last thing to do
 chown -R liveuser:liveuser /home/liveuser
 restorecon -R /home/liveuser
