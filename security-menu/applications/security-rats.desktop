@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=rats
+Exec=gnome-terminal -e "rats; bash"
+TryExec=rats
+Type=Application
+Categories=X-SecurityLab;X-CodeAnalysis;

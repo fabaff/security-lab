@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ophcrack
+Exec=gnome-terminal -e "sh -c 'ophcrack; bash'"
+TryExec=ophcrack
+Type=Application
+Categories=X-SecurityLab;X-PasswordTools;

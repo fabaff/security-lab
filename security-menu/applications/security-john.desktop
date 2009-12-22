@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=john
+Exec=gnome-terminal -e "sh -c 'john; bash'"
+TryExec=john
+Type=Application
+Categories=X-SecurityLab;X-PasswordTools;

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=nbtscan
+Exec=gnome-terminal -e "sh -c 'nbtscan; bash'"
+TryExec=nbtscan
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

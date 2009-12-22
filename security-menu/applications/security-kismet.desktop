@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=kismet
+Exec=kismet
+TryExec=kismet
+Type=Application
+Categories=X-SecurityLab;X-Wireless;

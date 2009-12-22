@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=aircrack-ng
+Exec=gnome-terminal -e "sh -c 'aircrack-ng ; bash'"
+TryExec=aircrack-ng
+Type=Application
+Categories=X-SecurityLab;X-Wireless;

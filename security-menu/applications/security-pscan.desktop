@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=pscan
+Exec=gnome-terminal -e "sh -c 'pscan; bash'"
+TryExec=pscan
+Type=Application
+Categories=X-SecurityLab;X-CodeAnalysis;

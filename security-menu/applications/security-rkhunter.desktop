@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=rkhunter
+Exec=gnome-terminal -e "sh -c 'rkhunter; bash'"
+TryExec=rkhunter
+Type=Application
+Categories=X-SecurityLab;X-Forensics;

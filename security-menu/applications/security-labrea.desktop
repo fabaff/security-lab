@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=labrea
+Exec=gnome-terminal -e "sh -c 'labrea; bash'"
+TryExec=labrea
+Type=Application
+Categories=X-SecurityLab;X-IntrusionDetection;

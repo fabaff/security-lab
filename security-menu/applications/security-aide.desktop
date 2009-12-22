@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=aide
+Exec=gnome-terminal -e "sh -c 'aide; bash'"
+TryExec=aide
+Type=Application
+Categories=X-SecurityLab;X-IntrusionDetection;

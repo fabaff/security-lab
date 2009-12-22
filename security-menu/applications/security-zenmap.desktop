@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Zenmap
+Exec=gnome-terminal -e "sh -c '; bash'"
+TryExec=
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

@@ -1,0 +1,10 @@
+security-menu
+----------------
+
+This package creates "Security Lab" submenus with icons in the Applications menu.
+
+Applications featuring "X-SecurityLab" in the Categories field of their .desktop
+file will appear in these menus.
+
+Contact Name : Hiemanshu Sharma
+E-Mail 	     : hiemanshu [at] fedoraproject (dot) org

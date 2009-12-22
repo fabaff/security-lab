@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=airsnort
+Exec=airsnort
+TryExec=airsnort
+Type=Application
+Categories=X-SecurityLab;X-Wireless;

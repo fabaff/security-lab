@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=clamav
+Exec=gnome-terminal -e "sh -c 'clamscan; bash'"
+TryExec=clamscan
+Type=Application
+Categories=X-SecurityLab;X-Forensics;

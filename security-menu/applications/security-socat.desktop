@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=socat
+Exec=gnome-terminal -e "sh -c 'socat; bash'"
+TryExec=socat
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

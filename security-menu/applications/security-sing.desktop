@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=sing
+Exec=gnome-terminal -e "sh -c 'sing; bash'"
+TryExec=sing
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

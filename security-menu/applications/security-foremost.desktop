@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=foremost
+Exec=gnome-terminal -e "sh -c 'foremost; bash'"
+TryExec=foremost
+Type=Application
+Categories=X-SecurityLab;X-Forensics;

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=hexedit
+Exec=gnome-terminal -e "sh -c 'hexedit; bash'"
+TryExec=hexedit
+Type=Application
+Categories=X-SecurityLab;X-Forensics;

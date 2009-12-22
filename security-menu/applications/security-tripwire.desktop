@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=tripwire
+Exec=gnome-terminal -e "sh -c 'tripwire --help; bash'"
+TryExec=tripwire
+Type=Application
+Categories=X-SecurityLab;X-IntrusionDetection;

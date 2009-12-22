@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=nc6
+Exec=gnome-terminal -e "sh -c 'nc6; bash'"
+TryExec=nc6
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

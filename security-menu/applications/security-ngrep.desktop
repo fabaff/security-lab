@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ngrep
+Exec=gnome-terminal -e "sh -c 'ngrep; bash'"
+TryExec=ngrep
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

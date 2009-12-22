@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=flawfinder
+Exec=gnome-terminal -e "sh -c 'flawfinder; bash'"
+TryExec=flawfinder
+Type=Application
+Categories=X-SecurityLab;X-CodeAnalysis;

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=halberd
+Exec=gnome-terminal -e "sh -c 'halberd; bash'"
+TryExec=halberd
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

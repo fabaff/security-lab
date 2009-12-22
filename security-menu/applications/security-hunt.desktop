@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=hunt
+Exec=gnome-terminal -e "sh -c 'hunt; bash'"
+TryExec=hunt
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

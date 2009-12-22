@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Scapy
+Exec=gnome-terminal -e "su -c 'scapy; bash'"
+TryExec=scapy
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;
