@@ -2,7 +2,7 @@
 
  * Rename X-Security-Lab to X-SecurityLab for better fdo compliance
  * Add subcategories X-Anonymity, X-CodeAnalysis, X-Forensics,
-   X-IntrusionDetection, X-Password-Tools, X-Reconnainssance and
+   X-IntrusionDetection, X-Password-Tools, X-Reconnaissance and
    X-Wireless
  * Use TryExec to determine installed apps
  * Menu tweaks
