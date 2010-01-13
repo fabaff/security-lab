@@ -1,0 +1,20 @@
+--- security-lab.menu	2010-01-08 13:32:38.000000000 +0100
++++ security-lab.menu.updated	2010-01-13 18:49:20.865742644 +0100
+@@ -24,9 +24,6 @@
+ 	    	<Include>
+ 				<And>	    		
+ 		      		<Category>X-Reconnaissance</Category>
+-		      		<Filename>fedora-etherape.desktop</Filename>
+-		      		<Filename>fedora-ettercap.desktop</Filename>
+-		      		<Filename>nmap-zenmap.desktop</Filename>
+ 				</And>
+ 	      	</Include>
+ 		</Menu>
+@@ -37,7 +34,6 @@
+ 	    	<Include>
+ 				<And>
+ 					<Category>X-Forensics</Category>
+-					<Filename>fedora-gparted.desktop</Filename>
+ 				</And>
+ 	      	</Include>
+ 		</Menu>
