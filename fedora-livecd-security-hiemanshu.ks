@@ -144,6 +144,7 @@ nebula
 # Password cracking
 john
 ophcrack
+medusa
 
 # Anonymity
 tor
