@@ -22,7 +22,7 @@ generic-release-notes
 generic-release
 generic-logos
 
-security-menu
+security-menus
 
 firefox
 yum-presto
