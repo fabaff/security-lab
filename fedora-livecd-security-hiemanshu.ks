@@ -148,9 +148,7 @@ medusa
 
 # Anonymity
 tor
-
-# under review (#461385)
-#hydra
+vidalia
 
 # Useful tools
 lsof
