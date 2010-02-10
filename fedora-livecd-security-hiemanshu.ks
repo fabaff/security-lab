@@ -69,6 +69,7 @@ dsniff
 hping3
 nc6
 nc
+ncrack
 nessus-client
 nessus-gui
 nessus-server
