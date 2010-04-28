@@ -157,6 +157,7 @@ lsof
 ntop
 scrot
 mc
+epdfview
 
 # Other necessary components
 screen
