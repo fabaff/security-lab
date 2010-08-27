@@ -14,6 +14,7 @@
 	      		<Not><Category>X-Wireless</Category></Not>
 	      		<Not><Category>X-CodeAnalysis</Category></Not>
 	      		<Not><Category>X-IntrusionDetection</Category></Not>
+	      		<Not><Category>X-WebApplicationTesting</Category></Not>
 	      		<Not><Category>X-PasswordTools</Category></Not>
 	      	</And>
       	</Include>
@@ -64,6 +65,16 @@
 	    	<Include>
 				<And>	    		
 		      		<Category>X-IntrusionDetection</Category>
+				</And>
+	      	</Include>
+		</Menu>
+		
+		<Menu>
+			<Name>Web Application Testing</Name>
+			<Directory>security-WebApplicationTesting.directory</Directory>
+	    	<Include>
+				<And>	    		
+		      		<Category>X-WebApplicationTesting/Category>
 				</And>
 	      	</Include>
 		</Menu>
