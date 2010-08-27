@@ -3,8 +3,8 @@
 # Description:
 #   A fully functional live OS based on Fedora for use in security auditing, forensics research, and penetration testing.
 # Maintainers:
-#  Hiemanshu Sharma <hiemanshu [AT] fedoraproject <dot> org>
 #  Christoph Wickert <cwickert [AT] fedoraproject <dot> org>
+#  Hiemanshu Sharma <hiemanshu [AT] fedoraproject <dot> org>
 #  Joerg Simon  <jsimon [AT] fedoraproject <dot> org>
 # Acknowledgements:
 #   Fedora LiveCD Xfce Spin team - some work here was inherited, many thanks!
