@@ -1,0 +1,140 @@
+#!/usr/bin/perl
+#
+#  security-apps4trac-generate 0.1.0
+#
+#  (c) 2010 by Robert Scheck <robert@fedoraproject.org>
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc.,
+#  59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
+use strict;
+use IPC::Open3;
+use Fcntl;
+use XML::Simple qw(:strict);
+
+if($#ARGV != 1)
+{
+  print "Usage: $0 <kickstart file.ks> <main file.menu>\n";
+  exit 1;
+}
+else
+{
+  my ($category, $package, $in_category, %packages, %categories, @order, @ignore, @trac, %replace);
+  my $kickstart = $ARGV[0];
+  my $menufile = $ARGV[1];
+
+  # Some specials (use only if needed)
+  @ignore = ();
+  $replace{'firstaidkit-plugin-all'} = "firstaidkit";
+
+  # Open *.menu file for parsing
+  sysopen(MF, $menufile, O_RDONLY) or die("Error: File \"$menufile\" is not readable!\n");
+  my $menu = XMLin(join("", <MF>), ForceArray => 0, KeyAttr => []);
+  close(MF);
+
+  # Mapping between group and name
+  for(my $i = 0; $i < scalar @{$menu->{'Menu'}->{'Menu'}}; $i++)
+  {
+    $categories{$menu->{'Menu'}->{'Menu'}->[$i]->{'Include'}->{'And'}->{'Category'}} = $menu->{'Menu'}->{'Menu'}->[$i]->{'Name'};
+  }
+
+  # Open kickstart configuration for parsing
+  sysopen(KS, $kickstart, O_RDONLY) or die("Error: File \"$kickstart\" is not readable!\n");
+  while(<KS>)
+  {
+    # Handle "# Category: foo"
+    if(/^#\s*Category:\s*([^\n]+)\n/)
+    {
+      $category = $1;
+      push(@order, $category);
+      $in_category = 1;  # Next line is a package name
+    }
+
+    # Reset variable for reusing
+    elsif(/^(\s|\t)*$/ && $in_category == 1)
+    {
+      $in_category = 0;
+    }
+
+    # Handle the package name
+    elsif(/^[^#]/ && $in_category == 1)
+    {
+      # Strip potential whitespaces
+      $package = $_;
+      $package =~ s/(\s*|\t*|\n)//g;
+
+      # Only append package if not ignored
+      if(!grep($package eq $_, @ignore))
+      {
+        # Lookup for possible replace
+        if(defined($replace{$package}))
+        {
+          push(@{$packages{$category}}, $replace{$package});
+        }
+        else
+        {
+          push(@{$packages{$category}}, $package);
+        }
+      }
+    }
+  }
+  close(KS);
+
+  # Walk through all categories
+  foreach my $category (@order)
+  {
+    # Resolve category to friendly name
+    if(defined($categories{"X-$category"}))
+    {
+      push(@trac, "== ''" . $categories{"X-$category"} . "'' ==\n");
+    }
+    else
+    {
+      print "Error: No entry for \"$category\" in \"$menufile\" found!\n";
+      exit 1;
+    }
+
+    # Perform one "repoquery" per category
+    my $pid = open3(*WRITER, *READER, *ERROR, "repoquery", "--qf", " * [%{url} %{name}] - %{summary}", sort @{$packages{$category}}) or die("Error: IPC::Open3 for \"repoquery\" failed!\n");
+    close(WRITER);
+    waitpid($pid, 0);
+
+    # Walk through response/output
+    if($? == 0)
+    {
+      foreach my $line (<READER>)
+      {
+        if(!grep($line eq $_, @trac))
+        {
+          push(@trac, $line);
+        }
+      }
+
+      push(@trac, "\n");
+    }
+    else
+    {
+      print join("", <ERROR>);
+      exit 1;
+    }
+
+    close(READER);
+    close(ERROR);
+  }
+
+  # Output everything
+  print join("", @trac);
+}
