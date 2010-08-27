@@ -51,6 +51,9 @@ alsa-plugins-pulseaudio
 pavucontrol
 system-config-printer
 
+# pam-fprint causes a segfault in LXDM when enabled
+-fprintd-pam
+
 # save some space
 -autofs
 -nss_db
@@ -67,9 +70,6 @@ hping3
 nc6
 nc
 ncrack
-nessus-client
-nessus-gui
-nessus-server
 ngrep
 nmap
 nmap-frontend
@@ -83,28 +83,34 @@ tiger
 unicornscan
 wireshark-gnome
 xprobe2
+medusa
 nbtscan
 tcpxtract
 firewalk
 hunt
-
-## Apparently missing from the repositories and fails the build
-#halberd
-
+dnsenum
+iftop
 argus
 nbtscan
 ettercap
 ettercap-gtk
+packETH
 iptraf
 pcapdiff
 picviz
 etherape
 lynis
+netsniff-ng
+tcpjunk
+ssldump
+yersinia
+net-snmp
+openvas-client
+openvas-scanner
 
 # Forensics
 chkrootkit
-clamav
-dd_rescue
+ddrescue
 gparted
 hexedit
 prelude-lml
@@ -118,11 +124,25 @@ sleuthkit
 unhide
 examiner
 dc3dd
+afftools
+srm
+firstaidkit-plugin-all
+
+# Web-Application Testing
+## Apparently missing from the repositories and fails the build
+#halberd
+httping
+nikto
+ratproxy
+lbd
+skipfish
 
 # Wireless
 aircrack-ng
 airsnort
 kismet
+weplab
+wavemon
 
 # Code analysis
 splint
