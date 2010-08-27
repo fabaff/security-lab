@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ELF Examiner
+Exec=gnome-terminal -e "sh -c 'examiner; bash'"
+TryExec=examiner
+Type=Application
+Categories=X-SecurityLab;X-Forensics;

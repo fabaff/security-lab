@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=halberd
-Exec=gnome-terminal -e "sh -c 'halberd; bash'"
-TryExec=halberd
+Name=lynis
+Exec=gnome-terminal -e "sh -c 'lynis; bash'"
+TryExec=lynis
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

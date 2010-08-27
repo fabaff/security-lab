@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=weplab - Wep Key Cracker
+Exec=gnome-terminal -e "sh -c 'weplab; bash'"
+TryExec=weplab
+Type=Application
+Categories=X-SecurityLab;X-Wireless;

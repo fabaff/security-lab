@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Passive Asset Detection System
+Exec=gnome-terminal -e "sh -c 'pads -h; bash'"
+TryExec=pads
+Type=Application
+Categories=X-SecurityLab;X-IntrusionDetection;

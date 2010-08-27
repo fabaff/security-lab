@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Yersinia
+Exec=gnome-terminal -e "su -c 'yersinia -G; bash'"
+TryExec=yersinia
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

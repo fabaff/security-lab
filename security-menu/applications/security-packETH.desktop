@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=ngrep
-Exec=gnome-terminal -e "sh -c 'ngrep; bash'"
-TryExec=ngrep
+Name=packETH
+Exec=gnome-terminal -e "su -c 'packETH; bash'"
+TryExec=packETH
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

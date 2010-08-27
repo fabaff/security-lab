@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=nmap-frontend
+Exec=gnome-terminal -e "sh -c 'zenmap-root; bash'"
+TryExec=zenmap-root
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

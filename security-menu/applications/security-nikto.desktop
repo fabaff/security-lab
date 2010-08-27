@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Nikto Websecurity Scanner
+Exec=gnome-terminal -e "sh -c 'nikto -help; bash'"
+TryExec=nikto
+Type=Application
+Categories=X-SecurityLab;X-WebApplicationTesting;

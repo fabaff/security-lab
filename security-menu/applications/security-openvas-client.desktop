@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=OpenVAS Client
+Exec=gnome-terminal -e "sh -c 'openvas-client; bash'"
+TryExec=openvas-client
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;
