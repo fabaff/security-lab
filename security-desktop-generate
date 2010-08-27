@@ -1,0 +1,213 @@
+#!/usr/bin/perl
+#
+#  security-desktop-generate 0.1.0
+#
+#  (c) 2010 by Robert Scheck <robert@fedoraproject.org>
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc.,
+#  59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+
+use strict;
+use IPC::Open3;
+use File::Find;
+use Fcntl;
+
+if($#ARGV != 1)
+{
+  print "Usage: $0 <kickstart file.ks> <output directory>\n";
+  exit 1;
+}
+else
+{
+  my ($category, $command, $rcommand, $in_command, $package, $entry, $tryexec, @df_git, @df_new, @df_add, @df_del);
+
+  my $kickstart = $ARGV[0];
+  my $output = $ARGV[1];
+  $output =~ s/\/$//g;
+
+  # Simple try to ensure that path is in same working directory
+  if($output =~ /^(\/|\.\.)/)
+  {
+    print "Error: Only relative paths in same working copy are supported!\n";
+    exit 1;
+  }
+
+  # Output directory needs to be a directory
+  if(!-d $output)
+  {
+    print "Error: \"$output\" is not a directory!\n";
+    exit 1;
+  }
+
+  # Perform a "git checkout" to the directory
+  local (*WRITER, *READER, *ERROR);
+
+  my $pid = open3(*WRITER, *READER, *ERROR, "git", "checkout", $output) or die("Error: IPC::Open3 for \"git checkout\" failed!\n");
+  close(WRITER);
+  waitpid($pid, 0);
+
+  if($? != 0)
+  {
+    print join("", <ERROR>);
+    exit 1;
+  }
+
+  close(READER);
+  close(ERROR);
+
+  # Lookup all *.desktop files for later use
+  find({ wanted => \&wanted, follow => 0 }, $output);
+
+  sub wanted
+  {
+    if($File::Find::name =~ /\.desktop$/)
+    {
+      push(@df_git, $File::Find::name);
+    }
+  }
+
+  # Open kickstart configuration for parsing
+  sysopen(KS, $kickstart, O_RDONLY) or die("Error: File \"$kickstart\" is not readable!\n");
+  while(<KS>)
+  {
+    # Ignore empty or nearly empty lines
+    if(/^(\#)?(\s|\t)*$/)
+    {
+      next;
+    }
+
+    # Handle "# Category: foo"
+    elsif(/^#\s*Category:\s*([^\n]+)\n/)
+    {
+      $category = $1;
+    }
+
+    # Handle "# Command: foo"
+    elsif(/^#\s*Command:\s*([^\n]+)\n/)
+    {
+      $command = $1;
+      $in_command = 1;  # Next line is a package name
+    }
+
+    # Handle "# rCommand: foo"
+    elsif(/^#\s*rCommand:\s*([^\n]+)\n/)
+    {
+      $rcommand = $1;
+      $in_command = 1;  # Next line is a package name
+    }
+
+    # Handle "# Entry: foo"
+    elsif(/^#\s*Entry:\s*([^\n]+)\n/)
+    {
+      $entry = $1;
+    }
+
+    # Handle the package name
+    elsif(/^[^#]/ && $in_command == 1)
+    {
+      # Strip potential whitespaces
+      $package = $_;
+      $package =~ s/(\s*|\t*|\n)//g;
+
+      # Use package name if no separate entry was found
+      if(!defined($entry))
+      {
+        $entry = $package;
+      }
+
+      # Write *.desktop file
+      sysopen(DF, "$output/security-$package.desktop", O_CREAT|O_WRONLY) or die("Error: File \"$output/security-$package.desktop\" is not writable!\n");
+      print DF "[Desktop Entry]\n";
+      print DF "Name=$entry\n";
+
+      # Switch between command and rcommand
+      if(defined($command))
+      {
+        print DF "Exec=gnome-terminal -e \"sh -c '$command; bash'\"\n";
+
+        $tryexec = $command;
+        $tryexec =~ s/\s+.*//;
+      }
+      elsif(defined($rcommand))
+      {
+        print DF "Exec=gnome-terminal -e \"su -c '$rcommand; bash'\"\n";
+
+        $tryexec = $rcommand;
+        $tryexec =~ s/\s+.*//;
+      }
+
+      print DF "TryExec=$tryexec\n";
+      print DF "Type=Application\n";
+      print DF "Categories=X-SecurityLab;X-$category;\n";
+      close(DF);
+
+      push(@df_new, "$output/security-$package.desktop");
+
+      # Reset variables which get reused
+      $command = undef;
+      $rcommand = undef;
+      $entry = undef;
+      $in_command = 0;
+    }
+  }
+  close(KS);
+
+  # Find files needing to be added
+  foreach my $df (@df_new)
+  {
+    if(!grep($df eq $_, @df_git))
+    {
+      push(@df_add, $df);
+    }
+  }
+
+  # Add files using "git add"
+  my $pid = open3(*WRITER, *READER, *ERROR, "git", "add", @df_add) or die("Error: IPC::Open3 for \"git add\" failed!\n");
+  close(WRITER);
+  waitpid($pid, 0);
+
+  if($? != 0)
+  {
+    print join("", <ERROR>);
+    exit 1;
+  }
+
+  close(READER);
+  close(ERROR);
+
+  # Find files needing to be removed
+  foreach my $df (@df_git)
+  {
+    if(!grep($df eq $_, @df_new))
+    {
+      push(@df_del, $df);
+    }
+  }
+
+  # Remove files using "git remove"
+  my $pid = open3(*WRITER, *READER, *ERROR, "git", "rm", @df_del) or die("Error: IPC::Open3 for \"git rm\" failed!\n");
+  close(WRITER);
+  waitpid($pid, 0);
+
+  if($? != 0)
+  {
+    print join("", <ERROR>);
+    exit 1;
+  }
+
+  close(READER);
+  close(ERROR);
+}
