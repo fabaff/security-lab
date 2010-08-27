@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=foremost
-Exec=gnome-terminal -e "sh -c 'foremost; bash'"
+Name=Foremost Filecarver
+Exec=gnome-terminal -e "sh -c 'foremost -h; bash'"
 TryExec=foremost
 Type=Application
 Categories=X-SecurityLab;X-Forensics;

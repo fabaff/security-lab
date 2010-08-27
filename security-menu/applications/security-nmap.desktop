@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=nc
-Exec=gnome-terminal -e "sh -c 'nc; bash'"
-TryExec=nc
+Name=nmap
+Exec=gnome-terminal -e "su -c 'nmap -h; bash'"
+TryExec=nmap
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

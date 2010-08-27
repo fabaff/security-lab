@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=scanssh
-Exec=gnome-terminal -e "sh -c 'scanssh; bash'"
+Exec=gnome-terminal -e "sh -c 'scanssh -h; bash'"
 TryExec=scanssh
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

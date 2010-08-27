@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=httping
+Exec=gnome-terminal -e "sh -c 'httping -h; bash'"
+TryExec=httping
+Type=Application
+Categories=X-SecurityLab;X-WebApplicationTesting;

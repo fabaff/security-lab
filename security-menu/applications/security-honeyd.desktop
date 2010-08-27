@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Honeypot Daemon
+Exec=gnome-terminal -e "sh -c 'honeyd -h; bash'"
+TryExec=honeyd
+Type=Application
+Categories=X-SecurityLab;X-IntrusionDetection;

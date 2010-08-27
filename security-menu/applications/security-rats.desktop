@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=rats
-Exec=gnome-terminal -e "rats; bash"
+Name=Rough Auditing Tool for Security
+Exec=gnome-terminal -e "sh -c 'rats; bash'"
 TryExec=rats
 Type=Application
 Categories=X-SecurityLab;X-CodeAnalysis;

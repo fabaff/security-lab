@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=hunt
+Name=Hunt
 Exec=gnome-terminal -e "sh -c 'hunt; bash'"
 TryExec=hunt
 Type=Application

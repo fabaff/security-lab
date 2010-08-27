@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=dd_rescue
-Exec=gnome-terminal -e "sh -c 'dd_rescue; bash'"
-TryExec=dd_rescue
-Type=Application
-Categories=X-SecurityLab;X-Forensics;

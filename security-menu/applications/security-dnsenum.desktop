@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=DNS Enumeration
+Exec=gnome-terminal -e "sh -c 'dnsenum -h; bash'"
+TryExec=dnsenum
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

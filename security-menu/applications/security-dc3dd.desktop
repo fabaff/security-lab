@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=dc3dd
-Exec=gnome-terminal -e "sh -c 'dc3dd; bash'"
-TryExec=dc3dd
-Type=Application
-Categories=X-SecurityLab;X-Forensics;

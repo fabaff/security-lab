@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=flawfinder
+Name=Flawfinder
 Exec=gnome-terminal -e "sh -c 'flawfinder; bash'"
 TryExec=flawfinder
 Type=Application

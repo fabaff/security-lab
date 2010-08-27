@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=gparted
+Exec=gnome-terminal -e "sh -c 'gparted; bash'"
+TryExec=gparted
+Type=Application
+Categories=X-SecurityLab;X-Forensics;

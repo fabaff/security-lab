@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ssldump
+Exec=gnome-terminal -e "su -c 'ssldump -h; bash'"
+TryExec=ssldump
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

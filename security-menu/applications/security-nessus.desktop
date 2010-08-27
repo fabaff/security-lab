@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=nessus
-Exec=gnome-terminal -e "sh -c 'nessus; bash'"
-TryExec=nessus
-Type=Application
-Categories=X-SecurityLab;X-Reconnaissance;

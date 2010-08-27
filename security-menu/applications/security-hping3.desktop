@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=hping3
-Exec=gnome-terminal -e "sh -c 'hping3; bash'"
-TryExec=hping3
+Exec=gnome-terminal -e "su -c 'hping -h; bash'"
+TryExec=hping
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

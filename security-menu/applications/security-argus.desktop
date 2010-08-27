@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=nc6
-Exec=gnome-terminal -e "sh -c 'nc6; bash'"
-TryExec=nc6
+Name=argus
+Exec=gnome-terminal -e "sh -c 'argus -h; bash'"
+TryExec=argus
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

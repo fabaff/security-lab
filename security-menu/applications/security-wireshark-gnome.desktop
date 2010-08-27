@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Wireshark
+Exec=gnome-terminal -e "su -c 'wireshark; bash'"
+TryExec=wireshark
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

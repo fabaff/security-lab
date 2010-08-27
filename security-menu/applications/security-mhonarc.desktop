@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=mhonarc
-Exec=gnome-terminal -e "sh -c 'mhonarc; bash'"
-TryExec=mhonarc
-Type=Application
-Categories=X-SecurityLab;X-Forensics;

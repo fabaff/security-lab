@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=prelude
-Exec=gnome-terminal -e "sh -c 'prelude; bash'"
-TryExec=prelude
-Type=Application
-Categories=X-SecurityLab;X-Forensics;

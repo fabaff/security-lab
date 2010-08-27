@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=snort
-Exec=gnome-terminal -e "sh -c 'snort; bash'"
+Name=Snort
+Exec=gnome-terminal -e "sh -c 'snort -h; bash'"
 TryExec=snort
 Type=Application
 Categories=X-SecurityLab;X-IntrusionDetection;

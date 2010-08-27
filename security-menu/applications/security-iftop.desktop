@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Zenmap
-Exec=gnome-terminal -e "sh -c 'zenmap-root; bash'"
-TryExec=
+Name=iftop
+Exec=gnome-terminal -e "su -c 'iftop; bash'"
+TryExec=iftop
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

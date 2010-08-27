@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=netsniff-ng
+Exec=gnome-terminal -e "su -c 'netsniff-ng; bash'"
+TryExec=netsniff-ng
+Type=Application
+Categories=X-SecurityLab;X-Reconnaissance;

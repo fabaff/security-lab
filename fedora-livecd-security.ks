@@ -217,7 +217,7 @@ weplab
 wavemon
 
 #######################################################################
-# CodeAnalysis
+# Category: CodeAnalysis
 # Command: splint
 splint
 # Command: pscan
