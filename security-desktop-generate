@@ -175,18 +175,21 @@ else
   }
 
   # Add files using "git add"
-  my $pid = open3(*WRITER, *READER, *ERROR, "git", "add", @df_add) or die("Error: IPC::Open3 for \"git add\" failed!\n");
-  close(WRITER);
-  waitpid($pid, 0);
-
-  if($? != 0)
+  if($#df_add > -1)
   {
-    print join("", <ERROR>);
-    exit 1;
-  }
+    my $pid = open3(*WRITER, *READER, *ERROR, "git", "add", @df_add) or die("Error: IPC::Open3 for \"git add\" failed!\n");
+    close(WRITER);
+    waitpid($pid, 0);
 
-  close(READER);
-  close(ERROR);
+    if($? != 0)
+    {
+      print join("", <ERROR>);
+      exit 1;
+    }
+
+    close(READER);
+    close(ERROR);
+  }
 
   # Find files needing to be removed
   foreach my $df (@df_git)
@@ -198,16 +201,19 @@ else
   }
 
   # Remove files using "git remove"
-  my $pid = open3(*WRITER, *READER, *ERROR, "git", "rm", @df_del) or die("Error: IPC::Open3 for \"git rm\" failed!\n");
-  close(WRITER);
-  waitpid($pid, 0);
-
-  if($? != 0)
+  if($#df_del > -1)
   {
-    print join("", <ERROR>);
-    exit 1;
-  }
+    my $pid = open3(*WRITER, *READER, *ERROR, "git", "rm", @df_del) or die("Error: IPC::Open3 for \"git rm\" failed!\n");
+    close(WRITER);
+    waitpid($pid, 0);
 
-  close(READER);
-  close(ERROR);
+    if($? != 0)
+    {
+      print join("", <ERROR>);
+      exit 1;
+    }
+
+    close(READER);
+    close(ERROR);
+  }
 }
