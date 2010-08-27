@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=dsniff
-Exec=gnome-terminal -e "sh -c 'dsniff; bash'"
+Exec=gnome-terminal -e "su -c 'dsniff -h; bash'"
 TryExec=dsniff
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

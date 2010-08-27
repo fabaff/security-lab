@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=chkrootkit
-Exec=gnome-terminal -e "sh -c 'chkrootkit; bash'"
+Exec=gnome-terminal -e "su -c 'chkrootkit; bash'"
 TryExec=chkrootkit
 Type=Application
-Categories=X-SecurityLab;X-Forensics;
+Categories=X-SecurityLab;X-IntrusionDetection;

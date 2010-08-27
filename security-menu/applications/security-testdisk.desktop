@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=testdisk
-Exec=gnome-terminal -e "sh -c 'testdisk; bash'"
+Exec=gnome-terminal -e "su -c 'testdisk -h; bash'"
 TryExec=testdisk
 Type=Application
 Categories=X-SecurityLab;X-Forensics;

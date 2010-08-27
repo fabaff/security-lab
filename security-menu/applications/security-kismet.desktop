@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=kismet
-Exec=kismet
+Exec=gnome-terminal -e "su -c 'kismet; bash'"
 TryExec=kismet
 Type=Application
 Categories=X-SecurityLab;X-Wireless;

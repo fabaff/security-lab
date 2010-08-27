@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ncrack
-Exec=gnome-terminal -e "sh -c 'ncrack; bash'"
+Exec=gnome-terminal -e "sh -c 'ncrack -h; bash'"
 TryExec=ncrack
 Type=Application
-Categories=X-SecurityLab;X-PasswordTools;
+Categories=X-SecurityLab;X-Reconnaissance;

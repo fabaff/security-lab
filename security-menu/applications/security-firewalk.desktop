@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=firewalk
+Name=Firewalk
 Exec=gnome-terminal -e "sh -c 'firewalk; bash'"
 TryExec=firewalk
 Type=Application

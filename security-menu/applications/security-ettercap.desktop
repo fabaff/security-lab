@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Ettercap
-Exec=gnome-terminal -e "su -c ettercap-gtk"
-TryExec=ettercap-gtk
+Exec=gnome-terminal -e "su -c 'ettercap -C; bash'"
+TryExec=ettercap
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

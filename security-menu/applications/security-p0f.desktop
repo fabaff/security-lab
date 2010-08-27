@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=p0f
-Exec=gnome-terminal -e "sh -c 'p0f; bash'"
+Exec=gnome-terminal -e "sh -c 'p0f -h; bash'"
 TryExec=p0f
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Unicornscan
-Exec=gnome-terminal -e "sh -c 'unicornscan; bash'"
+Name=unicornscan
+Exec=gnome-terminal -e "su -c 'unicornscan -h; bash'"
 TryExec=unicornscan
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

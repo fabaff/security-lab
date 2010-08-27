@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=tiger
-Exec=gnome-terminal -e "sh -c 'tiger; bash'"
+Name=Tiger
+Exec=gnome-terminal -e "sh -c 'tiger -h; bash'"
 TryExec=tiger
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;
