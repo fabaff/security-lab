@@ -184,6 +184,8 @@ srm
 # Command: firstaidkit -g gtk
 # Entry: First Aid Kit
 firstaidkit-plugin-all
+ntfs-3g
+ntfsprogs
 
 #####################################################################
 # Category: WebApplicationTesting
