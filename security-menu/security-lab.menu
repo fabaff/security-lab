@@ -74,7 +74,7 @@
 			<Directory>security-WebApplicationTesting.directory</Directory>
 	    	<Include>
 				<And>	    		
-		      		<Category>X-WebApplicationTesting/Category>
+		      		<Category>X-WebApplicationTesting</Category>
 				</And>
 	      	</Include>
 		</Menu>
