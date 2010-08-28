@@ -154,7 +154,6 @@ ddrescue
 # Command: gparted
 gparted
 hexedit
-prelude-lml
 # rCommand: testdisk -h
 testdisk
 # Command: foremost -h
