@@ -24,15 +24,13 @@
 %packages
 
 # internet
-firefox
+midori
 claws-mail
 
 
 # Command line
 cnetworkmanager
 irssi
-mutt
-ntfs-3g
 powertop
 wget
 yum-utils
@@ -97,9 +95,6 @@ scapy
 socat
 # rCommand: tcpdump -h
 tcpdump
-# Command: tiger -h
-# Entry: Tiger
-tiger
 # rCommand: unicornscan -h
 unicornscan
 # rCommand: wireshark
@@ -133,14 +128,13 @@ packETH
 # rCommand: iptraf
 iptraf
 pcapdiff
-picviz
 # rCommand: etherape
 etherape
 # Command: lynis
 lynis
 # rCommand: netsniff-ng
 netsniff-ng
-# Command: tcpjunk -h
+# Command: tcpjunk -x
 tcpjunk
 # rCommand: ssldump -h
 ssldump
@@ -233,13 +227,8 @@ rats
 # Category: IntrusionDetection
 # rCommand: chkrootkit
 chkrootkit
-# Command: snort -h
-# Entry: Snort
-snort
 # Command: aide -h
 aide
-# Command: tripwire --help all
-tripwire
 labrea
 # Command: honeyd -h
 # Entry: Honeypot Daemon
@@ -247,9 +236,6 @@ honeyd
 # Command: pads -h
 # Entry: Passive Asset Detection System
 pads
-prewikka
-prelude-notify
-prelude-manager
 nebula
 # Command: rkhunter
 # Entry: RootKitHunter
@@ -269,9 +255,7 @@ medusa
 
 # Useful tools
 lsof
-ntop
 scrot
-mc
 epdfview
 
 # Other necessary components
@@ -284,7 +268,7 @@ gnome-terminal
 PolicyKit-gnome
 
 # make sure debuginfo doesn't end up on the live image
--\*debug
+-*debug
 %end
 
 %post
