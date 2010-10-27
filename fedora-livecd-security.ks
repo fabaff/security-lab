@@ -22,8 +22,35 @@
 %include fedora-live-minimization.ks
 
 %packages
+#GUI Stuff
+@lxde
+lxlauncher
+obconf
+lxdm
+xarchiver
+gnome-bluetooth
+alsa-plugins-pulseaudio
+system-config-printer
+gmixer
+lxmusic
+asunder
+hal-storage-addon
+xcompmgr
+xdg-user-dirs-gtk
+perl-File-MimeInfo
+gnome-keyring-pam
+gnome-packagekit*
+-kpackagekit
+-polkit-gnome
+-polkit-kde
+notification-daemon
+-xfce4-notifyd
+metacity
+gigolo
+
 
 # internet
+firefox
 midori
 claws-mail
 
@@ -37,23 +64,14 @@ yum-utils
 yum-presto
 
 # dictionaries are big
-#-aspell-*
-#-hunspell-*
-#-man-pages-*
-#-words
+-aspell-*
+-hunspell-*
+-man-pages-*
+-words
 
 # more fun with space saving
 -gimp-help
 
-#GUI Stuff
-@lxde
-Thunar 
-thunar-volman
-xarchiver
-gnome-bluetooth
-alsa-plugins-pulseaudio
-pavucontrol
-system-config-printer
 
 # pam-fprint causes a segfault in LXDM when enabled
 -fprintd-pam
@@ -64,6 +82,28 @@ system-config-printer
 -sendmail
 ssmtp
 -acpid
+-system-config-boot
+-system-config-lvm
+-system-config-network
+-system-config-rootpassword
+-policycoreutils-gui
+
+# Useful tools
+lsof
+scrot
+epdfview
+
+# Other necessary components
+screen
+#desktop-backgrounds-basic
+feh
+vim-enhanced
+gnome-menus
+gnome-terminal
+
+# make sure debuginfo doesn't end up on the live image
+-*debug
+
 
 ###################### Security Stuffs ############################
 security-menus
@@ -252,22 +292,6 @@ ophcrack
 medusa
 
 
-# Useful tools
-lsof
-scrot
-epdfview
-
-# Other necessary components
-screen
-desktop-backgrounds-basic
-feh
-vim-enhanced
-gnome-menus
-gnome-terminal
-PolicyKit-gnome
-
-# make sure debuginfo doesn't end up on the live image
--*debug
 %end
 
 %post
