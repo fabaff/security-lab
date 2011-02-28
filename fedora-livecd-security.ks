@@ -4,12 +4,12 @@
 #   A fully functional live OS based on Fedora for use in security auditing, forensics research, and penetration testing.
 # Maintainers:
 #  Christoph Wickert <cwickert [AT] fedoraproject <dot> org>
-#  Hiemanshu Sharma <hiemanshu [AT] fedoraproject <dot> org>
 #  Joerg Simon  <jsimon [AT] fedoraproject <dot> org>
 # Acknowledgements:
 #   Fedora LiveCD Xfce Spin team - some work here was inherited, many thanks!
 #   Fedora LXDE Spin - Copied over stuff to make LXDE Default
 #   Luke Macken, Adam Miller for the original OpenBox Security ks and all the Security Applications! 
+#   Hiemanshu Sharma <hiemanshu [AT] fedoraproject <dot> org>
 # Important!!!!
 #   Beginning with Security Stuff - we use pattern to parse the kickstart-file for building the security menu - please use 
 #   # Category: Categoryname <- for new Categories
@@ -31,7 +31,8 @@ xarchiver
 gnome-bluetooth
 alsa-plugins-pulseaudio
 system-config-printer
-gmixer
+#gmixer
+pavucontrol
 lxmusic
 asunder
 hal-storage-addon
