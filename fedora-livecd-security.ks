@@ -93,6 +93,7 @@ ssmtp
 lsof
 scrot
 epdfview
+vlock
 
 # Other necessary components
 screen
@@ -128,7 +129,7 @@ p0f
 # rCommand: sing -h
 sing
 # Command: scanssh -h
-scanssh
+#temp takout scanssh
 # rCommand: scapy -h
 scapy
 # Command: socat
