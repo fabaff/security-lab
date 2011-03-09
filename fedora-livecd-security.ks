@@ -273,7 +273,8 @@ aide
 labrea
 # Command: honeyd -h
 # Entry: Honeypot Daemon
-honeyd
+# temp removal
+#honeyd
 # Command: pads -h
 # Entry: Passive Asset Detection System
 pads
