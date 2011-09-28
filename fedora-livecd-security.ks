@@ -22,42 +22,62 @@
 %include fedora-live-minimization.ks
 
 %packages
-#GUI Stuff
+### LXDE desktop
 @lxde-desktop
 lxlauncher
 obconf
 lxdm
-xarchiver
-gnome-bluetooth
-alsa-plugins-pulseaudio
-system-config-printer
-#gmixer
-pavucontrol
-lxmusic
-asunder
-hal-storage-addon
-xcompmgr
-xdg-user-dirs-gtk
-perl-File-MimeInfo
-gnome-keyring-pam
-gnome-packagekit*
--kpackagekit
--polkit-gnome
--polkit-kde
-notification-daemon
--xfce4-notifyd
-metacity
-gigolo
 
-
-# internet
+### internet
 firefox
+icedtea-web
 midori
 claws-mail
 
+### audio & video
+alsa-plugins-pulseaudio
+asunder
+lxmusic
+pavucontrol
+
+### system
+gigolo
+
+### more desktop stuff
+fedora-icon-theme
+adwaita-cursor-theme
+adwaita-gtk2-theme
+adwaita-gtk3-theme
+
+# pam-fprint causes a segfault in LXDM when enabled
+-fprintd-pam
+
+# needed for automatic unlocking of keyring (#643435)
+gnome-keyring-pam
+
+gnome-bluetooth
+
+# needed for xdg-open to support LXDE
+perl-File-MimeInfo
+
+xdg-user-dirs-gtk
+
+gnome-packagekit*
+-kpackagekit
+
+# LXDE has lxpolkit. Make sure no other authentication agents end up in the spin.
+-polkit-gnome
+-polkit-kde
+
+# make sure xfce4-notifyd is not pulled in
+notification-daemon
+-xfce4-notifyd
+
+# make sure xfwm4 is not pulled in for firstboot
+# https://bugzilla.redhat.com/show_bug.cgi?id=643416
+metacity
 
 # Command line
-cnetworkmanager
 irssi
 powertop
 wget
@@ -79,14 +99,17 @@ yum-presto
 
 # save some space
 -autofs
--nss_db
 -sendmail
 ssmtp
 -acpid
+
+# drop some system-config things
 -system-config-boot
+#-system-config-language
 -system-config-lvm
 -system-config-network
 -system-config-rootpassword
+#-system-config-services
 -policycoreutils-gui
 
 # Useful tools
@@ -311,7 +334,7 @@ cat >> /etc/rc.d/init.d/livesys << EOF
 cat > /etc/xdg/lxsession/LXDE/autostart << FOE
 /usr/libexec/gam_server
 @lxpanel --profile LXDE
-@pcmanfm --desktop --profile lxde
+@pcmanfm --desktop --profile LXDE
 @pulseaudio -D
 FOE
 
