@@ -17,7 +17,6 @@
 #   # rCommand: Commandname <- for a command as root
 #   # Entry: Menu-Entry <- for the MenuEntry Name (optional)
 
-
 %include fedora-live-base.ks
 %include fedora-live-minimization.ks
 
@@ -31,14 +30,34 @@ lxdm
 ### internet
 firefox
 icedtea-web
-midori
-claws-mail
+pidgin
+sylpheed
+transmission
+
+### office
+#abiword
+#gnumeric
+#osmo
+
+### graphics
+epdfview
+#mtpaint
 
 ### audio & video
 alsa-plugins-pulseaudio
 asunder
 lxmusic
+gxine
+gxine-mozplugin
 pavucontrol
+pnmixer
+# I'm looking for something smaller than
+#gnomebaker
+
+### utils
+galculator
+parcellite
+xpad
 
 ### system
 gigolo
@@ -55,14 +74,18 @@ adwaita-gtk3-theme
 # needed for automatic unlocking of keyring (#643435)
 gnome-keyring-pam
 
-gnome-bluetooth
+NetworkManager-gnome
 
 # needed for xdg-open to support LXDE
 perl-File-MimeInfo
 
+xcompmgr
 xdg-user-dirs-gtk
+xscreensaver-extras
 
-gnome-packagekit*
+# use yumex instead of gnome-packagekit
+#yumex
+-gnome-packagekit
 -kpackagekit
 
 # LXDE has lxpolkit. Make sure no other authentication agents end up in the spin.
@@ -78,7 +101,6 @@ notification-daemon
 metacity
 
 # Command line
-irssi
 powertop
 wget
 yum-utils
@@ -90,15 +112,7 @@ yum-presto
 -man-pages-*
 -words
 
-# more fun with space saving
--gimp-help
-
-
-# pam-fprint causes a segfault in LXDM when enabled
--fprintd-pam
-
 # save some space
--autofs
 -sendmail
 ssmtp
 -acpid
@@ -111,23 +125,7 @@ ssmtp
 -system-config-rootpassword
 #-system-config-services
 -policycoreutils-gui
-
-# Useful tools
-lsof
-scrot
-epdfview
-vlock
-
-# Other necessary components
-screen
-#desktop-backgrounds-basic
-feh
-vim-enhanced
-gnome-menus
-gnome-terminal
-
-# make sure debuginfo doesn't end up on the live image
--*debug
+-gnome-disk-utility
 
 
 ###################### Security Stuffs ############################
@@ -259,6 +257,8 @@ ratproxy
 lbd
 # Command: skipfish
 skipfish
+# Command: sqlninja
+sqlninja
 
 #######################################################################
 # Category: Wireless
@@ -317,7 +317,6 @@ ophcrack
 # Entry: Medusa Brute Force
 medusa
 
-
 %end
 
 %post
@@ -342,7 +341,7 @@ FOE
 cat > /etc/xdg/libfm/pref-apps.conf << FOE 
 [Preferred Applications]
 WebBrowser=mozilla-firefox.desktop
-MailClient=fedora-claws-mail.desktop
+MailClient=redhat-sylpheed.desktop
 FOE
 
 # set up auto-login for liveuser
