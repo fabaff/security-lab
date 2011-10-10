@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=tcpjunk
-Exec=gnome-terminal -e "sh -c 'tcpjunk -h; bash'"
+Exec=gnome-terminal -e "sh -c 'tcpjunk -x; bash'"
 TryExec=tcpjunk
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;

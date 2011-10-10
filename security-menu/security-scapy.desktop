@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=scapy
-Exec=gnome-terminal -e "su -c 'scapy -h; bash'"
-TryExec=scapy
+Exec=gnome-terminal -e "sh -c 'scanssh -h; bash'"
+TryExec=scanssh
 Type=Application
 Categories=X-SecurityLab;X-Reconnaissance;
