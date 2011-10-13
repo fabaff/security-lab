@@ -34,11 +34,6 @@ pidgin
 sylpheed
 transmission
 
-### office
-#abiword
-#gnumeric
-#osmo
-
 ### graphics
 epdfview
 #mtpaint
@@ -61,6 +56,7 @@ xpad
 
 ### system
 gigolo
+gnome-terminal
 
 ### more desktop stuff
 fedora-icon-theme
