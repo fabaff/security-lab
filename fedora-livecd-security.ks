@@ -269,7 +269,7 @@ airsnort
 # rCommand: kismet
 kismet
 # Command: weplab
-# Entry: weplab - Wep Key Cracker
+# Entry: Wep Key Cracker
 weplab
 # Command: wavemon
 wavemon
