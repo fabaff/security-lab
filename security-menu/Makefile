@@ -1,4 +1,4 @@
-NAME=security-menu
+NAME=security-menus
 PREFIX=/usr
 DATADIR=$(PREFIX)/share
 SYSCONFDIR=/etc
@@ -26,7 +26,7 @@ archive: tag
 	@bzip2 -f $(NAME)-$(VERSION).$(RELEASE).tar
 	@echo "$(NAME)-$(VERSION).$(RELEASE).tar.bz2 created" 
 	@sha1sum $(NAME)-$(VERSION).$(RELEASE).tar.bz2 > $(NAME)-$(VERSION).$(RELEASE).sha1sum 
-	@scp $(NAME)-$(VERSION).$(RELEASE).tar.bz2 $(NAME)-$(VERSION).$(RELEASE).sha1sum fedorahosted.org:$(NAME) 
+	@scp $(NAME)-$(VERSION).$(RELEASE).tar.bz2 $(NAME)-$(VERSION).$(RELEASE).sha1sum www.fedorahosted.org:security-spin
 	@echo "Everything done, files uploaded to Fedorahosted.org" 
 
 clean:

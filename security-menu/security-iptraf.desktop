@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=iptraf
-Exec=gnome-terminal -e "su -c 'iptraf; bash'"
-TryExec=iptraf
-Type=Application
-Categories=X-SecurityLab;X-Reconnaissance;
