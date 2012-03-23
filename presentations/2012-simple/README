@@ -1,0 +1,52 @@
+Fedora Security Lab - Simple presentation
+=========================================
+
+This simple presentation about the Fedora Security Lab is using the shower
+javascript library (http://github.com/pepelsbey/shower). It's designed for 
+short presentations or ligthning talks. This is the reason why only basic
+content is included, the rest needs to be in your brain or on your notes. 
+
+Download
+--------
+
+The source is located in the git repository of the Security Spin.
+
+$ git clone git://git.fedorahosted.org/git/security-spin.git/
+
+Now change to the 'presentations/2012-simple' directory.
+
+Usage
+-----
+
+Open the file index.html in the lastest version of a browser (eg. Firefox > 10,
+Google Chrome).
+
+* Click any slide to enter presentation mode
+* Use arrow keys to navigate
+* Press 'Esc' to exit presentation mode
+
+Or use just a keyboard to navigate:
+
+* Press right arrow key to select first slide
+* Press 'Enter' to enter presentation mode
+* Press 'Esc' to exit presentation mode
+
+Author
+------
+
+Fabian Affolter <fab [AT] fedoraproject.org>
+
+About Security Lab
+------------------
+
+Website:  https://fedorahosted.org/security-spin/
+Download: https://spins.fedoraproject.org/security/
+Source:   https://fedorahosted.org/security-spin/browser
+
+License
+-------
+
+This presentation is licensed under GPLv2, for more details check COPYING. 
+
+The Shower javascript part is licensed under MIT license and was developed
+by Vadim Makeev, http://pepelsbey.net/
