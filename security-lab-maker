@@ -31,9 +31,9 @@ ROOT_UID=0
 # Check if the script runs as root (aka UID 0)
 if [ "$UID" -eq "$ROOT_UID" ] 
     then
-        echo "You are root, please be patient"
+        echo "You are root, please be patient ..."
     else
-        echo "You must be root to run this script. Please use su to get root"
+        echo "You must be root to run this script. Please use su to get root."
     exit 0
 fi
 
