@@ -1,5 +1,5 @@
 # Filename:
-#   fedora-livecd-security.ks
+#   fedora-livecd-security-xfce.ks
 # Description:
 #   A fully functional live OS based on Fedora for use in security auditing, 
 #   forensics research, and penetration testing.
@@ -10,7 +10,7 @@
 # Acknowledgements:
 #   Fedora LiveCD Xfce Spin team - some work here was inherited, many thanks!
 #   Fedora LXDE Spin - Copied over stuff to make LXDE Default
-#   Luke Macken, Adam Miller for the original OpenBox Security ks and al
+#   Luke Macken, Adam Miller for the original OpenBox Security ks and all
 #   the Security Applications! 
 #   Hiemanshu Sharma <hiemanshu [AT] fedoraproject <dot> org>
 # Important!!!!
