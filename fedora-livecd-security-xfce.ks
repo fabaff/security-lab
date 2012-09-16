@@ -1,5 +1,5 @@
 # Filename:
-#   fedora-livecd-security.ks
+#   fedora-livecd-security-xfce.ks
 # Description:
 #   A fully functional live OS based on Fedora for use in security auditing, 
 #   forensics research, and penetration testing.
