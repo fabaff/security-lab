@@ -22,9 +22,10 @@
 #
 
 KICKSTART=fedora-livecd-security-xfce.ks
-DIRECTORY=/home/fab/Documents/repos/spin-kickstarts
+DIRECTORY=/home/fab/repos/spin-kickstarts
 CACHE=/var/cache/live
-LABEL=Fedora-SecurityCD
+LABEL=SecurityLab
+TITLE=SecurityLab
 RELEASEVER=17
 ROOT_UID=0   
 
@@ -41,12 +42,13 @@ fi
 setenforce 0
 
 # Create the live media. This needs time...
-livecd-creator -v \
+livecd-creator --verbose \
 --config=$DIRECTORY/$KICKSTART \
 --fslabel=$LABEL \
+--title=$TITLE \
 --cache=$CACHE \
 --releasever=$RELEASEVER
 
 echo ""
-echo "To test the image:  "
+echo "If this script finished with no error, then the image is ready."
 echo "qemu-kvm -m 768 -cdrom $LABEL.iso"
