@@ -28,101 +28,143 @@ lxlauncher
 obconf
 lxdm
 
-### internet
-firefox
-icedtea-web
-pidgin
-sylpheed
-transmission
+# Office
+-abiword
+gnumeric
 
-### graphics
+# Graphics
 epdfview
-#mtpaint
 
-### audio & video
+# Development
+geany
+
+# Internet
+firefox
+# Add the midori browser as a lighter alternative
+midori
+claws-mail
+-claws-mail-plugins-archive
+-claws-mail-plugins-att-remover
+-claws-mail-plugins-attachwarner
+-claws-mail-plugins-bogofilter
+-claws-mail-plugins-fetchinfo
+-claws-mail-plugins-mailmbox
+-claws-mail-plugins-newmail
+-claws-mail-plugins-notification
+-claws-mail-plugins-pgp
+-claws-mail-plugins-rssyl
+-claws-mail-plugins-smime
+-claws-mail-plugins-spam-report
+-claws-mail-plugins-tnef
+-claws-mail-plugins-vcalendar
+-liferea
+pidgin
+remmina
+remmina-plugins-rdp
+remmina-plugins-vnc
+-transmission
+
+# Sound & Video
 alsa-plugins-pulseaudio
-asunder
-lxmusic
-gxine
-gxine-mozplugin
+-asunder
+-cheese
 pavucontrol
-pnmixer
-# I'm looking for something smaller than
-#gnomebaker
+parole
+pragha
+xfburn
 
-### utils
-galculator
-parcellite
-xpad
-
-### system
+# System
+gparted
+-gnome-disk-utility
 gigolo
-gnome-terminal
+setroubleshoot
 
-### more desktop stuff
-fedora-icon-theme
-adwaita-cursor-theme
-adwaita-gtk2-theme
-adwaita-gtk3-theme
+# Accessories
+catfish
+galculator
+seahorse
+ConsoleKit-x11
 
-# pam-fprint causes a segfault in LXDM when enabled
--fprintd-pam
-
-# needed for automatic unlocking of keyring (#643435)
-gnome-keyring-pam
-
-NetworkManager-gnome
-
-# needed for xdg-open to support LXDE
-perl-File-MimeInfo
-
-xcompmgr
+# More Desktop stuff
+# java plugin
+icedtea-web
+NetworkManager-vpnc
+NetworkManager-openvpn
+NetworkManager-pptp
+gnome-bluetooth
+xscreensaver
 xdg-user-dirs-gtk
-xscreensaver-extras
 
-# use yumex instead of gnome-packagekit
-#yumex
--gnome-packagekit
--kpackagekit
+# default artwork
+fedora-icon-theme
 
-# LXDE has lxpolkit. Make sure no other authentication agents end up in the spin.
--polkit-gnome
--polkit-kde
-
-# make sure xfce4-notifyd is not pulled in
-notification-daemon
--xfce4-notifyd
-
-# make sure xfwm4 is not pulled in for firstboot
-# https://bugzilla.redhat.com/show_bug.cgi?id=643416
-metacity
-
-# Command line
+# command line
+irssi
+mutt
+ntfs-3g
 powertop
+rtorrent
+vim-enhanced
 wget
 yum-utils
-yum-presto
+
+# Xfce packages
+@xfce-desktop
+ristretto
+thunar-media-tags-plugin
+xfce4-battery-plugin
+xfce4-cellmodem-plugin
+xfce4-clipman-plugin
+xfce4-cpugraph-plugin
+xfce4-datetime-plugin
+xfce4-dict-plugin
+xfce4-diskperf-plugin
+xfce4-eyes-plugin
+xfce4-fsguard-plugin
+xfce4-genmon-plugin
+xfce4-mailwatch-plugin
+xfce4-mount-plugin
+xfce4-netload-plugin
+xfce4-notes-plugin
+xfce4-places-plugin
+xfce4-quicklauncher-plugin
+xfce4-screenshooter-plugin
+xfce4-sensors-plugin
+xfce4-smartbookmark-plugin
+xfce4-systemload-plugin
+xfce4-taskmanager
+xfce4-time-out-plugin
+xfce4-timer-plugin
+xfce4-verve-plugin
+# we already have nm-applet
+#xfce4-wavelan-plugin
+xfce4-weather-plugin
+xfce4-websearch-plugin
+xfce4-xfswitch-plugin
+xfce4-xkb-plugin
+# system-config-printer does printer management better
+#xfprint
+xfwm4-themes
 
 # dictionaries are big
 -aspell-*
--hunspell-*
--man-pages-*
--words
+#-man-pages-*
+
+# more fun with space saving
+-gimp-help
+# not needed, but as long as there is space left, we leave this in
+#-desktop-backgrounds-basic
 
 # save some space
--sendmail
-ssmtp
+-autofs
 -acpid
 
 # drop some system-config things
 -system-config-boot
-#-system-config-language
 -system-config-lvm
--system-config-network
 -system-config-rootpassword
 #-system-config-services
 -policycoreutils-gui
--gnome-disk-utility
 
 
 ###################### Security Stuffs ############################

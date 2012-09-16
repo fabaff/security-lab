@@ -26,52 +26,53 @@
 
 %packages
 # Office
-#abiword
-#gnumeric
+abiword
+gnumeric
+-gtkmathview
 
 # Graphics
 epdfview
 
 # Development
-#geany
+geany
 
 # Internet
-#firefox
+firefox
 # Add the midori browser as a lighter alternative
 midori
 claws-mail
-#claws-mail-plugins-archive
-#claws-mail-plugins-att-remover
-#claws-mail-plugins-attachwarner
-#claws-mail-plugins-bogofilter
-#claws-mail-plugins-fetchinfo
-#claws-mail-plugins-mailmbox
-#claws-mail-plugins-newmail
-#claws-mail-plugins-notification
-#claws-mail-plugins-pgp
-#claws-mail-plugins-rssyl
-#claws-mail-plugins-smime
-#claws-mail-plugins-spam-report
-#claws-mail-plugins-tnef
-#claws-mail-plugins-vcalendar
-#liferea
-#pidgin
+claws-mail-plugins-archive
+claws-mail-plugins-att-remover
+claws-mail-plugins-attachwarner
+claws-mail-plugins-bogofilter
+claws-mail-plugins-fetchinfo
+claws-mail-plugins-mailmbox
+claws-mail-plugins-newmail
+claws-mail-plugins-notification
+claws-mail-plugins-pgp
+claws-mail-plugins-rssyl
+claws-mail-plugins-smime
+claws-mail-plugins-spam-report
+claws-mail-plugins-tnef
+claws-mail-plugins-vcalendar
+liferea
+pidgin
 remmina
 remmina-plugins-rdp
 remmina-plugins-vnc
-#transmission
+transmission
 
 # Sound & Video
 alsa-plugins-pulseaudio
-#asunder
-#cheese
+-asunder
+cheese
 pavucontrol
-#parole
-#pragha
+parole
+pragha
 xfburn
 
 # System
-#gparted
+gparted
 -gnome-disk-utility
 gigolo
 setroubleshoot
@@ -92,21 +93,28 @@ gnome-bluetooth
 xscreensaver
 xdg-user-dirs-gtk
 
-# FIXME: work around #746693
-metacity
-
 # default artwork
 fedora-icon-theme
 adwaita-cursor-theme
 adwaita-gtk2-theme
 adwaita-gtk3-theme
+greybird-gtk2-theme
+greybird-gtk3-theme
+greybird-xfce4-notifyd-theme
+greybird-xfwm4-theme
+albatross-gtk2-theme
+albatross-gtk3-theme
+albatross-xfwm4-theme
+bluebird-gtk2-theme
+bluebird-gtk3-theme
+bluebird-xfwm4-theme
 
 # command line
 irssi
 mutt
 ntfs-3g
 powertop
-#rtorrent
+rtorrent
 vim-enhanced
 wget
 yum-utils
@@ -151,7 +159,7 @@ xfwm4-themes
 
 # dictionaries are big
 -aspell-*
--man-pages-*
+#-man-pages-*
 
 # more fun with space saving
 -gimp-help
@@ -165,25 +173,10 @@ xfwm4-themes
 # drop some system-config things
 -system-config-boot
 -system-config-lvm
--system-config-network
 -system-config-rootpassword
 #-system-config-services
 -policycoreutils-gui
 
-gnome-terminal
-macchanger
-
-# Metasploit
-subversion
-ruby-devel
-ruby-irb
-#ruby-ri
-rubygems
-postgresql-server
-postgresql-devel
-
-# we need UPower for suspend and hibernate
-upower
 
 ###################### Security Stuffs ############################
 security-menus
@@ -386,6 +379,7 @@ medusa
 
 cat > /etc/sysconfig/desktop <<EOF
 PREFERRED=/usr/bin/startxfce4
+DISPLAYMANAGER=/usr/sbin/lightdm
 EOF
 
 cat >> /etc/rc.d/init.d/livesys << EOF
@@ -411,12 +405,9 @@ rm -f /etc/xdg/autostart/xfconf-migration-4.6.desktop || :
 mkdir -p /home/liveuser/.config/xfce4/xfconf/xfce-perchannel-xml
 cp /etc/xdg/xfce4/panel/default.xml /home/liveuser/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 
-# set up auto-login
-cat >> /etc/gdm/custom.conf << FOE
-[daemon]
-AutomaticLoginEnable=True
-AutomaticLogin=liveuser
-FOE
+# set up lightdm autologin
+sed -ei '|^#autologin-user=|autologin-user=liveuser|' /etc/lightdm/lightdm.conf 
+sed -ei '|^#autologin-user-timeout=0|autologin-user-timeout=10|' /etc/lightdm/lightdm.conf 
 
 # Show harddisk install on the desktop
 sed -i -e 's/NoDisplay=true/NoDisplay=false/' /usr/share/applications/liveinst.desktop
