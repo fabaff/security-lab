@@ -25,137 +25,13 @@
 %include fedora-live-minimization.ks
 
 %packages
-# Office
-abiword
-gnumeric
--gtkmathview
 
-# Graphics
-epdfview
-
-# Development
-geany
-
-# Internet
-firefox
-# Add the midori browser as a lighter alternative
-midori
-claws-mail
-claws-mail-plugins-archive
-claws-mail-plugins-att-remover
-claws-mail-plugins-attachwarner
-claws-mail-plugins-bogofilter
-claws-mail-plugins-fetchinfo
-claws-mail-plugins-mailmbox
-claws-mail-plugins-newmail
-claws-mail-plugins-notification
-claws-mail-plugins-pgp
-claws-mail-plugins-rssyl
-claws-mail-plugins-smime
-claws-mail-plugins-spam-report
-claws-mail-plugins-tnef
-claws-mail-plugins-vcalendar
-liferea
-pidgin
-remmina
-remmina-plugins-rdp
-remmina-plugins-vnc
-transmission
-
-# Sound & Video
-alsa-plugins-pulseaudio
--asunder
-cheese
-pavucontrol
-parole
-pragha
-xfburn
-
-# System
-gparted
--gnome-disk-utility
-gigolo
-setroubleshoot
-
-# Accessories
-catfish
-galculator
-seahorse
-ConsoleKit-x11
-
-# More Desktop stuff
-# java plugin
-icedtea-web
-NetworkManager-vpnc
-NetworkManager-openvpn
-NetworkManager-pptp
-gnome-bluetooth
-xscreensaver
-xdg-user-dirs-gtk
-
-# default artwork
-fedora-icon-theme
-adwaita-cursor-theme
-adwaita-gtk2-theme
-adwaita-gtk3-theme
-greybird-gtk2-theme
-greybird-gtk3-theme
-greybird-xfce4-notifyd-theme
-greybird-xfwm4-theme
-albatross-gtk2-theme
-albatross-gtk3-theme
-albatross-xfwm4-theme
-bluebird-gtk2-theme
-bluebird-gtk3-theme
-bluebird-xfwm4-theme
-
-# command line
-irssi
-mutt
-ntfs-3g
-powertop
-rtorrent
-vim-enhanced
-wget
-yum-utils
-
-# Xfce packages
 @xfce-desktop
-ristretto
-thunar-media-tags-plugin
-xfce4-battery-plugin
-xfce4-cellmodem-plugin
-xfce4-clipman-plugin
-xfce4-cpugraph-plugin
-xfce4-datetime-plugin
-xfce4-dict-plugin
-xfce4-diskperf-plugin
-xfce4-eyes-plugin
-xfce4-fsguard-plugin
-xfce4-genmon-plugin
-xfce4-mailwatch-plugin
-xfce4-mount-plugin
-xfce4-netload-plugin
-xfce4-notes-plugin
-xfce4-places-plugin
-xfce4-quicklauncher-plugin
-xfce4-screenshooter-plugin
-xfce4-sensors-plugin
-xfce4-smartbookmark-plugin
-xfce4-systemload-plugin
-xfce4-taskmanager
-xfce4-time-out-plugin
-xfce4-timer-plugin
-xfce4-verve-plugin
-# we already have nm-applet
-#xfce4-wavelan-plugin
-xfce4-weather-plugin
-xfce4-websearch-plugin
-xfce4-xfswitch-plugin
-xfce4-xkb-plugin
-# system-config-printer does printer management better
-#xfprint
-xfwm4-themes
+@xfce-apps
+@xfce-extra-plugins
+@xfce-media
+@xfce-office
+@firefox
 
 # dictionaries are big
 -aspell-*
@@ -164,7 +40,9 @@ xfwm4-themes
 # more fun with space saving
 -gimp-help
 # not needed, but as long as there is space left, we leave this in
-#-desktop-backgrounds-basic
+-desktop-backgrounds-basic
+-cheese
+-asunder
 
 # save some space
 -autofs
@@ -174,8 +52,30 @@ xfwm4-themes
 -system-config-boot
 -system-config-lvm
 -system-config-rootpassword
-#-system-config-services
 -policycoreutils-gui
+
+# Sound & Video
+alsa-plugins-pulseaudio
+
+# System
+-gnome-disk-utility
+gigolo
+
+# More Desktop stuff
+icedtea-web
+gnome-bluetooth
+xscreensaver
+
+# command line
+irssi
+mutt
+nano
+ntfs-3g
+powertop
+rtorrent
+vim-enhanced
+wget
+yum-utils
 
 
 ###################### Security Stuffs ############################
