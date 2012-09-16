@@ -10,7 +10,7 @@
 # Acknowledgements:
 #   Fedora LiveCD Xfce Spin team - some work here was inherited, many thanks!
 #   Fedora LXDE Spin - Copied over stuff to make LXDE Default
-#   Luke Macken, Adam Miller for the original OpenBox Security ks and al
+#   Luke Macken, Adam Miller for the original OpenBox Security ks and all
 #   the Security Applications! 
 #   Hiemanshu Sharma <hiemanshu [AT] fedoraproject <dot> org>
 # Important!!!!
