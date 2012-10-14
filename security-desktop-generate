@@ -151,7 +151,7 @@ else
 
       print DF "TryExec=$tryexec\n";
       print DF "Type=Application\n";
-      print DF "Categories=X-SecurityLab;X-$category;\n";
+      print DF "Categories=System;Security;X-SecurityLab;X-$category;\n";
       close(DF);
 
       push(@df_new, "$output/security-$package.desktop");
