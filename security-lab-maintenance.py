@@ -28,6 +28,7 @@
 import argparse
 import operator
 import itertools
+import re
 import sys
 import os
 import yum
@@ -110,7 +111,9 @@ def trac():
     yb.conf.cache = 1
     print '<--- snip --->'
     for cat in sorted_categories:
-        print '== %s ==' % cat['category']
+        elements = re.findall('[A-Z][^A-Z]*', cat['category'])
+        category_name = ' '.join(elements)
+        print '== %s ==' % category_name
         for pkg in cat['pkgs']:
             pkgData = yb.pkgSack.searchNevra(pkg)
             for detail in pkgData:
