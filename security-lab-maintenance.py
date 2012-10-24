@@ -108,11 +108,14 @@ def trac():
     sorted_categories = [{'category': k, 'pkgs': [x[0] for x in v]} for k, v in groups]
 
     yb = yum.YumBase()
-    yb.conf.cache = 1
+    yb.conf.cache = 0
     print '<--- snip --->'
     for cat in sorted_categories:
-        elements = re.findall('[A-Z][^A-Z]*', cat['category'])
-        category_name = ' '.join(elements)
+        if cat['category'] != 'VoIP':
+            elements = re.findall('[A-Z][^A-Z]*', cat['category'])
+            category_name = ' '.join(elements)
+        else:
+            category_name = cat['category']
         print '== %s ==' % category_name
         for pkg in cat['pkgs']:
             pkgData = yb.pkgSack.searchNevra(pkg)
