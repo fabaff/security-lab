@@ -123,7 +123,6 @@ def trac():
                 part4 = '[https://admin.fedoraproject.org/pkgdb/acls/bugs/%s Bug Reports]' % detail.name
                 entry =  part1 + " - " + part2 + " - " + part3 + " - " + part4
                 print entry
-        print ""
     print '<--- snap --->\nPlease copy the text between the markings to the '
     print 'availableApps page in the Trac wiki.'
 
@@ -138,6 +137,7 @@ def menus():
 
     # Collects all files in the directory
     filelist = []
+    os.chdir('/security-menu')
     for files in os.listdir("."):
         if files.endswith(".desktop"):
             filelist.append(files)
