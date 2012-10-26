@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ratproxy
-Exec=gnome-terminal -e "sh -c 'ratproxy -h; bash'"
+Exec=Terminal -e "su -c 'ratproxy -h; bash'"
 TryExec=ratproxy
 Type=Application
-Categories=X-SecurityLab;X-WebApplicationTesting;
+Categories=System;Security;X-SecurityLab;X-WebApplicationTesting;

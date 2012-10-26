@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=sqlninja
-Exec=gnome-terminal -e "sh -c 'sqlninja; bash'"
+Exec=Terminal -e "su -c 'sqlninja; bash'"
 TryExec=sqlninja
 Type=Application
-Categories=X-SecurityLab;X-WebApplicationTesting;
+Categories=System;Security;X-SecurityLab;X-WebApplicationTesting;

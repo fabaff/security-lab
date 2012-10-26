@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=lynis
-Exec=gnome-terminal -e "sh -c 'lynis; bash'"
+Exec=Terminal -e "su -c 'lynis; bash'"
 TryExec=lynis
 Type=Application
-Categories=X-SecurityLab;X-Reconnaissance;
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

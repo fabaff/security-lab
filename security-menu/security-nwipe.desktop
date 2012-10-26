@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Securely erase disks
-Exec=gnome-terminal -e "sh -c 'nwipe; bash'"
+Exec=Terminal -e "su -c 'nwipe; bash'"
 TryExec=nwipe
 Type=Application
-Categories=X-SecurityLab;X-Forensics;
+Categories=System;Security;X-SecurityLab;X-Forensics;

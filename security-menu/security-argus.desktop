@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=argus
-Exec=gnome-terminal -e "sh -c 'argus -h; bash'"
+Exec=Terminal -e "su -c 'argus -h; bash'"
 TryExec=argus
 Type=Application
-Categories=X-SecurityLab;X-Reconnaissance;
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

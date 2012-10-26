@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Firewalk
-Exec=gnome-terminal -e "sh -c 'firewalk; bash'"
+Exec=Terminal -e "su -c 'firewalk; bash'"
 TryExec=firewalk
 Type=Application
-Categories=X-SecurityLab;X-Reconnaissance;
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

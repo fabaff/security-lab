@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=skipfish
-Exec=gnome-terminal -e "sh -c 'skipfish; bash'"
+Exec=Terminal -e "su -c 'skipfish; bash'"
 TryExec=skipfish
 Type=Application
-Categories=X-SecurityLab;X-WebApplicationTesting;
+Categories=System;Security;X-SecurityLab;X-WebApplicationTesting;

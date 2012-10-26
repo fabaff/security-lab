@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=unhide
-Exec=gnome-terminal -e "sh -c 'unhide; bash'"
+Exec=Terminal -e "su -c 'unhide; bash'"
 TryExec=unhide
 Type=Application
-Categories=X-SecurityLab;X-Forensics;
+Categories=System;Security;X-SecurityLab;X-Forensics;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=splint
-Exec=gnome-terminal -e "sh -c 'splint; bash'"
+Exec=Terminal -e "su -c 'splint; bash'"
 TryExec=splint
 Type=Application
-Categories=X-SecurityLab;X-CodeAnalysis;
+Categories=System;Security;X-SecurityLab;X-CodeAnalysis;

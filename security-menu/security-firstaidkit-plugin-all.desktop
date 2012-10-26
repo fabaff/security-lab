@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=First Aid Kit
-Exec=gnome-terminal -e "sh -c 'firstaidkit -g gtk; bash'"
-TryExec=firstaidkit
-Type=Application
-Categories=X-SecurityLab;X-Forensics;

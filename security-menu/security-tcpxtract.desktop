@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=tcpxtract
-Exec=gnome-terminal -e "sh -c 'tcpxtract; bash'"
+Exec=Terminal -e "su -c 'tcpxtract; bash'"
 TryExec=tcpxtract
 Type=Application
-Categories=X-SecurityLab;X-Reconnaissance;
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

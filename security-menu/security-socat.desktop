@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Socket cat
-Exec=gnome-terminal -e "sh -c 'socat; bash'"
+Exec=Terminal -e "su -c 'socat; bash'"
 TryExec=socat
 Type=Application
-Categories=X-SecurityLab;X-Reconnaissance;
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

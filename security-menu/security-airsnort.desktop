@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=airsnort
-Exec=gnome-terminal -e "sh -c 'airsnort; bash'"
+Exec=Terminal -e "su -c 'airsnort; bash'"
 TryExec=airsnort
 Type=Application
-Categories=X-SecurityLab;X-Wireless;
+Categories=System;Security;X-SecurityLab;X-Wireless;

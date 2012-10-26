@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=wavemon
-Exec=gnome-terminal -e "sh -c 'wavemon; bash'"
+Exec=Terminal -e "su -c 'wavemon; bash'"
 TryExec=wavemon
 Type=Application
-Categories=X-SecurityLab;X-Wireless;
+Categories=System;Security;X-SecurityLab;X-Wireless;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Objectif Securite ophcrack
-Exec=gnome-terminal -e "sh -c 'ophcrack ; bash'"
+Exec=Terminal -e "su -c 'ophcrack; bash'"
 TryExec=ophcrack
 Type=Application
-Categories=X-SecurityLab;X-PasswordTools;
+Categories=System;Security;X-SecurityLab;X-PasswordTools;

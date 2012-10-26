@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=sectool
-Exec=gnome-terminal -e "sh -c 'sectool-gui; bash'"
+Exec=Terminal -e "su -c 'sectool-gui; bash'"
 TryExec=sectool-gui
 Type=Application
-Categories=X-SecurityLab;X-Forensics;
+Categories=System;Security;X-SecurityLab;X-Forensics;

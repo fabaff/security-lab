@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=xprobe2
-Exec=gnome-terminal -e "sh -c 'xprobe2; bash'"
+Name=xprobe
+Exec=Terminal -e "su -c 'xprobe2; bash'"
 TryExec=xprobe2
 Type=Application
-Categories=X-SecurityLab;X-Reconnaissance;
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Medusa Brute Force
-Exec=gnome-terminal -e "sh -c 'medusa -d; bash'"
+Exec=Terminal -e "su -c 'medusa -d; bash'"
 TryExec=medusa
 Type=Application
-Categories=X-SecurityLab;X-PasswordTools;
+Categories=System;Security;X-SecurityLab;X-PasswordTools;

@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=RootKitHunter
-Exec=gnome-terminal -e "sh -c 'rkhunter; bash'"
+Name=Root Kit Hunter
+Exec=Terminal -e "su -c 'rkhunter; bash'"
 TryExec=rkhunter
 Type=Application
-Categories=X-SecurityLab;X-IntrusionDetection;
+Categories=System;Security;X-SecurityLab;X-IntrusionDetection;

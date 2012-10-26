@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Load Balancing Detector
-Exec=gnome-terminal -e "sh -c 'lbd; bash'"
+Exec=Terminal -e "su -c 'lbd; bash'"
 TryExec=lbd
 Type=Application
-Categories=X-SecurityLab;X-WebApplicationTesting;
+Categories=System;Security;X-SecurityLab;X-WebApplicationTesting;
