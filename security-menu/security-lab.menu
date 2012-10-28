@@ -16,6 +16,7 @@
 	      		<Not><Category>X-IntrusionDetection</Category></Not>
 	      		<Not><Category>X-WebApplicationTesting</Category></Not>
 	      		<Not><Category>X-PasswordTools</Category></Not>
+	      		<Not><Category>X-VoIP</Category></Not>
 	      	</And>
       	</Include>
 
@@ -85,6 +86,16 @@
 	    	<Include>
 				<And>	    		
 		    		<Category>X-PasswordTools</Category>
+				</And>
+	      	</Include>
+		</Menu>
+
+		<Menu>
+			<Name>VoIP</Name>
+	    	<Directory>security-VoIP.directory</Directory>
+	    	<Include>
+				<And>	    		
+		    		<Category>X-VoIP</Category>
 				</And>
 	      	</Include>
 		</Menu>
