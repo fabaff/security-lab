@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Midnight Commander
+Exec=Terminal -e "su -c 'mc; bash'"
+TryExec=mc
+Type=Application
+Categories=System;Security;X-SecurityLab;X-General;
