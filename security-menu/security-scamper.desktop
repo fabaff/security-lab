@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=scamper
+Exec=Terminal -e "su -c 'scamper; bash'"
+TryExec=scamper
+Type=Application
+Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=halberd
+Exec=Terminal -e "su -c 'halberd; bash'"
+TryExec=halberd
+Type=Application
+Categories=System;Security;X-SecurityLab;X-WebApplicationTesting;

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=First Aid Kit
+Exec=Terminal -e "su -c 'firstaidkit -g gtk; bash'"
+TryExec=firstaidkit-gui
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Forensics;

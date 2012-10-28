@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=labrea
+Exec=Terminal -e "su -c 'labrea; bash'"
+TryExec=labrea
+Type=Application
+Categories=System;Security;X-SecurityLab;X-IntrusionDetection;

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=nebula
+Exec=Terminal -e "su -c 'nebula; bash'"
+TryExec=nebula
+Type=Application
+Categories=System;Security;X-SecurityLab;X-IntrusionDetection;
