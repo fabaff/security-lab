@@ -19,7 +19,7 @@ install:
 	mkdir -p $(DESTDIR)$(DATADIR)/desktop-directories
 	mkdir -p $(DESTDIR)$(DATADIR)/applications
 	$(INSTALL) -p -m 0644 -D desktop-directories/*.directory $(DESTDIR)$(DATADIR)/desktop-directories
-	$(INSTALL) -p -m 0644 -D applications/*.desktop $(DESTDIR)/usr/share/applications
+	$(INSTALL) -p -m 0644 -D *.desktop $(DESTDIR)/usr/share/applications
 
 archive: tag
 	@git archive --format=tar --prefix=$(NAME)-$(VERSION).$(RELEASE)/ HEAD > $(NAME)-$(VERSION).$(RELEASE).tar
