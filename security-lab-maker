@@ -25,8 +25,8 @@ KICKSTART=fedora-livecd-security-xfce.ks
 DIRECTORY=/home/fab/repos/spin-kickstarts
 CACHE=/var/cache/live
 LABEL=SecurityLab
-TITLE=SecurityLab
-RELEASEVER=17
+TITLE=SecurityLab-`date -f`
+RELEASEVER=rawhide
 ROOT_UID=0   
 
 # Check if the script runs as root (aka UID 0)
@@ -42,12 +42,13 @@ fi
 setenforce 0
 
 # Create the live media. This needs time...
-livecd-creator --verbose \
---config=$DIRECTORY/$KICKSTART \
---fslabel=$LABEL \
---title=$TITLE \
---cache=$CACHE \
---releasever=$RELEASEVER
+livecd-creator \
+    --verbose \
+    --config=$DIRECTORY/$KICKSTART \
+    --fslabel=$LABEL \
+    --title=$TITLE \
+    --cache=$CACHE \
+    --releasever=$RELEASEVER
 
 echo ""
 echo "If this script finished with no error, then the image is ready."
