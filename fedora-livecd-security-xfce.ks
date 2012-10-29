@@ -13,262 +13,136 @@
 #   Luke Macken, Adam Miller for the original OpenBox Security ks and all
 #   the Security Applications! 
 #   Hiemanshu Sharma <hiemanshu [AT] fedoraproject <dot> org>
-# Important!!!!
-#   Beginning with Security Stuff - we use pattern to parse the kickstart 
-#   file for building the security menu - please use 
-#   # Category: Categoryname <- for new Categories
-#   # Command: Commandname <- for the given Command
-#   # rCommand: Commandname <- for a command as root
-#   # Entry: Menu-Entry <- for the MenuEntry Name (optional)
 
 %include fedora-live-base.ks
 %include fedora-live-minimization.ks
 
 %packages
-
 @xfce-desktop
 @xfce-apps
-@xfce-extra-plugins
-@xfce-media
-@xfce-office
-@firefox
+#@xfce-extra-plugins
+#@xfce-media
+#@xfce-office
+#@firefox
 
-# dictionaries are big
--aspell-*
-#-man-pages-*
-
-# more fun with space saving
--gimp-help
-# not needed, but as long as there is space left, we leave this in
--desktop-backgrounds-basic
--cheese
--asunder
+# Security tools (not ready at the moment)
+#@security-lab
 
 # save some space
 -autofs
 -acpid
+-gimp-help
+-desktop-backgrounds-basic
+-realmd                     # only seems to be used in GNOME
+-PackageKit*                # we switched to yumex, so we don't need this
+-aspell-*                   # dictionaries are big
+#-man-pages-*
 
 # drop some system-config things
 -system-config-boot
 -system-config-lvm
+-system-config-network
 -system-config-rootpassword
+#-system-config-services
 -policycoreutils-gui
 
-# Sound & Video
-alsa-plugins-pulseaudio
-
-# System
--gnome-disk-utility
-gigolo
-
-# More Desktop stuff
-icedtea-web
-gnome-bluetooth
-xscreensaver
-
-# command line
+# Security tools (to use as long the comps group is not ready.
+# python security-lab-maintenance.py -d
+security-menus
+xprobe2
+dsniff
+wireshark-gnome
+john
+ophcrack
+medusa
+chkrootkit
+aide
+pads
+rkhunter
+labrea
+nebula
+splint
+pscan
+flawfinder
+rats
+aircrack-ng
+airsnort
+kismet
+weplab
+wavemon
+hping3
+ncrack
+nmap
+nmap-frontend
+p0f
+sing
+scapy
+socat
+tcpdump
+unicornscan
+nbtscan
+tcpxtract
+firewalk
+hunt
+dnsenum
+iftop
+scamper
+argus
+ettercap
+ettercap-gtk
+packETH
+iptraf-ng
+etherape
+lynis
+netsniff-ng
+tcpjunk
+ssldump
+yersinia
+openvas-client
+ddrescue
+gparted
+testdisk
+foremost
+sectool-gui
+unhide
+examiner
+srm
+nwipe
+firstaidkit-gui
+nc6
+nc
+mc
+screen
+macchanger
+ngrep
+ntfs-3g
+ntfsprogs
+xmount
+dc3dd
+afftools
+pcapdiff
+net-snmp
+openvas-scanner
+hexedit
+scanmem
+sleuthkit
 irssi
+powertop
 mutt
 nano
-ntfs-3g
-powertop
-rtorrent
 vim-enhanced
 wget
 yum-utils
-
-
-###################### Security Stuffs ############################
-security-menus
-##################################################################
-# Category: Reconnaissance
-# rCommand: dsniff -h
-dsniff
-# rCommand: hping -h
-hping3
-nc6
-nc
-# Command: ncrack -h
-ncrack
-ngrep
-# rCommand: nmap -h
-nmap
-# Command: zenmap-root
-nmap-frontend
-# Command: p0f -h
-p0f
-# rCommand: sing -h
-sing
-# Command: scanssh -h
-#temp takout scanssh
-# rCommand: scapy -h
-scapy
-# Command: socat
-# Entry: Socket cat
-socat
-# rCommand: tcpdump -h
-tcpdump
-# rCommand: unicornscan -h
-unicornscan
-# rCommand: wireshark
-# Entry: Wireshark
-wireshark-gnome
-# Command: xprobe2
-xprobe2
-# Command: nbtscan
-nbtscan
-# Command: tcpxtract
-tcpxtract
-# Command: firewalk
-# Entry: Firewalk
-firewalk
-# Command: hunt
-# Entry: Hunt
-hunt
-# Command: dnsenum -h
-# Entry: DNS Enumeration
-dnsenum
-# rCommand: iftop
-iftop
-# Command: argus -h
-argus
-# rCommand: ettercap -C
-# Entry: Ettercap
-ettercap
-ettercap-gtk
-# rCommand: packETH
-packETH
-# rCommand: iptraf-ng
-iptraf-ng
-pcapdiff
-# rCommand: etherape
-etherape
-# Command: lynis
-lynis
-# rCommand: netsniff-ng
-netsniff-ng
-# Command: tcpjunk -x
-tcpjunk
-# rCommand: ssldump -h
-ssldump
-# rCommand: yersinia -G
-# Entry: Yersinia
-yersinia
-net-snmp
-# Command: openvas-client
-# Entry: OpenVAS Client
-openvas-client
-openvas-scanner
-
-#################################################################
-# Category: Forensics
-# Command: ddrescue -h
-ddrescue
-# Command: gparted
-gparted
-hexedit
-# rCommand: testdisk -h
-testdisk
-# Command: foremost -h
-# Entry: Foremost Filecarver
-foremost
-# Command: sectool-gui
-# Entry: sectool
-sectool-gui
-scanmem
-sleuthkit
-# Command: unhide
-unhide
-# Command: examiner
-# Entry: ELF Examiner
-examiner
-dc3dd
-afftools
-# Command: srm -h
-# Entry: Securely Remove Files
-srm
-# Command: nwipe
-# Entry: Securely erase disks
-nwipe
-# Command: firstaidkit -g gtk
-# Entry: First Aid Kit
+sipsak
+sipp
 firstaidkit-plugin-all
-ntfs-3g
-ntfsprogs
-
-#####################################################################
-# Category: WebApplicationTesting
-# Command: httping -h
+halberd
 httping
-# Command: nikto -help
-# Entry: Nikto Websecurity Scanner
 nikto
-# Command: ratproxy -h
 ratproxy
-# Command: lbd
-# Entry: Load Balancing Detector
 lbd
-# Command: skipfish
 skipfish
-# Command: sqlninja
 sqlninja
-
-#######################################################################
-# Category: Wireless
-# Command: aircrack-ng
-aircrack-ng
-# Command: airsnort
-airsnort
-# rCommand: kismet
-kismet
-# Command: weplab
-# Entry: Wep Key Cracker
-weplab
-# Command: wavemon
-wavemon
-
-#######################################################################
-# Category: CodeAnalysis
-# Command: splint
-splint
-# Command: pscan
-pscan
-# Command: flawfinder
-# Entry: Flawfinder
-flawfinder
-# Command: rats
-# Entry: Rough Auditing Tool for Security
-rats
-
-######################################################################
-# Category: IntrusionDetection
-# rCommand: chkrootkit
-chkrootkit
-# Command: aide -h
-aide
-labrea
-# Command: honeyd -h
-# Entry: Honeypot Daemon
-# temp removal
-#honeyd
-# Command: pads -h
-# Entry: Passive Asset Detection System
-pads
-nebula
-# Command: rkhunter
-# Entry: RootKitHunter
-rkhunter
-
-########################################################################
-# Category: PasswordTools
-# Command: john 
-john
-# Command: ophcrack 
-# Entry: Objectif Securite ophcrack
-ophcrack
-# Command: medusa -d
-# Entry: Medusa Brute Force
-medusa
 
 %end
 
@@ -306,8 +180,9 @@ mkdir -p /home/liveuser/.config/xfce4/xfconf/xfce-perchannel-xml
 cp /etc/xdg/xfce4/panel/default.xml /home/liveuser/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 
 # set up lightdm autologin
-sed -ei '|^#autologin-user=|autologin-user=liveuser|' /etc/lightdm/lightdm.conf 
-sed -ei '|^#autologin-user-timeout=0|autologin-user-timeout=10|' /etc/lightdm/lightdm.conf 
+sed -i 's/^#autologin-user=/autologin-user=liveuser/' /etc/lightdm/lightdm.conf 
+sed -i 's/^#autologin-user-timeout=0/autologin-user-timeout=30/' /etc/lightdm/lightdm.conf
+sed -i 's/^#show-language-selector=false/show-language-selector=true/' /etc/lightdm/lightdm-gtk-greeter.conf
 
 # Show harddisk install on the desktop
 sed -i -e 's/NoDisplay=true/NoDisplay=false/' /usr/share/applications/liveinst.desktop
