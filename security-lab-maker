@@ -22,7 +22,7 @@
 #
 
 KICKSTART=fedora-livecd-security-xfce.ks
-DIRECTORY=/home/fab/repos/spin-kickstarts
+DIRECTORY=../spin-kickstarts
 CACHE=/var/cache/live
 LABEL=SecurityLab
 TITLE=SecurityLab-`date -f`
