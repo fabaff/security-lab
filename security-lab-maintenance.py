@@ -63,7 +63,8 @@ def display():
     print 'Included packages: %s' % len(pkgslistIn)
     print 'Excluded packages: %s\n' % len(pkgslistEx)
     print 'Package list:'
-    for pkg in pkgslistIn:
+    sorted_pkgslist = sorted(pkgslistIn)
+    for pkg in sorted_pkgslist:
         print pkg
 
 def add(pkgname):
@@ -106,6 +107,8 @@ def trac():
     sorted_pkgslist = sorted(pkgslistIn, key=operator.itemgetter(1))
     groups = itertools.groupby(sorted_pkgslist, key=operator.itemgetter(1))
     sorted_categories = [{'category': k, 'pkgs': [x[0] for x in v]} for k, v in groups]
+    print sorted_categories
+
 
     yb = yum.YumBase()
     yb.conf.cache = 0
@@ -120,12 +123,13 @@ def trac():
         for pkg in cat['pkgs']:
             pkgData = yb.pkgSack.searchNevra(pkg)
             for detail in pkgData:
-                part1 = '* [%s %s]' % (detail.url, detail.name)
-                part2 = detail.summary
-                part3 = '[https://admin.fedoraproject.org/pkgdb/packages/name/%s Fedora Package Database]' % detail.name
-                part4 = '[https://admin.fedoraproject.org/pkgdb/acls/bugs/%s Bug Reports]' % detail.name
-                entry =  part1 + " - " + part2 + " - " + part3 + " - " + part4
-                print entry
+                print detail.name, detail.url
+#                part1 = '* [%s %s]' % (detail.url, detail.name)
+#                part2 = detail.summary
+#                part3 = '[https://admin.fedoraproject.org/pkgdb/packages/name/%s Fedora Package Database]' % detail.name
+#                part4 = '[https://admin.fedoraproject.org/pkgdb/acls/bugs/%s Bug Reports]' % detail.name
+#                entry =  part1 + " - " + part2 + " - " + part3 + " - " + part4
+#                print entry
     print '<--- snap --->\nPlease copy the text between the markings to the '
     print 'availableApps page in the Trac wiki.'
 
