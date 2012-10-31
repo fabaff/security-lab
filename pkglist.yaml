@@ -100,8 +100,4 @@
 - {category: Reconnaissance, command: samdump2, pkg: samdump2, name: syskey retriever}
 - {category: Reconnaissance, command: bkhive, pkg: bkhive, name: Recover Syskey bootkey}
 - {category: NetworkStatistics, command: uperf, pkg: uperf, name: Network performance tool}
-
-
-
-
-
+- {category: Reconnaissance, command: tcpick, pkg: tcpick, name: TCP stream sniffer}
