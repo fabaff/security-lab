@@ -70,8 +70,8 @@
 - {category: General, pkg: ntfs-3g}
 - {category: General, pkg: ntfsprogs}
 - {category: Forensics, command: xmount, name: xmount, pkg: xmount}
-- {category: General, pkg: dc3dd}
-- {category: General, pkg: afftools}
+- {category: Forensics, pkg: dc3dd, name: dc3dd, command: dc3dd}
+- {category: Forensics, pkg: afftools, name: afftools, command: afftools}
 - {category: General, pkg: pcapdiff}
 - {category: General, pkg: net-snmp}
 - {category: General, pkg: openvas-scanner}
@@ -95,3 +95,13 @@
 - {category: WebApplicationTesting, command: lbd, name: Load Balancing Detector, pkg: lbd}
 - {category: WebApplicationTesting, command: skipfish, name: skipfish, pkg: skipfish}
 - {category: WebApplicationTesting, command: sqlninja, name: sqlninja, pkg: sqlninja}
+- {category: Reconnaissance, command: sslscan, pkg: sslscan, name: SSL port scanner}
+- {category: Reconnaissance, command: snmpcheck, pkg: snmpcheck, name: SNMP enumerator}
+- {category: Reconnaissance, command: samdump2, pkg: samdump2, name: syskey retriever}
+- {category: Reconnaissance, command: bkhive, pkg: bkhive, name: Recover Syskey bootkey}
+- {category: NetworkStatistics, command: uperf, pkg: uperf, name: Network performance tool}
+
+
+
+
+
