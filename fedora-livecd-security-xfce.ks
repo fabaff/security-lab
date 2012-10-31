@@ -58,6 +58,7 @@ chkrootkit
 dc3dd
 ddrescue
 dnsenum
+dnsmap
 dsniff
 etherape
 ettercap
@@ -118,6 +119,7 @@ scamper
 scanmem
 scapy
 screen
+scrub
 sectool-gui
 security-menus
 sing
@@ -133,6 +135,7 @@ srm
 ssldump
 sslscan
 tcpdump
+tcpflow
 tcpick
 tcpjunk
 tcpxtract
@@ -149,6 +152,7 @@ xmount
 xprobe2
 yersinia
 yum-utils
+
 %end
 
 %post
