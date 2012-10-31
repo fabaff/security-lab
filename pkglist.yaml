@@ -101,3 +101,6 @@
 - {category: Reconnaissance, command: bkhive, pkg: bkhive, name: Recover Syskey bootkey}
 - {category: NetworkStatistics, command: uperf, pkg: uperf, name: Network performance tool}
 - {category: Reconnaissance, command: tcpick, pkg: tcpick, name: TCP stream sniffer}
+- {category: Reconnaissance, command: tcpflow -h, pkg: tcpflow, name: Network traffic recorder}
+- {category: Reconnaissance, command: dnsmap, pkg: dnsmap, name: Sub-domains bruteforcer}
+- {category: Forensics, command: scrub, pkg: scrub, name: Disk scruber}
