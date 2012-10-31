@@ -69,13 +69,13 @@ def display():
 
 def add(pkgname):
     """Adds a new package to the Fedora Security Lab."""
-    print 'Not implemented at the moment. Package name was %s. Please edit the \
-            pkglist.yaml file by hand' % pkgname
+    print 'Not implemented at the moment. Package name was %s. Please edit ' \
+          'the pkglist.yaml file by hand.' % pkgname
 
 def edit(pkgname):
     """Modify an existing package in the package list."""
-    print 'Not implemented at the moment. Package name was %s. Please edit the \
-            pkglist.yaml file by hand' % pkgname
+    print 'Not implemented at the moment. Package name was %s. Please edit ' \
+          'the pkglist.yaml file by hand.' % pkgname
 
 def comps():
     """
