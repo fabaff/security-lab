@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Sub-domains bruteforcer
+Exec=Terminal -e "su -c 'dnsmap; bash'"
+TryExec=dnsmap
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

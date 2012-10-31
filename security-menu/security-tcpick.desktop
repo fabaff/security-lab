@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=TCP stream sniffer
+Exec=Terminal -e "su -c 'tcpick; bash'"
+TryExec=tcpick
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

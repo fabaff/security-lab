@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=SSL port scanner
+Exec=Terminal -e "su -c 'sslscan; bash'"
+TryExec=sslscan
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

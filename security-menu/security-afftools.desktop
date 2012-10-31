@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=afftools
+Exec=Terminal -e "su -c 'afftools; bash'"
+TryExec=afftools
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Forensics;

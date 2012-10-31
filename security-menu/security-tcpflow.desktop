@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Network traffic recorder
+Exec=Terminal -e "su -c 'tcpflow -h; bash'"
+TryExec=tcpflow
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;
