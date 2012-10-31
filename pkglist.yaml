@@ -105,3 +105,4 @@
 - {category: Reconnaissance, command: dnsmap, pkg: dnsmap, name: Sub-domains bruteforcer}
 - {category: Forensics, command: scrub, pkg: scrub, name: Disk scruber}
 - {category: Forensics, command: ht, name: File editor/viewer/analyzer, pkg: ht}
+- {category: Wireless, command: horst -h, name: Radio scanning tool, pkg: hosrt}
