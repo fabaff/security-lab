@@ -144,11 +144,10 @@ def menus():
 
     # Collects all files in the directory
     filelist = []
-    os.chdir('/security-menu')
+    os.chdir('security-menu')
     for files in os.listdir("."):
         if files.endswith(".desktop"):
             filelist.append(files)
-
     # Write .desktop files
     for pkg in pkgslist:
         if 'command' in pkg:
