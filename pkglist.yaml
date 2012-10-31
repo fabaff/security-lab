@@ -76,7 +76,7 @@
 - {category: General, pkg: net-snmp}
 - {category: General, pkg: openvas-scanner}
 - {category: General, pkg: hexedit}
-- {category: General, pkg: scanmem}
+- {category: General, pkg: scanmem, name: Debugging tool, command:scanmem}
 - {category: General, pkg: sleuthkit}
 - {category: General, pkg: irssi}
 - {category: General, pkg: powertop}
@@ -104,3 +104,4 @@
 - {category: Reconnaissance, command: tcpflow -h, pkg: tcpflow, name: Network traffic recorder}
 - {category: Reconnaissance, command: dnsmap, pkg: dnsmap, name: Sub-domains bruteforcer}
 - {category: Forensics, command: scrub, pkg: scrub, name: Disk scruber}
+- {category: Forensics, command: ht, name: File editor/viewer/analyzer, pkg: ht}
