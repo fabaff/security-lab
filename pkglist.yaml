@@ -3,6 +3,7 @@
 - {category: Reconnaissance, command: dsniff -h, name: dsniff, pkg: dsniff}
 - {category: Reconnaissance, command: wireshark, name: wireshark, pkg: wireshark-gnome}
 - {category: PasswordTools, command: john, name: john, pkg: john}
+- {category: PasswordTools, command: sucrack, name: sucrack, pkg: sucrack}
 - {category: PasswordTools, command: ophcrack, name: Objectif Securite ophcrack, pkg: ophcrack}
 - {category: PasswordTools, command: medusa -d, name: Medusa Brute Force, pkg: medusa}
 - {category: IntrusionDetection, command: chkrootkit, name: chkrootkit, pkg: chkrootkit}
