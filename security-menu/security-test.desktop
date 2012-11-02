@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=syskey retriever
+Exec=Terminal -e "su -c 'samdump2; bash'"
+TryExec=samdump2
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;
+Name[en_US]=security-test.desktop
