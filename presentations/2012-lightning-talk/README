@@ -1,0 +1,39 @@
+Fedora Security Lab - Lightning talk
+====================================
+This simple presentation about the Fedora Security Lab is using the impress
+javascript library (http://github.com/bartaz/impress.js). It's designed for 
+ligthning talks. This is the reason why only basic content is included, the
+rest needs to be in your brain or on your notes. 
+
+Download
+--------
+The source is located in the git repository of the Security Spin.
+
+$ git clone git://git.fedorahosted.org/git/security-spin.git/
+
+Now change to the 'presentations/2012-lightning-talk' directory.
+
+Usage
+-----
+Open the file index.html in the lastest version of a browser (eg. Firefox > 10,
+Google Chrome).
+
+* Use arrow keys to navigate
+* Press 'Space' for the next slide
+
+Author
+------
+Fabian Affolter <fab [AT] fedoraproject.org>
+
+About Security Lab
+------------------
+Website:  https://fedorahosted.org/security-spin/
+Download: https://spins.fedoraproject.org/security/
+Source:   https://fedorahosted.org/security-spin/browser
+
+License
+-------
+This presentation is licensed under GPLv2, for more details check COPYING. 
+
+The impress javascript part is licensed under MIT license and was developed
+by Bartek Szopka, http://pepelsbey.net/

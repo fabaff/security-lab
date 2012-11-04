@@ -21,12 +21,14 @@
 # 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 #
 
-KICKSTART=fedora-livecd-security-xfce.ks
+KICKSTART=fedora-livecd-security.ks
+#KICKSTART=fedora-livecd-security-xfce.ks
 DIRECTORY=../spin-kickstarts
 CACHE=/var/cache/live
 LABEL=SecurityLab
 TITLE=SecurityLab-`date -f`
-RELEASEVER=rawhide
+RELEASEVER=18
+#RELEASEVER=rawhide
 ROOT_UID=0   
 
 # Check if the script runs as root (aka UID 0)
