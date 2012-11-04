@@ -25,12 +25,12 @@
 			<Name>Reconnaissance</Name>
 	    	<Directory>security-Reconnaissance.directory</Directory>
 	    	<Include>
-				<And>	    		
+				<And>
 		      		<Category>X-Reconnaissance</Category>
 				</And>
 	      	</Include>
 		</Menu>
-	
+
 		<Menu>
 			<Name>Forensics</Name>
 	    	<Directory>security-Forensics.directory</Directory>
@@ -40,22 +40,22 @@
 				</And>
 	      	</Include>
 		</Menu>
-	
+
 		<Menu>
 			<Name>Wireless</Name>
 	    	<Directory>security-Wireless.directory</Directory>
 	    	<Include>
-				<And>	    		
+				<And>
 		      		<Category>X-Wireless</Category>
 				</And>
 	      	</Include>
 		</Menu>
-	
+
 		<Menu>
 			<Name>Code Analysis</Name>
 	    	<Directory>security-CodeAnalysis.directory</Directory>
 	    	<Include>
-				<And>	    		
+				<And>
 		      		<Category>X-CodeAnalysis</Category>
 				</And>
 	      	</Include>
@@ -65,7 +65,7 @@
 			<Name>Network Statistics</Name>
 			<Directory>security-NetworkStatistics.directory</Directory>
 	    	<Include>
-				<And>	    		
+				<And>
 		      		<Category>X-NetworkStatistics</Category>
 				</And>
 	      	</Include>
@@ -75,27 +75,27 @@
 			<Name>Intrusion Detection</Name>
 			<Directory>security-IntrusionDetection.directory</Directory>
 	    	<Include>
-				<And>	    		
+				<And>
 		      		<Category>X-IntrusionDetection</Category>
 				</And>
 	      	</Include>
 		</Menu>
-		
+
 		<Menu>
 			<Name>Web Application Testing</Name>
 			<Directory>security-WebApplicationTesting.directory</Directory>
 	    	<Include>
-				<And>	    		
+				<And>
 		      		<Category>X-WebApplicationTesting</Category>
 				</And>
 	      	</Include>
 		</Menu>
-	
+
 		<Menu>
 			<Name>Password Tools</Name>
 	    	<Directory>security-PasswordTools.directory</Directory>
 	    	<Include>
-				<And>	    		
+				<And>
 		    		<Category>X-PasswordTools</Category>
 				</And>
 	      	</Include>
@@ -105,12 +105,12 @@
 			<Name>VoIP</Name>
 	    	<Directory>security-VoIP.directory</Directory>
 	    	<Include>
-				<And>	    		
+				<And>
 		    		<Category>X-VoIP</Category>
 				</And>
 	      	</Include>
 		</Menu>
 
 	</Menu>
-	
+
 </Menu>
