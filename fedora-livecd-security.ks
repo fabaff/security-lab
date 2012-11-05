@@ -71,6 +71,9 @@ ssmtp
 # we need UPower for suspend and hibernate
 upower
 
+# gnome-terminal was replaced by Terminal
+Terminal
+
 ###################### Security Stuffs ############################
 security-menus
 ##################################################################
