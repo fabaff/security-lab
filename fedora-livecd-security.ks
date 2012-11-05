@@ -27,148 +27,49 @@
 %packages
 ### LXDE desktop
 @lxde-desktop
-lxlauncher
-obconf
-lxdm
+@lxde-apps
+@lxde-media
+@lxde-office
+#@firefox
 
-# Office
--abiword
-gnumeric
+# pam-fprint causes a segfault in LXDM when enabled
+-fprintd-pam
 
-# Graphics
-epdfview
+# LXDE has lxpolkit. Make sure no other authentication agents end up in the spin.
+-polkit-gnome
+-polkit-kde
 
-# Development
-geany
+# make sure xfce4-notifyd is not pulled in
+notification-daemon
+-xfce4-notifyd
 
-# Internet
-firefox
-# Add the midori browser as a lighter alternative
-midori
-claws-mail
--claws-mail-plugins-archive
--claws-mail-plugins-att-remover
--claws-mail-plugins-attachwarner
--claws-mail-plugins-bogofilter
--claws-mail-plugins-fetchinfo
--claws-mail-plugins-mailmbox
--claws-mail-plugins-newmail
--claws-mail-plugins-notification
--claws-mail-plugins-pgp
--claws-mail-plugins-rssyl
--claws-mail-plugins-smime
--claws-mail-plugins-spam-report
--claws-mail-plugins-tnef
--claws-mail-plugins-vcalendar
--liferea
-pidgin
-remmina
-remmina-plugins-rdp
-remmina-plugins-vnc
--transmission
-
-# Sound & Video
-alsa-plugins-pulseaudio
--asunder
--cheese
-pavucontrol
-parole
-pragha
-xfburn
-
-# System
-gparted
--gnome-disk-utility
-gigolo
-setroubleshoot
-
-# Accessories
-catfish
-galculator
-seahorse
-ConsoleKit-x11
-
-# More Desktop stuff
-# java plugin
-icedtea-web
-NetworkManager-vpnc
-NetworkManager-openvpn
-NetworkManager-pptp
-gnome-bluetooth
-xscreensaver
-xdg-user-dirs-gtk
-
-# default artwork
-fedora-icon-theme
-
-# command line
-irssi
-mutt
-ntfs-3g
-powertop
-rtorrent
-vim-enhanced
-wget
-yum-utils
-
-# Xfce packages
-@xfce-desktop
-ristretto
-thunar-media-tags-plugin
-xfce4-battery-plugin
-xfce4-cellmodem-plugin
-xfce4-clipman-plugin
-xfce4-cpugraph-plugin
-xfce4-datetime-plugin
-xfce4-dict-plugin
-xfce4-diskperf-plugin
-xfce4-eyes-plugin
-xfce4-fsguard-plugin
-xfce4-genmon-plugin
-xfce4-mailwatch-plugin
-xfce4-mount-plugin
-xfce4-netload-plugin
-xfce4-notes-plugin
-xfce4-places-plugin
-xfce4-quicklauncher-plugin
-xfce4-screenshooter-plugin
-xfce4-sensors-plugin
-xfce4-smartbookmark-plugin
-xfce4-systemload-plugin
-xfce4-taskmanager
-xfce4-time-out-plugin
-xfce4-timer-plugin
-xfce4-verve-plugin
-# we already have nm-applet
-#xfce4-wavelan-plugin
-xfce4-weather-plugin
-xfce4-websearch-plugin
-xfce4-xfswitch-plugin
-xfce4-xkb-plugin
-# system-config-printer does printer management better
-#xfprint
-xfwm4-themes
+# make sure xfwm4 is not pulled in for firstboot
+# https://bugzilla.redhat.com/show_bug.cgi?id=643416
+metacity
 
 # dictionaries are big
 -aspell-*
-#-man-pages-*
-
-# more fun with space saving
--gimp-help
-# not needed, but as long as there is space left, we leave this in
-#-desktop-backgrounds-basic
+-hunspell-*
+-man-pages-*
+-words
 
 # save some space
--autofs
+-sendmail
+ssmtp
 -acpid
 
 # drop some system-config things
 -system-config-boot
+#-system-config-language
 -system-config-lvm
+#-system-config-network
 -system-config-rootpassword
 #-system-config-services
 -policycoreutils-gui
+-gnome-disk-utility
 
+# we need UPower for suspend and hibernate
+upower
 
 ###################### Security Stuffs ############################
 security-menus
@@ -362,6 +263,9 @@ ophcrack
 # Entry: Medusa Brute Force
 medusa
 
+sipp
+sipsak
+
 %end
 
 %post
@@ -379,13 +283,13 @@ cat > /etc/xdg/lxsession/LXDE/autostart << FOE
 /usr/libexec/gam_server
 @lxpanel --profile LXDE
 @pcmanfm --desktop --profile LXDE
-@pulseaudio -D
+/usr/libexec/notification-daemon
 FOE
 
 # set up preferred apps 
 cat > /etc/xdg/libfm/pref-apps.conf << FOE 
 [Preferred Applications]
-WebBrowser=mozilla-firefox.desktop
+WebBrowser=firefox.desktop
 MailClient=redhat-sylpheed.desktop
 FOE
 
@@ -407,4 +311,3 @@ restorecon -R /home/liveuser
 EOF
 
 %end
-
