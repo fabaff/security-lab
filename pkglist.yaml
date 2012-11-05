@@ -88,6 +88,7 @@
 - {category: General, pkg: yum-utils}
 - {category: VoIP, pkg: sipsak, command: sipsak, name: sipsak}
 - {category: VoIP, pkg: sipp, command: sipp, name: sipp}
+- {category: General, pkg: mcabber}
 - {category: General, pkg: firstaidkit-plugin-all}
 - {category: WebApplicationTesting, command: halberd, name: halberd, pkg: halberd}
 - {category: WebApplicationTesting, command: httping -h, name: httping, pkg: httping}
