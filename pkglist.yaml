@@ -37,15 +37,16 @@
 - {category: Reconnaissance, command: tcpxtract, name: tcpxtract, pkg: tcpxtract}
 - {category: Reconnaissance, command: firewalk, name: Firewalk, pkg: firewalk}
 - {category: Reconnaissance, command: hunt, name: Hunt, pkg: hunt}
-- {category: Reconnaissance, command: dnsenum -h, name: DNS Enumeration, pkg: dnsenum}
+- {category: Reconnaissance, command: dnsenum -h, name: dns‏enum, pkg: dns‏enum}
 - {category: NetworkStatistics, command: iftop, name: iftop, pkg: iftop}
 - {category: NetworkStatistics, command: scamper, name: scamper, pkg: scamper}
 - {category: Reconnaissance, command: argus -h, name: argus, pkg: argus}
-- {category: Reconnaissance, command: ettercap -C, name: Ettercap, pkg: ettercap}
+- {category: Reconnaissance, command: ettercap -C, name: ettercap, pkg: ettercap}
 - {category: Reconnaissance, pkg: ettercap-gtk}
-- {category: Reconnaissance, command: packETH, name: Package Generator, pkg: packETH}
+- {category: Reconnaissance, command: packETH, name: packETH, pkg: packETH}
 - {category: NetworkStatistics, command: iptraf-ng, name: iptraf-ng, pkg: iptraf-ng}
 - {category: NetworkStatistics, command: iperf -h, name: iperf, pkg: iperf}
+- {category: NetworkStatistics, command: nethogs -h, name: nethogs, pkg: nethogs}
 - {category: Reconnaissance, command: etherape, name: etherape, pkg: etherape}
 - {category: Reconnaissance, command: lynis, name: lynis, pkg: lynis}
 - {category: Reconnaissance, command: netsniff-ng -h, name: netsniff-ng, pkg: netsniff-ng}
@@ -78,7 +79,7 @@
 - {category: General, pkg: net-snmp}
 - {category: General, pkg: openvas-scanner}
 - {category: General, pkg: hexedit}
-- {category: General, pkg: scanmem, name: Debugging tool, command: scanmem}
+- {category: Forensics, pkg: scanmem, name: Debugging tool, command: scanmem}
 - {category: General, pkg: sleuthkit}
 - {category: General, pkg: irssi}
 - {category: General, pkg: powertop}
@@ -107,5 +108,8 @@
 - {category: Reconnaissance, command: tcpflow -h, pkg: tcpflow, name: Network traffic recorder}
 - {category: Reconnaissance, command: dnsmap, pkg: dnsmap, name: Sub-domains bruteforcer}
 - {category: Forensics, command: scrub, pkg: scrub, name: Disk scruber}
-- {category: Forensics, command: ht, name: File editor, pkg: ht}
-- {category: Wireless, command: horst -h, name: Radio scanning tool, pkg: horst}
+- {category: Forensics, command: ht, name: ht, pkg: ht}
+- {category: Wireless, command: horst -h, name: horst, pkg: horst}
+- {category: NetworkStatistics, command: nload -h, pkg: nload, name: nload}
+- {category: NetworkStatistics, command: ntop -h, pkg: ntop, name: ntop}
+- {category: NetworkStatistics, command: driftnet -h, pkg: driftnet, name: driftnet}
