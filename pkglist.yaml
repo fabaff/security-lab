@@ -21,6 +21,7 @@
 - {category: Wireless, command: airsnort, name: airsnort, pkg: airsnort}
 - {category: Wireless, command: kismet, name: kismet, pkg: kismet}
 - {category: Wireless, command: weplab -h, name: Wep Key Cracker, pkg: weplab}
+- {category: Wireless, command: cowpatty -h, name: cowpatty, pkg: cowpatty}
 - {category: Wireless, command: wavemon, name: wavemon, pkg: wavemon}
 - {category: Reconnaissance, command: hping -h, name: hping, pkg: hping3}
 - {category: Reconnaissance, command: ncrack -h, name: ncrack, pkg: ncrack}
