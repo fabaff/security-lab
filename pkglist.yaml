@@ -38,7 +38,7 @@
 - {category: Reconnaissance, command: tcpxtract, name: tcpxtract, pkg: tcpxtract}
 - {category: Reconnaissance, command: firewalk, name: Firewalk, pkg: firewalk}
 - {category: Reconnaissance, command: hunt, name: Hunt, pkg: hunt}
-- {category: Reconnaissance, command: dnsenum -h, name: dns‏enum, pkg: dns‏enum}
+- {category: Reconnaissance, command: dnsenum -h, name: dnsenum, pkg: dnsenum}
 - {category: NetworkStatistics, command: iftop, name: iftop, pkg: iftop}
 - {category: NetworkStatistics, command: scamper, name: scamper, pkg: scamper}
 - {category: Reconnaissance, command: argus -h, name: argus, pkg: argus}
