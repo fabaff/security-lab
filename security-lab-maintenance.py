@@ -31,7 +31,9 @@ import itertools
 import re
 import sys
 import os
+import columnize
 import yum
+import git
 import yaml
 
 def getPackages():
@@ -64,13 +66,25 @@ def display():
     print 'Excluded packages: %s\n' % len(pkgslistEx)
     print 'Package list:'
     sorted_pkgslist = sorted(pkgslistIn)
-    for pkg in sorted_pkgslist:
-        print pkg
+    print columnize.columnize(sorted_pkgslist, displaywidth=80)
 
 def add(pkgname):
     """Adds a new package to the Fedora Security Lab."""
     print 'Not implemented at the moment. Package name was %s. Please edit ' \
           'the pkglist.yaml file by hand.' % pkgname
+
+    categories = {"CodeAnalysis", 
+        "Forensics",
+        "IntrusionDetection",
+        "NetworkStatistics",
+        "PasswordTools",
+        "Reconnaissance",
+        "VoIP",
+        "WebApplicationTesting",
+        "Wireless"
+        }
+    for category in categories:
+        print category
 
 def edit(pkgname):
     """Modify an existing package in the package list."""
@@ -173,7 +187,24 @@ def menus():
     # Remove the .desktop files which are no longer needed
     if len(dellist) != 0:
         for file in dellist:
-	        os.remove(file)
+	        #os.remove(file)
+            repo.git.rm(file)
+
+
+#    print os.getcwd()
+#    repo = git.Repo(os.getcwd())
+#    print repo.git.status()
+
+#    # add a file
+#    #print repo.git.add(file)
+#    # commit
+#    #print repo.git.commit( m='my commit message' )
+
+
+#    # Push changes to git repository
+#    repo.git.push()          
+
+#    # Pull the changes to the repo
 
 def argParsing():
     parser = argparse.ArgumentParser(
