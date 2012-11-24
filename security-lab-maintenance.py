@@ -66,7 +66,7 @@ def display():
     print 'Excluded packages: %s\n' % len(pkgslistEx)
     print 'Package list:'
     sorted_pkgslist = sorted(pkgslistIn)
-    print columnize.columnize(sorted_pkgslist, displaywidth=80)
+    print columnize.columnize(sorted_pkgslist, displaywidth=72)
 
 def add(pkgname):
     """Adds a new package to the Fedora Security Lab."""
