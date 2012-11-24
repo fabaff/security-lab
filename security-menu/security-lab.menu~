@@ -9,14 +9,15 @@
     	<Include>
     		<And>
       			<Category>X-SecurityLab</Category>
-	      		<Not><Category>X-Reconnaissance</Category></Not>
-	      		<Not><Category>X-Forensics</Category></Not>
-	      		<Not><Category>X-Wireless</Category></Not>
 	      		<Not><Category>X-CodeAnalysis</Category></Not>
+	      		<Not><Category>X-Forensics</Category></Not>
 	      		<Not><Category>X-IntrusionDetection</Category></Not>
-	      		<Not><Category>X-WebApplicationTesting</Category></Not>
+	      		<Not><Category>X-NetworkStatistics</Category></Not>
 	      		<Not><Category>X-PasswordTools</Category></Not>
+	      		<Not><Category>X-Reconnaissance</Category></Not>
 	      		<Not><Category>X-VoIP</Category></Not>
+	      		<Not><Category>X-WebApplicationTesting</Category></Not>
+	      		<Not><Category>X-Wireless</Category></Not>
 	      	</And>
       	</Include>
 
@@ -56,6 +57,16 @@
 	    	<Include>
 				<And>	    		
 		      		<Category>X-CodeAnalysis</Category>
+				</And>
+	      	</Include>
+		</Menu>
+
+		<Menu>
+			<Name>Network Statistics</Name>
+			<Directory>security-NetworkStatistics.directory</Directory>
+	    	<Include>
+				<And>	    		
+		      		<Category>X-NetworkStatistics</Category>
 				</And>
 	      	</Include>
 		</Menu>
