@@ -187,24 +187,7 @@ def menus():
     # Remove the .desktop files which are no longer needed
     if len(dellist) != 0:
         for file in dellist:
-	        #os.remove(file)
-            repo.git.rm(file)
-
-
-#    print os.getcwd()
-#    repo = git.Repo(os.getcwd())
-#    print repo.git.status()
-
-#    # add a file
-#    #print repo.git.add(file)
-#    # commit
-#    #print repo.git.commit( m='my commit message' )
-
-
-#    # Push changes to git repository
-#    repo.git.push()          
-
-#    # Pull the changes to the repo
+	        os.remove(file)
 
 def argParsing():
     parser = argparse.ArgumentParser(
