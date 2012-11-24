@@ -113,4 +113,4 @@
 - {category: Wireless, command: horst -h, name: horst, pkg: horst}
 - {category: NetworkStatistics, command: nload -h, pkg: nload, name: nload}
 - {category: NetworkStatistics, command: ntop -h, pkg: ntop, name: ntop}
-- {category: NetworkStatistics, command: driftnet -h, pkg: driftnet, name: driftnet}
+- {category: Forensics, command: driftnet -h, pkg: driftnet, name: driftnet}
