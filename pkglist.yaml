@@ -114,3 +114,4 @@
 - {category: NetworkStatistics, command: nload -h, pkg: nload, name: nload}
 - {category: NetworkStatistics, command: ntop -h, pkg: ntop, name: ntop}
 - {category: Forensics, command: driftnet -h, pkg: driftnet, name: driftnet}
+- {category: Reconnaissance, command: whois -h, name: whois, pkg: whois}
