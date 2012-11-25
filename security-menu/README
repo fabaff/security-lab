@@ -1,6 +1,5 @@
 security-menus
 --------------
-
 This package creates "Security Lab" submenus with icons in the Applications
 menu.
 
@@ -16,7 +15,7 @@ RPM package  : https://admin.fedoraproject.org/pkgdb/name/security-menus
 
 Authors
 -------
-See AUTHORS for details
+See AUTHORS for details.
 
 License
 -------
