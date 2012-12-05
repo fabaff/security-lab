@@ -116,5 +116,6 @@
 - {category: Forensics, command: driftnet -h, pkg: driftnet, name: driftnet}
 - {category: Reconnaissance, command: whois -h, name: whois, pkg: whois}
 - {category: Reconnaissance, command: paris-traceroute -h, name: paris-traceroute, pkg: paris-traceroute}
+- {category: Reconnaissance, command: nmbscan -h, name: NMB/SMB network scanner, pkg: nmbscan}
 - {category: Reconnaissance, command: bannergrab -h, name: bannergrab, pkg: bannergrab}
 - {category: Reconnaissance, command: slowhttptest -h, name: slowhttptest, pkg: slowhttptest}
