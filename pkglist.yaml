@@ -119,3 +119,4 @@
 - {category: Reconnaissance, command: nmbscan, name: NMB/SMB network scanner, pkg: nmbscan}
 - {category: Reconnaissance, command: bannergrab -h, name: bannergrab, pkg: bannergrab}
 - {category: Reconnaissance, command: slowhttptest -h, name: slowhttptest, pkg: slowhttptest}
+- {category: Reconnaissance, command: httpry -h, name: httpry, pkg: httpry}
