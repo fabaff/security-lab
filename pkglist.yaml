@@ -121,3 +121,5 @@
 - {category: Reconnaissance, command: slowhttptest -h, name: slowhttptest, pkg: slowhttptest}
 - {category: Reconnaissance, command: httpry -h, name: httpry, pkg: httpry}
 - {category: Forensics, command: binwalk -h, name: binwalk, pkg: binwalk}
+- {category: General, command: netsed -h, name: netsed, pkg: netsed}
+- {category: General, command: dnstop, name: dnstop, pkg: dnstop}
