@@ -58,7 +58,7 @@ if [ -d ../$DIRECTORY ]
 fi
 
 # Set SELinux to permissive mode
-setenforce 0
+sudo setenforce 0
 
 # Create the live media. This needs time...
 sudo livecd-creator \
