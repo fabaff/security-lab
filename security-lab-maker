@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 #
 # security-lab-maker - A help script to compose the Security Lab
-# Copyright (c) 2010-2012 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2010-2013 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # 
@@ -23,30 +23,47 @@
 
 KICKSTART=fedora-livecd-security.ks
 #KICKSTART=fedora-livecd-security-xfce.ks
-DIRECTORY=../spin-kickstarts
+DIRECTORY=spin-kickstarts
 CACHE=/var/cache/live
 LABEL=SecurityLab
 TITLE=SecurityLab-`date -I`
-RELEASEVER=18
+RELEASEVER=19
 #RELEASEVER=rawhide
 ROOT_UID=0   
 
 # Check if the script runs as root (aka UID 0)
-if [ "$UID" -eq "$ROOT_UID" ] 
+#if [ "$UID" -eq "$ROOT_UID" ] 
+#    then
+#        echo "You are root, please be patient ..."
+#    else
+#        echo "You must be root to run this script. Please use su to get root."
+#    exit 0
+#fi
+
+# Check if livecd-creator is available
+if [ ! -e /usr/bin/livecd-creator ]
     then
-        echo "You are root, please be patient ..."
+        echo "livecd-creator is not installed. Installation starts now ..."
+        sudo yum install livecd-tools
+fi
+
+# Check if the spin-kickstarts directory is present
+if [ -d ../$DIRECTORY ]
+    then
+        echo "Updating the spin-kickstarts git repository."
+        ( cd ../$DIRECTORY && git pull origin master)
     else
-        echo "You must be root to run this script. Please use su to get root."
-    exit 0
+        echo "Getting the spin-kickstarts git repository." 
+        ( cd .. && git clone ssh://git.fedorahosted.org/git/spin-kickstarts.git )
 fi
 
 # Set SELinux to permissive mode
 setenforce 0
 
 # Create the live media. This needs time...
-livecd-creator \
+sudo livecd-creator \
     --verbose \
-    --config=$DIRECTORY/$KICKSTART \
+    --config=../$DIRECTORY/$KICKSTART \
     --fslabel=$LABEL \
     --title=$TITLE \
     --cache=$CACHE \
@@ -54,4 +71,4 @@ livecd-creator \
 
 echo ""
 echo "If this script finished with no error, then the image is ready."
-echo "qemu-kvm -m 768 -cdrom $LABEL.iso"
+#echo "qemu-kvm -m 768 -cdrom $LABEL.iso"
