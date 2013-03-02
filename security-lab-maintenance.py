@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python -tt
 #
 # security-lab-maintenance - A helper script to maintain the Security Lab 
 # package list and other relevant maintenance task.
@@ -12,7 +12,7 @@
 # the Free Software Foundation; either version 2 of the License, or
 # (at your option) any later version.
 #
-# This program is distributed in the hope that it will be useful,
+# This program is distributed in the hope that it will be useful,sudo yum -y install
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
@@ -50,7 +50,7 @@ def display():
     """All included tools and details will be printed to STDOUT."""
     pkgslist = getPackages()
 
-    # Split list of packages into eincluded and excluded packages
+    # Split list of packages into included and excluded packages
     pkgslistIn = []
     pkgslistEx = []
     for pkg in pkgslist:
@@ -61,9 +61,8 @@ def display():
 
     # Displays the details to STDOUT
     print '\nDetails about the packages in the Fedora Security Lab\n'
-    print 'Total entries: %s' % len(pkgslist)
-    print 'Included packages: %s' % len(pkgslistIn)
-    print 'Excluded packages: %s\n' % len(pkgslistEx)
+    print 'Packages in comps               : %s' % len(pkgslist)
+    print 'Packages included in live media : %s\n' % len(pkgslistIn)
     print 'Package list:'
     sorted_pkgslist = sorted(pkgslistIn)
     print columnize.columnize(sorted_pkgslist, displaywidth=72)
