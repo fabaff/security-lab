@@ -12,7 +12,7 @@
 - {category: IntrusionDetection, command: rkhunter, name: Root Kit Hunter, pkg: rkhunter}
 - {category: IntrusionDetection, command: labrea, pkg: labrea, name: labrea}
 - {category: IntrusionDetection, command: nebula, pkg: nebula, name: nebula}
-- {category: IntrusionDetection, command: honeyd -h, exclude: 1, name: Honeypot Daemon, pkg: honeyd}
+- {category: IntrusionDetection, command: honeyd -h, name: Honeypot Daemon, pkg: honeyd, exclude: 1}
 - {category: CodeAnalysis, command: splint, name: splint, pkg: splint}
 - {category: CodeAnalysis, command: pscan, name: pscan, pkg: pscan}
 - {category: CodeAnalysis, command: flawfinder, name: Flawfinder, pkg: flawfinder}
@@ -87,7 +87,7 @@
 - {category: General, pkg: mutt}
 - {category: General, pkg: nano}
 - {category: General, pkg: vim-enhanced}
-- {category: General, pkg: wget}
+- {category: General, pkg: wget, command: wget -h}
 - {category: General, pkg: yum-utils}
 - {category: VoIP, pkg: sipsak, command: sipsak, name: sipsak}
 - {category: VoIP, pkg: sipp, command: sipp, name: sipp}
@@ -121,5 +121,27 @@
 - {category: Reconnaissance, command: slowhttptest -h, name: slowhttptest, pkg: slowhttptest}
 - {category: Reconnaissance, command: httpry -h, name: httpry, pkg: httpry}
 - {category: Forensics, command: binwalk -h, name: binwalk, pkg: binwalk}
-- {category: General, command: netsed -h, name: netsed, pkg: netsed}
-- {category: General, command: dnstop, name: dnstop, pkg: dnstop}
+- {category: General, command: netsed -h, name: netsed, pkg: netsed, exclude: 1}
+- {category: General, command: dnstop, name: dnstop, pkg: dnstop, exclude: 1}
+- {category: General, command: sslstrip -h, name: sslstrip, pkg: sslstrip, exclude: 1}
+- {category: Forensics, command: scalpel -h, name: scalpel, pkg: scalpel, exclude: 1}
+- {category: Forensics, command: pdfcrack, name: pdfcrack, pkg: pdfcrack, exclude: 1}
+- {category: Reconnaissance, command: pyrit, name: pyrit, pkg: pyrit, exclude: 1}
+- {category: Forensics, command: wipe -h, name: wipe, pkg: wipe, exclude: 1}
+- {category: Forensics, command: safecopy -h, name: safecopy, pkg: safecopy, exclude: 1}
+- {category: Wireless, command: kismon, name: kismon, pkg: kismon, exclude: 1}
+- {category: Reconnaissance, command: onesixtyone, name: , pkg: , exclude: 1}
+- {category: General, command: bonesi, name: , pkg: , exclude: 1}
+- {category: General, command: proxychains, name: proxychains, pkg: proxychains, exclude: 1}
+- {category: Reconnaissance, command: raddump -h, name: raddump, pkg: raddump, exclude: 1}
+- {category: Reconnaissance, command: arpon -h, name: arpon, pkg: ArpOn, exclude: 1}
+- {category: Forensics, command: hfsutils, name: hfsutils, pkg: hfsutils, exclude: 1}
+- {category: Reconnaissance, command: tcpreen, name: tcpreen, pkg: tcpreen, exclude: 1}
+- {category: Reconnaissance, command: tcpreplay, name: tcpreplay, pkg: tcpreplay, exclude: 1}
+- {category: IntrusionDetection, command: snort, name: snort, pkg: snort, exclude: 1}
+- {category: IntrusionDetection, command: tripwire, name: tripwire, pkg: tripwire, exclude: 1}
+- {category: IntrusionDetection, command: prelude-lml, name: prelude-lml, pkg: prelude-lml, exclude: 1}
+- {category: General, command: prewikka, name: prewikka, pkg: prewikka, exclude: 1}
+- {category: General, command: prelude-manager, name: prelude-manager, pkg: prelude-manager, exclude: 1}
+- {category: General, command: picviz-gui, name: picviz-gui, pkg: picviz-gui, exclude: 1}
+- {category: Reconnaissance, command: siege, name: siege -h, pkg: siege, exclude: 0}
