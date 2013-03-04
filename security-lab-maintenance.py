@@ -1,7 +1,7 @@
 #!/usr/bin/python -tt
 #
 # security-lab-maintenance - A helper script to maintain the Security Lab 
-# package list and other relevant maintenance task.
+# package list and other relevant maintenance tasks.
 #
 # Copyright (c) 2012-2013 Fabian Affolter <fab@fedoraproject.org>
 #
