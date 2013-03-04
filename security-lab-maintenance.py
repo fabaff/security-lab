@@ -116,6 +116,7 @@ def comps():
 	        print '      <packagereq type="default">%s</packagereq>' % pkg['pkg']
 
 def trac():
+    # FIXME: There are duplicates in the list !!!
     """Generates the package overview for FSL trac instance."""
     pkgslist = getPackages()
 
@@ -147,7 +148,7 @@ def trac():
 #                print detail.name, detail.url
                 part1 = '* [%s %s]' % (detail.url, detail.name)
                 part2 = detail.summary
-                part3 = '[https://admin.fedoraproject.org/pkgdb/packages/name/%s Fedora Package Database]' % detail.name
+                part3 = '[https://admin.fedoraproject.org/pkgdb/acls/name/%s Fedora Package Database]' % detail.name
                 part4 = '[https://admin.fedoraproject.org/pkgdb/acls/bugs/%s Bug Reports]' % detail.name
                 entry =  part1 + " - " + part2 + " - " + part3 + " - " + part4
                 print entry
@@ -169,7 +170,7 @@ def menus():
     for files in os.listdir("."):
         if files.endswith(".desktop"):
             filelist.append(files)
-    # Write .desktop files
+    # Write the .desktop files
     for pkg in pkgslist:
         if 'command' in pkg:
 	        fileOut = open('security-' + pkg['pkg'] + '.desktop','w')
