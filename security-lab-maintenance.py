@@ -127,11 +127,10 @@ def live():
     pkgslist = getPackages()
     # Split list of packages into eincluded and excluded packages
     sorted_pkgslist = sorted(pkgslist, key=operator.itemgetter('pkg'))
-    print sorted_pkgslist
+
     for pkg in sorted_pkgslist:
-	    if 'exclude' in pkg:
+	    if pkg['exclude'] == 1:
 	        print '-%s' % pkg['pkg']
-#        print pkg['exclude']
 
 def trac():
     # FIXME: There are duplicates in the list !!!
