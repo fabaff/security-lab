@@ -117,7 +117,6 @@
 - {category: Reconnaissance, command: whois -h, name: whois, pkg: whois}
 - {category: Reconnaissance, command: paris-traceroute -h, name: paris-traceroute, pkg: paris-traceroute}
 - {category: Reconnaissance, command: nmbscan, name: NMB/SMB network scanner, pkg: nmbscan}
-- {category: Reconnaissance, command: bannergrab -h, name: bannergrab, pkg: bannergrab}
 - {category: Reconnaissance, command: slowhttptest -h, name: slowhttptest, pkg: slowhttptest}
 - {category: Reconnaissance, command: httpry -h, name: httpry, pkg: httpry}
 - {category: Forensics, command: binwalk -h, name: binwalk, pkg: binwalk}
