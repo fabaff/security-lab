@@ -1,125 +1,125 @@
-- {category: General, pkg: security-menus}
-- {category: Reconnaissance, command: xprobe2, name: xprobe, pkg: xprobe2}
-- {category: Reconnaissance, command: dsniff -h, name: dsniff, pkg: dsniff}
-- {category: Reconnaissance, command: wireshark, name: wireshark, pkg: wireshark-gnome}
-- {category: PasswordTools, command: john, name: john, pkg: john}
-- {category: PasswordTools, command: sucrack, name: sucrack, pkg: sucrack}
-- {category: PasswordTools, command: ophcrack, name: Objectif Securite ophcrack, pkg: ophcrack}
-- {category: PasswordTools, command: medusa -d, name: Medusa Brute Force, pkg: medusa}
-- {category: IntrusionDetection, command: chkrootkit, name: chkrootkit, pkg: chkrootkit}
-- {category: IntrusionDetection, command: aide -h, name: aide, pkg: aide}
-- {category: IntrusionDetection, command: pads -h, name: Passive Asset Detection System, pkg: pads}
-- {category: IntrusionDetection, command: rkhunter, name: Root Kit Hunter, pkg: rkhunter}
-- {category: IntrusionDetection, command: labrea, pkg: labrea, name: labrea}
-- {category: IntrusionDetection, command: nebula, pkg: nebula, name: nebula}
+- {category: General, pkg: security-menus, exclude: 0}
+- {category: Reconnaissance, command: xprobe2, name: xprobe, pkg: xprobe2, exclude: 0}
+- {category: Reconnaissance, command: dsniff -h, name: dsniff, pkg: dsniff, exclude: 0}
+- {category: Reconnaissance, command: wireshark, name: wireshark, pkg: wireshark-gnome, exclude: 0}
+- {category: PasswordTools, command: john, name: john, pkg: john, exclude: 0}
+- {category: PasswordTools, command: sucrack, name: sucrack, pkg: sucrack, exclude: 0}
+- {category: PasswordTools, command: ophcrack, name: Objectif Securite ophcrack, pkg: ophcrack, exclude: 0}
+- {category: PasswordTools, command: medusa -d, name: Medusa Brute Force, pkg: medusa, exclude: 0}
+- {category: IntrusionDetection, command: chkrootkit, name: chkrootkit, pkg: chkrootkit, exclude: 0}
+- {category: IntrusionDetection, command: aide -h, name: aide, pkg: aide, exclude: 0}
+- {category: IntrusionDetection, command: pads -h, name: Passive Asset Detection System, pkg: pads, exclude: 0}
+- {category: IntrusionDetection, command: rkhunter, name: Root Kit Hunter, pkg: rkhunter, exclude: 0}
+- {category: IntrusionDetection, command: labrea, pkg: labrea, name: labrea, exclude: 0}
+- {category: IntrusionDetection, command: nebula, pkg: nebula, name: nebula, exclude: 0}
 - {category: IntrusionDetection, command: honeyd -h, name: Honeypot Daemon, pkg: honeyd, exclude: 1}
-- {category: CodeAnalysis, command: splint, name: splint, pkg: splint}
-- {category: CodeAnalysis, command: pscan, name: pscan, pkg: pscan}
-- {category: CodeAnalysis, command: flawfinder, name: Flawfinder, pkg: flawfinder}
-- {category: CodeAnalysis, command: rats, name: Rough Auditing Tool for Security, pkg: rats}
-- {category: Wireless, command: aircrack-ng, name: aircrack-ng, pkg: aircrack-ng}
-- {category: Wireless, command: airsnort, name: airsnort, pkg: airsnort}
-- {category: Wireless, command: kismet, name: kismet, pkg: kismet}
-- {category: Wireless, command: weplab -h, name: Wep Key Cracker, pkg: weplab}
-- {category: Wireless, command: cowpatty -h, name: cowpatty, pkg: cowpatty}
-- {category: Wireless, command: wavemon, name: wavemon, pkg: wavemon}
-- {category: Reconnaissance, command: hping -h, name: hping, pkg: hping3}
-- {category: Reconnaissance, command: ncrack -h, name: ncrack, pkg: ncrack}
-- {category: Reconnaissance, command: nmap -h, name: nmap, pkg: nmap}
+- {category: CodeAnalysis, command: splint, name: splint, pkg: splint, exclude: 0}
+- {category: CodeAnalysis, command: pscan, name: pscan, pkg: pscan, exclude: 0}
+- {category: CodeAnalysis, command: flawfinder, name: Flawfinder, pkg: flawfinder, exclude: 0}
+- {category: CodeAnalysis, command: rats, name: Rough Auditing Tool for Security, pkg: rats, exclude: 0}
+- {category: Wireless, command: aircrack-ng, name: aircrack-ng, pkg: aircrack-ng, exclude: 0}
+- {category: Wireless, command: airsnort, name: airsnort, pkg: airsnort, exclude: 0}
+- {category: Wireless, command: kismet, name: kismet, pkg: kismet, exclude: 0}
+- {category: Wireless, command: weplab -h, name: Wep Key Cracker, pkg: weplab, exclude: 0}
+- {category: Wireless, command: cowpatty -h, name: cowpatty, pkg: cowpatty, exclude: 0}
+- {category: Wireless, command: wavemon, name: wavemon, pkg: wavemon, exclude: 0}
+- {category: Reconnaissance, command: hping -h, name: hping, pkg: hping3, exclude: 0}
+- {category: Reconnaissance, command: ncrack -h, name: ncrack, pkg: ncrack, exclude: 0}
+- {category: Reconnaissance, command: nmap -h, name: nmap, pkg: nmap, exclude: 0}
 - {category: Reconnaissance, command: scanssh -h, name: scanssh, pkg: sshscan, exclude: 1}
-- {category: Reconnaissance, command: zenmap-root, name: nmap, pkg: nmap-frontend}
-- {category: Reconnaissance, command: p0f -h, name: p0f, pkg: p0f}
-- {category: Reconnaissance, command: sing -h, name: sing, pkg: sing}
-- {category: Reconnaissance, command: scapy -h, name: scapy, pkg: scapy}
-- {category: Reconnaissance, command: socat, name: Socket cat, pkg: socat}
-- {category: Reconnaissance, command: tcpdump -h, name: tcpdump, pkg: tcpdump}
-- {category: Reconnaissance, command: unicornscan -h, name: unicornscan, pkg: unicornscan}
-- {category: Reconnaissance, command: nbtscan, name: nbtscan, pkg: nbtscan}
-- {category: Reconnaissance, command: tcpxtract, name: tcpxtract, pkg: tcpxtract}
-- {category: Reconnaissance, command: firewalk, name: Firewalk, pkg: firewalk}
-- {category: Reconnaissance, command: hunt, name: Hunt, pkg: hunt}
-- {category: Reconnaissance, command: dnsenum -h, name: dnsenum, pkg: dnsenum}
-- {category: NetworkStatistics, command: iftop, name: iftop, pkg: iftop}
-- {category: NetworkStatistics, command: scamper, name: scamper, pkg: scamper}
-- {category: Reconnaissance, command: argus -h, name: argus, pkg: argus}
-- {category: Reconnaissance, command: ettercap -C, name: ettercap, pkg: ettercap}
-- {category: Reconnaissance, pkg: ettercap-gtk}
-- {category: Reconnaissance, command: packETH, name: packETH, pkg: packETH}
-- {category: NetworkStatistics, command: iptraf-ng, name: iptraf-ng, pkg: iptraf-ng}
-- {category: NetworkStatistics, command: iperf -h, name: iperf, pkg: iperf}
-- {category: NetworkStatistics, command: nethogs -h, name: nethogs, pkg: nethogs}
-- {category: Reconnaissance, command: etherape, name: etherape, pkg: etherape}
-- {category: Reconnaissance, command: lynis, name: lynis, pkg: lynis}
-- {category: Reconnaissance, command: netsniff-ng -h, name: netsniff-ng, pkg: netsniff-ng}
-- {category: Reconnaissance, command: tcpjunk -x, name: tcpjunk, pkg: tcpjunk}
-- {category: Reconnaissance, command: ssldump -h, name: ssldump, pkg: ssldump}
-- {category: Reconnaissance, command: yersinia -G, name: Yersinia, pkg: yersinia}
-- {category: Reconnaissance, command: openvas-client, name: OpenVAS Client, pkg: openvas-client}
-- {category: Forensics, command: ddrescue -h, name: ddrescue, pkg: ddrescue}
-- {category: Forensics, command: gparted, name: gParted, pkg: gparted}
-- {category: Forensics, command: testdisk -h, name: testdisk, pkg: testdisk}
-- {category: Forensics, command: foremost -h, name: Foremost Filecarver, pkg: foremost}
-- {category: Forensics, command: sectool-gui, name: sectool, pkg: sectool-gui}
-- {category: Forensics, command: unhide, name: unhide, pkg: unhide}
-- {category: Forensics, command: examiner, name: ELF Examiner, pkg: examiner}
-- {category: Forensics, command: srm -h, name: Securely Remove Files, pkg: srm}
-- {category: Forensics, command: nwipe, name: Securely erase disks, pkg: nwipe}
-- {category: Forensics, command: firstaidkit -g gtk, name: First Aid Kit, pkg: firstaidkit-gui}
-- {category: General, pkg: nc6}
-- {category: General, pkg: nc}
-- {category: General, pkg: mc, name: Midnight Commander, command: mc}
-- {category: General, pkg: screen}
-- {category: General, command: macchanger, name: MAC address changer, pkg: macchanger}
-- {category: General, pkg: ngrep}
-- {category: General, pkg: ntfs-3g}
-- {category: General, pkg: ntfsprogs}
-- {category: Forensics, command: xmount, name: xmount, pkg: xmount}
-- {category: Forensics, pkg: dc3dd, name: dc3dd, command: dc3dd}
-- {category: Forensics, pkg: afftools, name: afftools, command: afftools}
-- {category: General, pkg: pcapdiff}
-- {category: General, pkg: net-snmp}
-- {category: General, pkg: openvas-scanner}
-- {category: General, pkg: hexedit}
-- {category: Forensics, pkg: scanmem, name: Debugging tool, command: scanmem}
-- {category: General, pkg: sleuthkit}
-- {category: General, pkg: irssi}
-- {category: General, pkg: powertop}
-- {category: General, pkg: mutt}
-- {category: General, pkg: nano}
-- {category: General, pkg: vim-enhanced}
-- {category: General, pkg: wget, command: wget -h}
-- {category: General, pkg: yum-utils}
-- {category: VoIP, pkg: sipsak, command: sipsak, name: sipsak}
-- {category: VoIP, pkg: sipp, command: sipp, name: sipp}
-- {category: General, pkg: mcabber}
-- {category: General, pkg: firstaidkit-plugin-all}
-- {category: WebApplicationTesting, command: halberd, name: halberd, pkg: halberd}
-- {category: WebApplicationTesting, command: httping -h, name: httping, pkg: httping}
-- {category: WebApplicationTesting, command: nikto -help, name: Nikto Websecurity Scanner, pkg: nikto}
-- {category: WebApplicationTesting, command: ratproxy -h, name: ratproxy, pkg: ratproxy}
-- {category: WebApplicationTesting, command: lbd, name: Load Balancing Detector, pkg: lbd}
-- {category: WebApplicationTesting, command: skipfish, name: skipfish, pkg: skipfish}
-- {category: WebApplicationTesting, command: sqlninja, name: sqlninja, pkg: sqlninja}
-- {category: Reconnaissance, command: sslscan, pkg: sslscan, name: SSL port scanner}
-- {category: Reconnaissance, command: snmpcheck, pkg: snmpcheck, name: SNMP enumerator}
-- {category: Reconnaissance, command: samdump2, pkg: samdump2, name: syskey retriever}
-- {category: Reconnaissance, command: bkhive, pkg: bkhive, name: Recover Syskey bootkey}
-- {category: NetworkStatistics, command: uperf, pkg: uperf, name: Network performance tool}
-- {category: Reconnaissance, command: tcpick, pkg: tcpick, name: TCP stream sniffer}
-- {category: Reconnaissance, command: tcpflow -h, pkg: tcpflow, name: Network traffic recorder}
-- {category: Reconnaissance, command: dnsmap, pkg: dnsmap, name: Sub-domains bruteforcer}
-- {category: Forensics, command: scrub, pkg: scrub, name: Disk scruber}
-- {category: Forensics, command: ht, name: ht, pkg: ht}
-- {category: Wireless, command: horst -h, name: horst, pkg: horst}
-- {category: NetworkStatistics, command: nload -h, pkg: nload, name: nload}
-- {category: NetworkStatistics, command: ntop -h, pkg: ntop, name: ntop}
-- {category: Forensics, command: driftnet -h, pkg: driftnet, name: driftnet}
-- {category: Reconnaissance, command: whois -h, name: whois, pkg: whois}
-- {category: Reconnaissance, command: paris-traceroute -h, name: paris-traceroute, pkg: paris-traceroute}
-- {category: Reconnaissance, command: nmbscan, name: NMB/SMB network scanner, pkg: nmbscan}
-- {category: Reconnaissance, command: slowhttptest -h, name: slowhttptest, pkg: slowhttptest}
-- {category: Reconnaissance, command: httpry -h, name: httpry, pkg: httpry}
-- {category: Forensics, command: binwalk -h, name: binwalk, pkg: binwalk}
+- {category: Reconnaissance, command: zenmap-root, name: nmap, pkg: nmap-frontend, exclude: 0}
+- {category: Reconnaissance, command: p0f -h, name: p0f, pkg: p0f, exclude: 0}
+- {category: Reconnaissance, command: sing -h, name: sing, pkg: sing, exclude: 0}
+- {category: Reconnaissance, command: scapy -h, name: scapy, pkg: scapy, exclude: 0}
+- {category: Reconnaissance, command: socat, name: Socket cat, pkg: socat, exclude: 0}
+- {category: Reconnaissance, command: tcpdump -h, name: tcpdump, pkg: tcpdump, exclude: 0}
+- {category: Reconnaissance, command: unicornscan -h, name: unicornscan, pkg: unicornscan, exclude: 0}
+- {category: Reconnaissance, command: nbtscan, name: nbtscan, pkg: nbtscan, exclude: 0}
+- {category: Reconnaissance, command: tcpxtract, name: tcpxtract, pkg: tcpxtract, exclude: 0}
+- {category: Reconnaissance, command: firewalk, name: Firewalk, pkg: firewalk, exclude: 0}
+- {category: Reconnaissance, command: hunt, name: Hunt, pkg: hunt, exclude: 0}
+- {category: Reconnaissance, command: dnsenum -h, name: dnsenum, pkg: dnsenum, exclude: 0}
+- {category: NetworkStatistics, command: iftop, name: iftop, pkg: iftop, exclude: 0}
+- {category: NetworkStatistics, command: scamper, name: scamper, pkg: scamper, exclude: 0}
+- {category: Reconnaissance, command: argus -h, name: argus, pkg: argus, exclude: 0}
+- {category: Reconnaissance, command: ettercap -C, name: ettercap, pkg: ettercap, exclude: 0}
+- {category: Reconnaissance, pkg: ettercap-gtk, exclude: 0}
+- {category: Reconnaissance, command: packETH, name: packETH, pkg: packETH, exclude: 0}
+- {category: NetworkStatistics, command: iptraf-ng, name: iptraf-ng, pkg: iptraf-ng, exclude: 0}
+- {category: NetworkStatistics, command: iperf -h, name: iperf, pkg: iperf, exclude: 0}
+- {category: NetworkStatistics, command: nethogs -h, name: nethogs, pkg: nethogs, exclude: 0}
+- {category: Reconnaissance, command: etherape, name: etherape, pkg: etherape, exclude: 0}
+- {category: Reconnaissance, command: lynis, name: lynis, pkg: lynis, exclude: 0}
+- {category: Reconnaissance, command: netsniff-ng -h, name: netsniff-ng, pkg: netsniff-ng, exclude: 0}
+- {category: Reconnaissance, command: tcpjunk -x, name: tcpjunk, pkg: tcpjunk, exclude: 0}
+- {category: Reconnaissance, command: ssldump -h, name: ssldump, pkg: ssldump, exclude: 0}
+- {category: Reconnaissance, command: yersinia -G, name: Yersinia, pkg: yersinia, exclude: 0}
+- {category: Reconnaissance, command: openvas-client, name: OpenVAS Client, pkg: openvas-client, exclude: 0}
+- {category: Forensics, command: ddrescue -h, name: ddrescue, pkg: ddrescue, exclude: 0}
+- {category: Forensics, command: gparted, name: gParted, pkg: gparted, exclude: 0}
+- {category: Forensics, command: testdisk -h, name: testdisk, pkg: testdisk, exclude: 0}
+- {category: Forensics, command: foremost -h, name: Foremost Filecarver, pkg: foremost, exclude: 0}
+- {category: Forensics, command: sectool-gui, name: sectool, pkg: sectool-gui, exclude: 0}
+- {category: Forensics, command: unhide, name: unhide, pkg: unhide, exclude: 0}
+- {category: Forensics, command: examiner, name: ELF Examiner, pkg: examiner, exclude: 0}
+- {category: Forensics, command: srm -h, name: Securely Remove Files, pkg: srm, exclude: 0}
+- {category: Forensics, command: nwipe, name: Securely erase disks, pkg: nwipe, exclude: 0}
+- {category: Forensics, command: firstaidkit -g gtk, name: First Aid Kit, pkg: firstaidkit-gui, exclude: 0}
+- {category: General, pkg: nc6, exclude: 0}
+- {category: General, pkg: nc, exclude: 0}
+- {category: General, pkg: mc, name: Midnight Commander, command: mc, exclude: 0}
+- {category: General, pkg: screen, exclude: 0}
+- {category: General, command: macchanger, name: MAC address changer, pkg: macchanger, exclude: 0}
+- {category: General, pkg: ngrep, exclude: 0}
+- {category: General, pkg: ntfs-3g, exclude: 0}
+- {category: General, pkg: ntfsprogs, exclude: 0}
+- {category: Forensics, command: xmount, name: xmount, pkg: xmount, exclude: 0}
+- {category: Forensics, pkg: dc3dd, name: dc3dd, command: dc3dd, exclude: 0}
+- {category: Forensics, pkg: afftools, name: afftools, command: afftools, exclude: 0}
+- {category: General, pkg: pcapdiff, exclude: 0}
+- {category: General, pkg: net-snmp, exclude: 0}
+- {category: General, pkg: openvas-scanner, exclude: 0}
+- {category: General, pkg: hexedit, exclude: 0}
+- {category: Forensics, pkg: scanmem, name: Debugging tool, command: scanmem, exclude: 0}
+- {category: General, pkg: sleuthkit, exclude: 0}
+- {category: General, pkg: irssi, exclude: 0}
+- {category: General, pkg: powertop, exclude: 0}
+- {category: General, pkg: mutt, exclude: 0}
+- {category: General, pkg: nano, exclude: 0}
+- {category: General, pkg: vim-enhanced, exclude: 0}
+- {category: General, pkg: wget, command: wget -h, exclude: 0}
+- {category: General, pkg: yum-utils, exclude: 0}
+- {category: VoIP, pkg: sipsak, command: sipsak, name: sipsak, exclude: 0}
+- {category: VoIP, pkg: sipp, command: sipp, name: sipp, exclude: 0}
+- {category: General, pkg: mcabber, exclude: 0}
+- {category: General, pkg: firstaidkit-plugin-all, exclude: 0}
+- {category: WebApplicationTesting, command: halberd, name: halberd, pkg: halberd, exclude: 0}
+- {category: WebApplicationTesting, command: httping -h, name: httping, pkg: httping, exclude: 0}
+- {category: WebApplicationTesting, command: nikto -help, name: Nikto Websecurity Scanner, pkg: nikto, exclude: 0}
+- {category: WebApplicationTesting, command: ratproxy -h, name: ratproxy, pkg: ratproxy, exclude: 0}
+- {category: WebApplicationTesting, command: lbd, name: Load Balancing Detector, pkg: lbd, exclude: 0}
+- {category: WebApplicationTesting, command: skipfish, name: skipfish, pkg: skipfish, exclude: 0}
+- {category: WebApplicationTesting, command: sqlninja, name: sqlninja, pkg: sqlninja, exclude: 0}
+- {category: Reconnaissance, command: sslscan, pkg: sslscan, name: SSL port scanner, exclude: 0}
+- {category: Reconnaissance, command: snmpcheck, pkg: snmpcheck, name: SNMP enumerator, exclude: 0}
+- {category: Reconnaissance, command: samdump2, pkg: samdump2, name: syskey retriever, exclude: 0}
+- {category: Reconnaissance, command: bkhive, pkg: bkhive, name: Recover Syskey bootkey, exclude: 0}
+- {category: NetworkStatistics, command: uperf, pkg: uperf, name: Network performance tool, exclude: 0}
+- {category: Reconnaissance, command: tcpick, pkg: tcpick, name: TCP stream sniffer, exclude: 0}
+- {category: Reconnaissance, command: tcpflow -h, pkg: tcpflow, name: Network traffic recorder, exclude: 0}
+- {category: Reconnaissance, command: dnsmap, pkg: dnsmap, name: Sub-domains bruteforcer, exclude: 0}
+- {category: Forensics, command: scrub, pkg: scrub, name: Disk scruber, exclude: 0}
+- {category: Forensics, command: ht, name: ht, pkg: ht, exclude: 0}
+- {category: Wireless, command: horst -h, name: horst, pkg: horst, exclude: 0}
+- {category: NetworkStatistics, command: nload -h, pkg: nload, name: nload, exclude: 0}
+- {category: NetworkStatistics, command: ntop -h, pkg: ntop, name: ntop, exclude: 0}
+- {category: Forensics, command: driftnet -h, pkg: driftnet, name: driftnet, exclude: 0}
+- {category: Reconnaissance, command: whois -h, name: whois, pkg: whois, exclude: 0}
+- {category: Reconnaissance, command: paris-traceroute -h, name: paris-traceroute, pkg: paris-traceroute, exclude: 0}
+- {category: Reconnaissance, command: nmbscan, name: NMB/SMB network scanner, pkg: nmbscan, exclude: 0}
+- {category: Reconnaissance, command: slowhttptest -h, name: slowhttptest, pkg: slowhttptest, exclude: 0}
+- {category: Reconnaissance, command: httpry -h, name: httpry, pkg: httpry, exclude: 0}
+- {category: Forensics, command: binwalk -h, name: binwalk, pkg: binwalk, exclude: 0}
 - {category: General, command: netsed -h, name: netsed, pkg: netsed, exclude: 1}
 - {category: General, command: dnstop, name: dnstop, pkg: dnstop, exclude: 1}
 - {category: General, command: sslstrip -h, name: sslstrip, pkg: sslstrip, exclude: 1}
