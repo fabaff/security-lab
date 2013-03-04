@@ -75,6 +75,11 @@ def display():
     sorted_pkgslist = sorted(pkgslistAll)
     print columnize.columnize(sorted_pkgslist, displaywidth=72)
 
+def raw():
+    """The pkglist.yaml file will be printed to STDOUT."""
+    pkgslist = getPackages()
+    print yaml.dump(pkgslist)
+
 def add(pkgname):
     """Adds a new package to the Fedora Security Lab."""
     print 'Not implemented at the moment. Package name was %s. Please edit ' \
@@ -114,6 +119,19 @@ def comps():
 	        pass
 	    else:
 	        print '      <packagereq type="default">%s</packagereq>' % pkg['pkg']
+
+def live():
+    """
+    Generates the exclude list for the kickstart file.
+    """
+    pkgslist = getPackages()
+    # Split list of packages into eincluded and excluded packages
+    sorted_pkgslist = sorted(pkgslist, key=operator.itemgetter('pkg'))
+    print sorted_pkgslist
+    for pkg in sorted_pkgslist:
+	    if 'exclude' in pkg:
+	        print '-%s' % pkg['pkg']
+#        print pkg['exclude']
 
 def trac():
     # FIXME: There are duplicates in the list !!!
@@ -217,6 +235,12 @@ def argParsing():
     parser.add_argument('-m', '--menus',
                        action='store_true',
                        help='generate an updated list for the security-menus package')
+    parser.add_argument('-l', '--live',
+                       action='store_true',
+                       help='generate an exclude list for the kickstart file')
+    parser.add_argument('-r', '--raw',
+                       action='store_true',
+                       help='display the pkglist.yaml file to STDOUT')
     return parser.parse_args()
 
 if __name__ == '__main__':
@@ -233,3 +257,7 @@ if __name__ == '__main__':
         trac()
     if args.menus:
         menus()
+    if args.live:
+        live()
+    if args.raw:
+        raw()
