@@ -44,7 +44,7 @@ ROOT_UID=0
 if [ ! -e /usr/bin/livecd-creator ]
     then
         echo "livecd-creator is not installed. Installation starts now ..."
-        sudo yum install livecd-tools
+        sudo yum -y install livecd-tools
 fi
 
 # Check if the spin-kickstarts directory is present
