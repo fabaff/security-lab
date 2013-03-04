@@ -12,7 +12,7 @@
 # the Free Software Foundation; either version 2 of the License, or
 # (at your option) any later version.
 #
-# This program is distributed in the hope that it will be useful,sudo yum -y install
+# This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
@@ -50,21 +50,29 @@ def display():
     """All included tools and details will be printed to STDOUT."""
     pkgslist = getPackages()
 
-    # Split list of packages into included and excluded packages
     pkgslistIn = []
     pkgslistEx = []
+    pkgslistAll = []
+
+    # All packages
+    pkgslistAll = []
     for pkg in pkgslist:
-	    if 'exclude' in pkg:
-	        pkgslistEx.append(pkg['pkg'])
-	    else:
-	        pkgslistIn.append(pkg['pkg'])
+        pkgslistAll.append(pkg['pkg'])
+
+    # Split list of packages into included and excluded packages
+    # Not used at the moment
+    #for pkg in pkgslist:
+	#    if 'exclude' in pkg:
+	#        pkgslistEx.append(pkg['pkg'])
+	#    else:
+	 #       pkgslistIn.append(pkg['pkg'])
 
     # Displays the details to STDOUT
     print '\nDetails about the packages in the Fedora Security Lab\n'
     print 'Packages in comps               : %s' % len(pkgslist)
     print 'Packages included in live media : %s\n' % len(pkgslistIn)
-    print 'Package list:'
-    sorted_pkgslist = sorted(pkgslistIn)
+    print 'Package listing:'
+    sorted_pkgslist = sorted(pkgslistAll)
     print columnize.columnize(sorted_pkgslist, displaywidth=72)
 
 def add(pkgname):
