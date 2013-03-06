@@ -146,3 +146,4 @@
 - {category: Reconnaissance, command: siege, name: siege -h, pkg: siege, exclude: 0}
 - {category: Reconnanssance, command: echoping -h, name: echoping, pkg: echoping, exclude: 0}
 - {category: Reconnanssance, command: dhcping, name: dhcping, pkg: dhcping, exclude: 0}
+- {category: Reconnanssance, command: wbox, name: wbox, pkg: wbox, exclude: 0}
