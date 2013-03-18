@@ -149,3 +149,4 @@
 - {category: Reconnanssance, command: dhcping, name: dhcping, pkg: dhcping, exclude: 0}
 - {category: Reconnanssance, command: wbox, name: wbox, pkg: wbox, exclude: 0}
 - {category: Reconnanssance, command: swaks, name: SMTP transaction tester, pkg: swaks, exclude: 0}
+- {category: General, command: telnet -h, name: Telnet, pkg: telnet, exclude: 0}
