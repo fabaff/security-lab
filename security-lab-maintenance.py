@@ -37,6 +37,8 @@ import yum
 import git
 import yaml
 
+repo = git.Repo(os.getcwd())
+
 def getPackages():
     """
     Reading yaml package file which is placed in the root of the Fedora 
@@ -153,6 +155,11 @@ def playbook():
     for pkg in sorted_pkgslist:
         fileOut.write('       - %s\n' %  pkg['pkg'])
     fileOut.close()
+
+    # Commit the changed file to the repository
+    repo.git.add('ansible-playbooks/fsl-packages.yml')
+    repo.git.commit(m='Updated playbook')
+    repo.git.push()
 
 def live():
     """
