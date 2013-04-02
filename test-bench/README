@@ -1,0 +1,34 @@
+Fedora Security Lab Test bench
+------------------------------
+
+The Fedora Security Lab Test bench provides a save environment for
+security auditing and testing and can be used for teaching security
+testing methodologies. At the moment the focus lies on web applications.
+All application are running on top of a current Fedora installation with
+a ​Lighttpd webserver and a ​MySQL server. 
+
+The Fedora Security Lab Test bench includes:
+
+* Vulnerable web applications (DVWA, bWAPP, SQLI Labs, and SQLol)
+* Shells (PHP Shell, ​b374k, ​Ani-Shell, and ​WSO PHP Shell)
+* ​Helper tools (PHP Shell detector, ​linfo, and ​phpmyadmin) 
+
+All applications are directly accessible from a bootstrap-based website. 
+
+Resources
+---------
+
+Documentation : https://fedorahosted.org/security-spin/wiki/Test%20bench
+Installation  : https://fedorahosted.org/security-spin/wiki/Test%20bench%20setup
+Website/Bugs  : https://fedorahosted.org/security-spin/
+Downloads     : https://fedorahosted.org/releases/s/e/security-spin/
+
+Authors
+-------
+
+See AUTHORS for details.
+
+License
+-------
+
+The FSL Test bench is licensed under GPLv2, for more details check COPYING. 
