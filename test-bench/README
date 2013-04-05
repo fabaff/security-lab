@@ -18,13 +18,15 @@ All applications are directly accessible from a bootstrap-based website.
 The 'test-bench' directory contains everything that is needed by Ansible 
 to configure a bare Fedora installation as FSL Test bench.
 
-The FSL Test bench repository contains a subset of playbooks from the 
-fedora-ansible git repository maintained by Fabian Affolter. This repo is
-located at https://github.com/fabaff/fedora-ansible.
+The FSL Test bench repository at https://github.com/fabaff/fsl-test-bench
+contains a subset of playbooks from the fedora-ansible git repository
+maintained by Fabian Affolter. This repo is located at
+https://github.com/fabaff/fedora-ansible.
 
 Resources
 ---------
 
+Git repos     : https://github.com/fabaff/fsl-test-bench
 Documentation : https://fedorahosted.org/security-spin/wiki/Test%20bench
 Installation  : https://fedorahosted.org/security-spin/wiki/Test%20bench%20setup
 Website/Bugs  : https://fedorahosted.org/security-spin/
