@@ -1,0 +1,90 @@
+#!/bin/bash
+#
+# fsl-virt-inst - Creator for a libvirt-based virtual machine
+#
+# Copyright (c) 2012-2013 Fabian Affolter <fab@fedoraproject.org>
+#
+# All rights reserved.
+# 
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc.,
+# 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+# Credits goes to Robert Scheck. He did a lot brain work for the initial
+# approach. This script is heavy based on his perl scripts.
+
+cat <<END_ENTRY >> fsl-testbench.ks
+# Minimal Kickstart file for the Fedora Security Lab test bench
+# Installation, not an upgrade
+install
+
+# No graphical things needed
+skipx
+text
+
+# Language
+lang en_US.UTF-8
+
+# Kexboard setup
+keyboard --vckeymap=sg --xlayouts='ch (de_nodeadkeys)'
+#keyboard us
+
+# Networking
+network --onboot yes --device eth0 --bootproto dhcp --ipv6 auto --hostname test-bench
+
+# Authentication
+auth --enableshadow --passalgo=sha512
+#rootpw {{ server_root_password }}
+rootpw testbench
+
+# Services, SELinux and firewall
+firewall --enabled --ssh
+services --enabled network,sshd
+selinux --enforcing
+#firstboot --disable
+logging --level=info
+
+# Time zone
+timezone Europe/Zurich
+
+# Disk setup
+zerombr
+bootloader --location=mbr --append="rd_NO_PLYMOUTH"
+ignoredisk --only-use=vda
+clearpart --none --initlabel --drives=vda
+autopart
+
+%packages
+@core
+chrony
+python
+dnf
+bash-completion
+%end
+END_ENTRY
+
+sudo virt-install \
+    --name FSL-Test-bench \
+    --os-variant fedora18 \
+    --ram 768 \
+    --disk /var/lib/libvirt/images/fsl-tb-f18.img,size=3 \
+    --location http://ftp.halifax.rwth-aachen.de/fedora/linux/releases/18/Fedora/x86_64/os/ \
+    --initrd-inject fsl-testbench.ks \
+    --extra-args "ks=file:fsl-testbench.ks" \
+    --noautoconsole \
+    --vnc \
+    --network=bridge:vnet0 \
+    --mac=52:52:00:00:00:01
+
+rm fsl-testbench.ks
