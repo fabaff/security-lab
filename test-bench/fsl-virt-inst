@@ -22,8 +22,6 @@
 # Foundation, Inc.,
 # 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 #
-# Credits goes to Robert Scheck. He did a lot brain work for the initial
-# approach. This script is heavy based on his perl scripts.
 
 cat <<END_ENTRY >> fsl-testbench.ks
 # Minimal Kickstart file for the Fedora Security Lab test bench
