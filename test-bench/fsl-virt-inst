@@ -69,7 +69,6 @@ poweroff
 %packages
 @core
 chrony
-python
 #dnf
 bash-completion
 %end
