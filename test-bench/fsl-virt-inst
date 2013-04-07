@@ -66,6 +66,8 @@ ignoredisk --only-use=vda
 clearpart --none --initlabel --drives=vda
 autopart
 
+poweroff
+
 %packages
 @core
 chrony
