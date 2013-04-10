@@ -27,7 +27,7 @@
 
 # Security tools (not ready at the moment)
 @security-lab
-security-menus
+#security-menus
 
 # save some space
 -autofs
@@ -41,7 +41,7 @@ security-menus
 
 # drop some system-config things
 -system-config-boot
--system-config-lvm
+#-system-config-lvm
 #-system-config-network
 -system-config-rootpassword
 #-system-config-services
