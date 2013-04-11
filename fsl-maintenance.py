@@ -1,4 +1,4 @@
-#!/usr/bin/python -tt
+#!/usr/bin/python
 #
 # fsl-maintenance - A helper script to maintain the Security Lab package list
 # and other relevant maintenance tasks.
@@ -32,10 +32,19 @@ import datetime
 import re
 import sys
 import os
-import columnize
+try:
+    import columnize
+except ImportError:
+    print 'Please install pycolumnize first -> sudo yum -y install pycolumnize'
 import yum
-import git
-import yaml
+try:
+    import git
+except ImportError:
+    print 'Please install GitPython first -> sudo yum -y install GitPython'
+try:
+    import yaml
+except ImportError:
+    print 'Please install PyYAML first -> sudo yum -y install PyYAML'
 
 repo = git.Repo(os.getcwd())
 
