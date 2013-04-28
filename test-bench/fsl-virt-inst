@@ -36,7 +36,7 @@ text
 lang en_US.UTF-8
 
 # Kexboard setup
-keyboard --vckeymap=sg --xlayouts='ch (de_nodeadkeys)'
+keyboard sg-latin1
 #keyboard us
 
 # Networking
@@ -71,20 +71,24 @@ poweroff
 chrony
 #dnf
 bash-completion
+tar
+unzip
+git
 %end
 END_ENTRY
 
 sudo virt-install \
     --name FSL-Test-bench \
     --os-variant fedora18 \
-    --ram 768 \
-    --disk /var/lib/libvirt/images/fsl-tb-f18.img,size=4 \
-    --location http://ftp.halifax.rwth-aachen.de/fedora/linux/releases/18/Fedora/x86_64/os/ \
+    --ram 1024 \
+    --disk /var/lib/libvirt/images/fsl-tb-f18.img,size=6 \
+    --location http://mirror.switch.ch/ftp/mirror/fedora/linux/releases/18/Fedora/x86_64/os/ \
     --initrd-inject fsl-testbench.ks \
     --extra-args "ks=file:fsl-testbench.ks" \
     --noautoconsole \
     --vnc \
-    --network=bridge:vnet0 \
+    --network=network:testbench \
     --mac=52:52:00:00:00:01
 
 rm fsl-testbench.ks
+
