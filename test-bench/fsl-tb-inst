@@ -1,0 +1,52 @@
+#!/bin/bash
+#
+# fsl-tb-inst - This script create a full working Fedora Security Lab Test
+# bench as libvirt-based virtual machine on your local machine.
+#
+# Copyright (c) 2013 Fabian Affolter <fab@fedoraproject.org>
+#
+# All rights reserved.
+# 
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc.,
+# 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+#
+# Packages
+yum -y install git ansible
+
+# Remove the old key (from previous installation)
+ssh-keygen -R 10.1.1.5
+
+# Delete default Ansible host file
+rm /etc/ansible/hosts
+
+# Start sshd on local machine
+systemctl start sshd.service
+
+# Create an Ansible hosts file for the local setup
+cat <<END_ENTRY >> /etc/ansible/hosts
+[localhost]
+127.0.0.1
+END_ENTRY
+
+git clone git://github.com/fabaff/fsl-test-bench.git
+
+# Run playbook
+ansible-playbook fsl-test-bench/local-setup.yml --connection=local
+ansible-playbook fsl-test-bench/all-in-one.yml
+
+# Clean-up
+rm -rf fsl-test-bench
+rm  /etc/ansible/hosts
+yum -y remove ansible
