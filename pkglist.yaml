@@ -153,3 +153,4 @@
 - {category: General, command: dnstracer -h, name: DNS tracer, pkg: dnstracer, exclude: 0}
 - {category: General, command: cmospwd -h, name: BIOS tool, pkg: cmospwd, exclude: 1}
 - {category: General, command: vnstat -h, name: Traffic monitor, pkg: vnstat, exclude: 0}
+- {category: Reconnaissance, command: incept --help, name: Physical memory manipulation, pkg: inception, exclude: 0}
