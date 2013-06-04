@@ -1,4 +1,3 @@
---
 - {category: General, pkg: security-menus, exclude: 0}
 - {category: Reconnaissance, command: xprobe2, name: xprobe, pkg: xprobe2, exclude: 0}
 - {category: Reconnaissance, command: dsniff -h, name: dsniff, pkg: dsniff, exclude: 0}
