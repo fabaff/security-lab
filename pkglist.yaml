@@ -1,4 +1,4 @@
----
+ the ---
 - {category: General, pkg: security-menus, exclude: 0}
 - {category: Reconnaissance, command: xprobe2, name: xprobe, pkg: xprobe2, exclude: 0}
 - {category: Reconnaissance, command: dsniff -h, name: dsniff, pkg: dsniff, exclude: 0}
@@ -155,3 +155,4 @@
 - {category: General, command: vnstat -h, name: Traffic monitor, pkg: vnstat, exclude: 0}
 - {category: Reconnaissance, command: incept --help, name: Physical memory manipulation, pkg: inception, exclude: 0}
 - {category: Reconnaissance, command: bannergrab -h, name: Banner grabbing, pkg: bannergrab, exclude: 0}
+- {category: Reconnaissance, command: mausezahn -h, name: A packet generator, pkg: mausezahn, exclude: 0}
