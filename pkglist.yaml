@@ -157,3 +157,4 @@
 - {category: Reconnaissance, command: mausezahn -h, name: A packet generator, pkg: mausezahn, exclude: 0}
 - {category: Reconnaissance, command: arp-scan -h, name: An ARP scanner, pkg: arp-scan, exclude: 0}
 - {category: Reconnaissance, command: mtr -h, name: My traceroute, pkg: mtr, exclude: 0}
+- {category: Reconnaissance, command: sslsplit -h, name: SSL/TLS interception, pkg: sslsplit, exclude: 0}
