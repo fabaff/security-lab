@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ntop
+Exec=xfce4-terminal -e "su -c 'ntop -h; bash'"
+TryExec=ntop
+Type=Application
+Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

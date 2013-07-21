@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Network performance tool
-Exec=Terminal -e "su -c 'uperf; bash'"
+Exec=xfce4-terminal -e "su -c 'uperf; bash'"
 TryExec=uperf
 Type=Application
 Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

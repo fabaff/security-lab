@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Passive Asset Detection System
-Exec=Terminal -e "su -c 'pads -h; bash'"
+Exec=xfce4-terminal -e "su -c 'pads -h; bash'"
 TryExec=pads
 Type=Application
 Categories=System;Security;X-SecurityLab;X-IntrusionDetection;

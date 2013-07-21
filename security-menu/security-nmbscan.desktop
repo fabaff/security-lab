@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=NMB/SMB network scanner
+Exec=xfce4-terminal -e "su -c 'nmbscan; bash'"
+TryExec=nmbscan
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

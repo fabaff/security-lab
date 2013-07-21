@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=scapy
-Exec=Terminal -e "su -c 'scapy -h; bash'"
+Exec=xfce4-terminal -e "su -c 'scapy -h; bash'"
 TryExec=scapy
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

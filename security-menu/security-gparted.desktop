@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=gParted
-Exec=Terminal -e "su -c 'gparted; bash'"
+Exec=xfce4-terminal -e "su -c 'gparted; bash'"
 TryExec=gparted
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

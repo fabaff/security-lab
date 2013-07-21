@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=john
-Exec=Terminal -e "su -c 'john; bash'"
+Exec=xfce4-terminal -e "su -c 'john; bash'"
 TryExec=john
 Type=Application
 Categories=System;Security;X-SecurityLab;X-PasswordTools;

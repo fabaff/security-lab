@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=sucrack
+Exec=xfce4-terminal -e "su -c 'sucrack; bash'"
+TryExec=sucrack
+Type=Application
+Categories=System;Security;X-SecurityLab;X-PasswordTools;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=kismet
-Exec=Terminal -e "su -c 'kismet; bash'"
+Exec=xfce4-terminal -e "su -c 'kismet; bash'"
 TryExec=kismet
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Wireless;

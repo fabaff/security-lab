@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=iftop
-Exec=Terminal -e "su -c 'iftop; bash'"
+Exec=xfce4-terminal -e "su -c 'iftop; bash'"
 TryExec=iftop
 Type=Application
 Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

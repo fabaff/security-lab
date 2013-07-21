@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=chkrootkit
-Exec=Terminal -e "su -c 'chkrootkit; bash'"
+Exec=xfce4-terminal -e "su -c 'chkrootkit; bash'"
 TryExec=chkrootkit
 Type=Application
 Categories=System;Security;X-SecurityLab;X-IntrusionDetection;
