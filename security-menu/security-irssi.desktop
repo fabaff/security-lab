@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=IRC client
+Exec=xfce4-terminal -e "su -c 'irssi; bash'"
+TryExec=irssi
+Type=Application
+Categories=System;Security;X-SecurityLab;X-General;

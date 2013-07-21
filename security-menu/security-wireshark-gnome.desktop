@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=wireshark
-Exec=Terminal -e "su -c 'wireshark; bash'"
+Exec=xfce4-terminal -e "su -c 'wireshark; bash'"
 TryExec=wireshark-gnome
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

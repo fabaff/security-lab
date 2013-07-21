@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Securely Remove Files
-Exec=Terminal -e "su -c 'srm -h; bash'"
+Exec=xfce4-terminal -e "su -c 'srm -h; bash'"
 TryExec=srm
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

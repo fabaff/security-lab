@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Securely erase disks
-Exec=Terminal -e "su -c 'nwipe; bash'"
+Exec=xfce4-terminal -e "su -c 'nwipe; bash'"
 TryExec=nwipe
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

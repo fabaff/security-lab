@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=dc3dd
-Exec=Terminal -e "su -c 'dc3dd; bash'"
+Exec=xfce4-terminal -e "su -c 'dc3dd; bash'"
 TryExec=dc3dd
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

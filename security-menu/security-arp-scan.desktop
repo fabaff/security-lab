@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=An ARP scanner
+Exec=xfce4-terminal -e "su -c 'arp-scan -h; bash'"
+TryExec=arp-scan
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

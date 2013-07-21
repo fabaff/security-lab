@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=whois
+Exec=xfce4-terminal -e "su -c 'whois -h; bash'"
+TryExec=whois
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

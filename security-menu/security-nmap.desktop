@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=nmap
-Exec=Terminal -e "su -c 'nmap -h; bash'"
+Exec=xfce4-terminal -e "su -c 'nmap -h; bash'"
 TryExec=nmap
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

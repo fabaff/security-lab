@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=tcpdump
-Exec=Terminal -e "su -c 'tcpdump -h; bash'"
+Exec=xfce4-terminal -e "su -c 'tcpdump -h; bash'"
 TryExec=tcpdump
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

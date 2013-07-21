@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=hping
-Exec=Terminal -e "su -c 'hping -h; bash'"
+Exec=xfce4-terminal -e "su -c 'hping -h; bash'"
 TryExec=hping3
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

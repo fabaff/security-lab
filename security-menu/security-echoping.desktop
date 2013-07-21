@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=echoping
+Exec=xfce4-terminal -e "su -c 'echoping -h; bash'"
+TryExec=echoping
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnanssance;

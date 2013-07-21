@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=xmount
-Exec=Terminal -e "su -c 'xmount; bash'"
+Exec=xfce4-terminal -e "su -c 'xmount; bash'"
 TryExec=xmount
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;
