@@ -48,5 +48,5 @@ ansible-playbook fsl-test-bench/all-in-one.yml
 
 # Clean-up
 rm -rf fsl-test-bench
-rm  /etc/ansible/hosts
+rm /etc/ansible/hosts
 yum -y remove ansible
