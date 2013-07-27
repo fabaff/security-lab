@@ -79,10 +79,10 @@ END_ENTRY
 
 sudo virt-install \
     --name FSL-Test-bench \
-    --os-variant fedora18 \
+    --os-variant fedora19 \
     --ram 1024 \
     --disk /var/lib/libvirt/images/fsl-tb-f18.img,size=6 \
-    --location http://mirror.switch.ch/ftp/mirror/fedora/linux/releases/18/Fedora/x86_64/os/ \
+    --location http://mirror.switch.ch/ftp/mirror/fedora/linux/releases/19/Fedora/x86_64/os/ \
     --initrd-inject fsl-testbench.ks \
     --extra-args "ks=file:fsl-testbench.ks" \
     --noautoconsole \
