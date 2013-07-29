@@ -1,0 +1,98 @@
+\documentclass[12pt]{beamer}
+\usepackage[ngerman, english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{pgf}
+\usepackage{wrapfig}
+
+% Design
+\usecolortheme{seagull}
+\useoutertheme{miniframes}
+\useinnertheme{circles}
+\usefonttheme[onlymath]{serif}
+
+%Command for sizing to width    \figw{file}{fraction of \textwidth}
+\newcommand{\figw}[2]{\centerline{\includegraphics[width=#2\textwidth]{#1}}}
+%Command for sizing to height   \figh{file}{fraction of \textheight}
+\newcommand{\figh}[2]{\centerline{\includegraphics[height=#2\textheight]{#1}}}
+%Use \figh{graphics file name}{1} to size to whole text height
+%For graphics needing no shrinkage:  \fig{file}
+\newcommand{\fig}[1]{\centerline{\includegraphics{#1}}}
+
+\setbeamertemplate{headline}[default]
+\mode<beamer>{\setbeamertemplate{blocks}[rounded][shadow=true]}
+% To remove the navigation symbols from the bottom of slides
+\setbeamertemplate{navigation symbols}{} % {footline}[page number],  {blocks}[rounded][shadow=true], {blocks}[shadow=false]
+\setbeamercovered{transparent} % invisible
+\setbeamercolor{block body example}{fg=blue, bg=black!20}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{itemize items}[circle]
+% Background image
+%\setbeamertemplate{background}{\includegraphics[width=\paperwidth]{xyz.png}} 
+
+% I don't like the logo in the right lower corner
+%\logo{\includegraphics[height=0.6cm]{fedora-logo1.png}}
+% Put the logo in the upper right corner
+\logo{\pgfputat{\pgfxy(-6.3,7.5)}{\pgfbox[center,base]{\includegraphics[width=1.19\textwidth]{Spins-banner_security.png}}}}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},
+  basicstyle=\scriptsize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+%  frame=single,                    % adds a frame around the code
+  keywordstyle=\color{blue},       % keyword style
+  language=C,                      % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=4,                       % sets default tabsize to 2 spaces
+  identifierstyle=\ttfamily,
+}
+
+\title[FSL Test Bench]{Fedora Security Lab Test Bench}
+\subtitle{Part of the Fedora Security Lab}
+\author{Fabian Affolter}
+\institute[Fedora Project]
+{
+\medskip
+{\emph{\href{mailto:fab@fedoraproject.org}{fab@fedoraproject.org}}}
+}
+\date{27.07.2013}
+
+\begin{document}
+%
+\begin{frame}
+\titlepage
+\end{frame}
+%
+\begin{frame}
+\frametitle{\\}
+\tableofcontents
+\end{frame}
+%
+\include{about-me-en}
+\include{intro}
+\include{basics}
+\include{types}
+\include{services}
+\include{applications}
+\include{future}
+\include{misc}
+%
+\end{document}
