@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #
 # fsl-maintenance - A helper script to maintain the Security Lab package list
 # and other relevant maintenance tasks.
