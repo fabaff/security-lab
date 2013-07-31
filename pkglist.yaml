@@ -158,4 +158,8 @@
 - {category: Reconnaissance, command: arp-scan -h, name: An ARP scanner, pkg: arp-scan, exclude: 0}
 - {category: Reconnaissance, command: mtr -h, name: My traceroute, pkg: mtr, exclude: 0}
 - {category: Reconnaissance, command: sslsplit -h, name: SSL/TLS interception, pkg: sslsplit, exclude: 0}
+<<<<<<< HEAD
 - {category: Reconnaissance, command: fping -h, name: Parallelized ping-like utility, pkg: fping, exclude: 0}
+=======
+- {category: Reconnaissance, command: bro -h, name: Network analysis framework, pkg: bro, exclude: 0}
+>>>>>>> 054fc5f... bro added
