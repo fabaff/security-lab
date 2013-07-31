@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Network analysis framework
+Exec=xfce4-terminal -e "su -c 'bro -h; bash'"
+TryExec=bro
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

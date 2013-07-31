@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=SNMP enumerator
-Exec=Terminal -e "su -c 'snmpcheck; bash'"
+Exec=xfce4-terminal -e "su -c 'snmpcheck; bash'"
 TryExec=snmpcheck
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

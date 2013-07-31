@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=siege -h
+Exec=xfce4-terminal -e "su -c 'siege; bash'"
+TryExec=siege
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

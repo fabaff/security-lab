@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Objectif Securite ophcrack
-Exec=Terminal -e "su -c 'ophcrack; bash'"
+Exec=xfce4-terminal -e "su -c 'ophcrack; bash'"
 TryExec=ophcrack
 Type=Application
 Categories=System;Security;X-SecurityLab;X-PasswordTools;

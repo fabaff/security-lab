@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Banner grabbing
+Exec=xfce4-terminal -e "su -c 'bannergrab -h; bash'"
+TryExec=bannergrab
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

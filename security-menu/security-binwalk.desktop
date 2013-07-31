@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=binwalk
+Exec=xfce4-terminal -e "su -c 'binwalk -h; bash'"
+TryExec=binwalk
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Forensics;

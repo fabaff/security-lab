@@ -82,12 +82,12 @@
 - {category: General, pkg: hexedit, exclude: 0}
 - {category: Forensics, pkg: scanmem, name: Debugging tool, command: scanmem, exclude: 0}
 - {category: General, pkg: sleuthkit, exclude: 0}
-- {category: General, pkg: irssi, exclude: 0}
+- {category: General, pkg: irssi, exclude: 0, command: irssi, name: IRC client}
 - {category: General, pkg: powertop, exclude: 0}
 - {category: General, pkg: mutt, exclude: 0}
-- {category: General, pkg: nano, exclude: 0}
+- {category: General, pkg: nano, command: nano, name: nano Editor, exclude: 0}
 - {category: General, pkg: vim-enhanced, exclude: 0}
-- {category: General, pkg: wget, command: wget -h, exclude: 0}
+- {category: General, pkg: wget, command: wget -h, name: wget File downloader, exclude: 0}
 - {category: General, pkg: yum-utils, exclude: 0}
 - {category: VoIP, pkg: sipsak, command: sipsak, name: sipsak, exclude: 0}
 - {category: VoIP, pkg: sipp, command: sipp, name: sipp, exclude: 0}
@@ -128,7 +128,7 @@
 - {category: Reconnaissance, command: pyrit, name: pyrit, pkg: pyrit, exclude: 1}
 - {category: Forensics, command: wipe -h, name: wipe, pkg: wipe, exclude: 1}
 - {category: Forensics, command: safecopy -h, name: safecopy, pkg: safecopy, exclude: 1}
-- {category: Wireless, command: kismon, name: kismon, pkg: kismon, exclude: 1}
+- {category: Wireless, command: kismon, name: Kismet GUI, pkg: kismon, exclude: 1}
 - {category: Reconnaissance, command: onesixtyone, name: SNMP scanner, pkg: onesixtyone, exclude: 1}
 - {category: General, command: bonesi, name: DDoS Botnet Simulator, pkg: bonesi, exclude: 1}
 - {category: General, command: proxychains, name: proxychains, pkg: proxychains, exclude: 1}
@@ -159,3 +159,4 @@
 - {category: Reconnaissance, command: mtr -h, name: My traceroute, pkg: mtr, exclude: 0}
 - {category: Reconnaissance, command: sslsplit -h, name: SSL/TLS interception, pkg: sslsplit, exclude: 0}
 - {category: Reconnaissance, command: fping -h, name: Parallelized ping-like utility, pkg: fping, exclude: 0}
+- {category: Reconnaissance, command: bro -h, name: Network analysis framework, pkg: bro, exclude: 0}

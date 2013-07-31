@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Telnet
+Exec=xfce4-terminal -e "su -c 'telnet -h; bash'"
+TryExec=telnet
+Type=Application
+Categories=System;Security;X-SecurityLab;X-General;

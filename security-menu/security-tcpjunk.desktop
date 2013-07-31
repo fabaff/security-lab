@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=tcpjunk
-Exec=Terminal -e "su -c 'tcpjunk -x; bash'"
+Exec=xfce4-terminal -e "su -c 'tcpjunk -x; bash'"
 TryExec=tcpjunk
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

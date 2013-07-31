@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=cowpatty
+Exec=xfce4-terminal -e "su -c 'cowpatty -h; bash'"
+TryExec=cowpatty
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Wireless;

@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Package Generator
-Exec=Terminal -e "su -c 'packETH; bash'"
+Name=packETH
+Exec=xfce4-terminal -e "su -c 'packETH; bash'"
 TryExec=packETH
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=tcpxtract
-Exec=Terminal -e "su -c 'tcpxtract; bash'"
+Exec=xfce4-terminal -e "su -c 'tcpxtract; bash'"
 TryExec=tcpxtract
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

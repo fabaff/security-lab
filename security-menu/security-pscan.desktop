@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=pscan
-Exec=Terminal -e "su -c 'pscan; bash'"
+Exec=xfce4-terminal -e "su -c 'pscan; bash'"
 TryExec=pscan
 Type=Application
 Categories=System;Security;X-SecurityLab;X-CodeAnalysis;

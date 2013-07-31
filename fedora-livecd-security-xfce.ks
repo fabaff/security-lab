@@ -27,7 +27,7 @@
 
 # Security tools (not ready at the moment)
 @security-lab
-#security-menus
+security-menus
 
 # save some space
 -autofs

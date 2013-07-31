@@ -3,8 +3,8 @@ PREFIX=/usr
 DATADIR=$(PREFIX)/share
 SYSCONFDIR=/etc
 INSTALL=/usr/bin/install -p
-VERSION=1.1
-RELEASE=3
+VERSION=1.2
+RELEASE=0
 TAG=$(NAME)-$(VERSION)-$(RELEASE)
 
 all: update-po archive

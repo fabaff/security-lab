@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Hunt
-Exec=Terminal -e "su -c 'hunt; bash'"
+Exec=xfce4-terminal -e "su -c 'hunt; bash'"
 TryExec=hunt
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

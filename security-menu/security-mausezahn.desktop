@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=A packet generator
+Exec=xfce4-terminal -e "su -c 'mausezahn -h; bash'"
+TryExec=mausezahn
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

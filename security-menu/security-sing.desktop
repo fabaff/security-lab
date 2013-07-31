@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=sing
-Exec=Terminal -e "su -c 'sing -h; bash'"
+Exec=xfce4-terminal -e "su -c 'sing -h; bash'"
 TryExec=sing
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

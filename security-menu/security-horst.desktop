@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=horst
+Exec=xfce4-terminal -e "su -c 'horst -h; bash'"
+TryExec=horst
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Wireless;

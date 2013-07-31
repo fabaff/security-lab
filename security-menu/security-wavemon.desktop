@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=wavemon
-Exec=Terminal -e "su -c 'wavemon; bash'"
+Exec=xfce4-terminal -e "su -c 'wavemon; bash'"
 TryExec=wavemon
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Wireless;
