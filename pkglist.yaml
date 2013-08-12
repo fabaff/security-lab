@@ -6,6 +6,7 @@
 - {category: PasswordTools, command: sucrack, name: sucrack, pkg: sucrack, exclude: 0}
 - {category: PasswordTools, command: ophcrack, name: Objectif Securite ophcrack, pkg: ophcrack, exclude: 0}
 - {category: PasswordTools, command: medusa -d, name: Medusa Brute Force, pkg: medusa, exclude: 0}
+- {category: PasswordTools, command: pwgen -h, name: pwgen - Password generator, pkg: pwgen, exclude: 0}
 - {category: IntrusionDetection, command: chkrootkit, name: chkrootkit, pkg: chkrootkit, exclude: 0}
 - {category: IntrusionDetection, command: aide -h, name: aide, pkg: aide, exclude: 0}
 - {category: IntrusionDetection, command: pads -h, name: Passive Asset Detection System, pkg: pads, exclude: 0}
