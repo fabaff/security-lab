@@ -1,5 +1,5 @@
 - {category: General, pkg: security-menus, exclude: 0}
-- {category: Reconnaissance, command: xprobe2, name: xprobe, pkg: xprobe2, exclude: 0}
+- {category: Reconnaissance, command: xprobe2, name: xprobe2, pkg: xprobe2, exclude: 0}
 - {category: Reconnaissance, command: dsniff -h, name: dsniff, pkg: dsniff, exclude: 0}
 - {category: Reconnaissance, command: wireshark, name: wireshark, pkg: wireshark-gnome, exclude: 0}
 - {category: PasswordTools, command: john, name: john, pkg: john, exclude: 0}
