@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=nmap
-Exec=xfce4-terminal -e "su -c 'zenmap-root; bash'"
+Exec=Terminal -e "su -c 'zenmap-root; bash'"
 TryExec=nmap-frontend
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

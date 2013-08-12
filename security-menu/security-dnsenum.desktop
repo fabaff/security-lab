@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=dnsenum
-Exec=xfce4-terminal -e "su -c 'dnsenum -h; bash'"
+Exec=Terminal -e "su -c 'dnsenum -h; bash'"
 TryExec=dnsenum
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=sqlninja
-Exec=xfce4-terminal -e "su -c 'sqlninja; bash'"
+Exec=Terminal -e "su -c 'sqlninja; bash'"
 TryExec=sqlninja
 Type=Application
 Categories=System;Security;X-SecurityLab;X-WebApplicationTesting;

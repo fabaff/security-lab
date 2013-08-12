@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=netsniff-ng
-Exec=xfce4-terminal -e "su -c 'netsniff-ng -h; bash'"
+Exec=Terminal -e "su -c 'netsniff-ng -h; bash'"
 TryExec=netsniff-ng
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Nikto Websecurity Scanner
-Exec=xfce4-terminal -e "su -c 'nikto -help; bash'"
+Exec=Terminal -e "su -c 'nikto -help; bash'"
 TryExec=nikto
 Type=Application
 Categories=System;Security;X-SecurityLab;X-WebApplicationTesting;

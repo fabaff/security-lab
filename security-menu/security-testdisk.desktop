@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=testdisk
-Exec=xfce4-terminal -e "su -c 'testdisk -h; bash'"
+Exec=Terminal -e "su -c 'testdisk -h; bash'"
 TryExec=testdisk
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=driftnet
-Exec=xfce4-terminal -e "su -c 'driftnet -h; bash'"
+Exec=Terminal -e "su -c 'driftnet -h; bash'"
 TryExec=driftnet
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

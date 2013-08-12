@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=unicornscan
-Exec=xfce4-terminal -e "su -c 'unicornscan -h; bash'"
+Exec=Terminal -e "su -c 'unicornscan -h; bash'"
 TryExec=unicornscan
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

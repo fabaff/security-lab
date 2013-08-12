@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Telnet
-Exec=Terminal -e "su -c 'telnet --help; bash'"
-TryExec=telnet
+Name=SSH client
+Exec=Terminal -e "su -c 'ssh; bash'"
+TryExec=openssh
 Type=Application
 Categories=System;Security;X-SecurityLab;X-General;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ELF Examiner
-Exec=xfce4-terminal -e "su -c 'examiner; bash'"
+Exec=Terminal -e "su -c 'examiner; bash'"
 TryExec=examiner
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

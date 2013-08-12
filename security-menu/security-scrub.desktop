@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Disk scruber
-Exec=xfce4-terminal -e "su -c 'scrub; bash'"
+Exec=Terminal -e "su -c 'scrub; bash'"
 TryExec=scrub
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Foremost Filecarver
-Exec=xfce4-terminal -e "su -c 'foremost -h; bash'"
+Exec=Terminal -e "su -c 'foremost -h; bash'"
 TryExec=foremost
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ddrescue
-Exec=xfce4-terminal -e "su -c 'ddrescue -h; bash'"
+Exec=Terminal -e "su -c 'ddrescue -h; bash'"
 TryExec=ddrescue
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

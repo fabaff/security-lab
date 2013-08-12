@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=wget File downloader
-Exec=xfce4-terminal -e "su -c 'wget -h; bash'"
+Exec=Terminal -e "su -c 'wget -h; bash'"
 TryExec=wget
 Type=Application
 Categories=System;Security;X-SecurityLab;X-General;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=skipfish
-Exec=xfce4-terminal -e "su -c 'skipfish; bash'"
+Exec=Terminal -e "su -c 'skipfish; bash'"
 TryExec=skipfish
 Type=Application
 Categories=System;Security;X-SecurityLab;X-WebApplicationTesting;

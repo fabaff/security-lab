@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Recover Syskey bootkey
-Exec=xfce4-terminal -e "su -c 'bkhive; bash'"
+Exec=Terminal -e "su -c 'bkhive; bash'"
 TryExec=bkhive
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

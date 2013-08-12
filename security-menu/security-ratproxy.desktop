@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ratproxy
-Exec=xfce4-terminal -e "su -c 'ratproxy -h; bash'"
+Exec=Terminal -e "su -c 'ratproxy -h; bash'"
 TryExec=ratproxy
 Type=Application
 Categories=System;Security;X-SecurityLab;X-WebApplicationTesting;

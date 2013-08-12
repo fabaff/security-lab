@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Wep Key Cracker
-Exec=xfce4-terminal -e "su -c 'weplab -h; bash'"
+Exec=Terminal -e "su -c 'weplab -h; bash'"
 TryExec=weplab
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Wireless;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=sipsak
-Exec=xfce4-terminal -e "su -c 'sipsak; bash'"
+Exec=Terminal -e "su -c 'sipsak; bash'"
 TryExec=sipsak
 Type=Application
 Categories=System;Security;X-SecurityLab;X-VoIP;

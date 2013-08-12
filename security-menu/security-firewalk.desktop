@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Firewalk
-Exec=xfce4-terminal -e "su -c 'firewalk; bash'"
+Exec=Terminal -e "su -c 'firewalk; bash'"
 TryExec=firewalk
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

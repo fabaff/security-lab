@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Traffic monitor
-Exec=xfce4-terminal -e "su -c 'vnstat -h; bash'"
+Exec=Terminal -e "su -c 'vnstat -h; bash'"
 TryExec=vnstat
 Type=Application
-Categories=System;Security;X-SecurityLab;X-General;
+Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ncrack
-Exec=xfce4-terminal -e "su -c 'ncrack -h; bash'"
+Exec=Terminal -e "su -c 'ncrack -h; bash'"
 TryExec=ncrack
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Load Balancing Detector
-Exec=xfce4-terminal -e "su -c 'lbd; bash'"
+Exec=Terminal -e "su -c 'lbd; bash'"
 TryExec=lbd
 Type=Application
 Categories=System;Security;X-SecurityLab;X-WebApplicationTesting;

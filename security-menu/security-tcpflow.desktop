@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Network traffic recorder
-Exec=xfce4-terminal -e "su -c 'tcpflow -h; bash'"
+Exec=Terminal -e "su -c 'tcpflow -h; bash'"
 TryExec=tcpflow
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

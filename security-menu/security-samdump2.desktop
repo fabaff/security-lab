@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=syskey retriever
-Exec=xfce4-terminal -e "su -c 'samdump2; bash'"
+Exec=Terminal -e "su -c 'samdump2; bash'"
 TryExec=samdump2
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

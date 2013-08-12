@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=afftools
-Exec=xfce4-terminal -e "su -c 'afftools; bash'"
+Exec=Terminal -e "su -c 'afftools; bash'"
 TryExec=afftools
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

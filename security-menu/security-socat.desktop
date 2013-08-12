@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Socket cat
-Exec=xfce4-terminal -e "su -c 'socat; bash'"
+Exec=Terminal -e "su -c 'socat; bash'"
 TryExec=socat
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

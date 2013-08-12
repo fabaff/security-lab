@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=httping
-Exec=xfce4-terminal -e "su -c 'httping -h; bash'"
+Exec=Terminal -e "su -c 'httping -h; bash'"
 TryExec=httping
 Type=Application
 Categories=System;Security;X-SecurityLab;X-WebApplicationTesting;

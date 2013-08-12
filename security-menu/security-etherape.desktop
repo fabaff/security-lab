@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=etherape
-Exec=xfce4-terminal -e "su -c 'etherape; bash'"
+Exec=Terminal -e "su -c 'etherape; bash'"
 TryExec=etherape
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

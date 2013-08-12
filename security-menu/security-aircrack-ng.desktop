@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=aircrack-ng
-Exec=xfce4-terminal -e "su -c 'aircrack-ng; bash'"
+Exec=Terminal -e "su -c 'aircrack-ng; bash'"
 TryExec=aircrack-ng
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Wireless;

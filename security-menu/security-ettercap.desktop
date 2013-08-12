@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ettercap
-Exec=xfce4-terminal -e "su -c 'ettercap -C; bash'"
+Exec=Terminal -e "su -c 'ettercap -C; bash'"
 TryExec=ettercap
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

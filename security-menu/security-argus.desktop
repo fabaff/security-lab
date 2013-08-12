@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=argus
-Exec=xfce4-terminal -e "su -c 'argus -h; bash'"
+Exec=Terminal -e "su -c 'argus -h; bash'"
 TryExec=argus
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

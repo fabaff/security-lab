@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=iptraf-ng
-Exec=xfce4-terminal -e "su -c 'iptraf-ng; bash'"
+Exec=Terminal -e "su -c 'iptraf-ng; bash'"
 TryExec=iptraf-ng
 Type=Application
 Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

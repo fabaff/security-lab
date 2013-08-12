@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Root Kit Hunter
-Exec=xfce4-terminal -e "su -c 'rkhunter; bash'"
+Exec=Terminal -e "su -c 'rkhunter; bash'"
 TryExec=rkhunter
 Type=Application
 Categories=System;Security;X-SecurityLab;X-IntrusionDetection;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Sub-domains bruteforcer
-Exec=xfce4-terminal -e "su -c 'dnsmap; bash'"
+Exec=Terminal -e "su -c 'dnsmap; bash'"
 TryExec=dnsmap
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

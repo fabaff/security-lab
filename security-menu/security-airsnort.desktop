@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=airsnort
-Exec=xfce4-terminal -e "su -c 'airsnort; bash'"
+Exec=Terminal -e "su -c 'airsnort; bash'"
 TryExec=airsnort
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Wireless;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=aide
-Exec=xfce4-terminal -e "su -c 'aide -h; bash'"
+Exec=Terminal -e "su -c 'aide -h; bash'"
 TryExec=aide
 Type=Application
 Categories=System;Security;X-SecurityLab;X-IntrusionDetection;

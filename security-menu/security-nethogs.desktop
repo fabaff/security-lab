@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=nethogs
-Exec=xfce4-terminal -e "su -c 'nethogs -h; bash'"
+Exec=Terminal -e "su -c 'nethogs -h; bash'"
 TryExec=nethogs
 Type=Application
 Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

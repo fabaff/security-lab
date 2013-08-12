@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=My traceroute
-Exec=xfce4-terminal -e "su -c 'mtr -h; bash'"
+Exec=Terminal -e "su -c 'mtr -h; bash'"
 TryExec=mtr
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

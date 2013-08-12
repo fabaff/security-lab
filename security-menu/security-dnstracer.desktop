@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=DNS tracer
-Exec=xfce4-terminal -e "su -c 'dnstracer -h; bash'"
+Exec=Terminal -e "su -c 'dnstracer -h; bash'"
 TryExec=dnstracer
 Type=Application
 Categories=System;Security;X-SecurityLab;X-General;
