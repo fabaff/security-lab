@@ -82,7 +82,7 @@
 - {category: General, pkg: openvas-scanner, exclude: 0}
 - {category: General, pkg: hexedit, exclude: 0}
 - {category: Forensics, pkg: scanmem, name: Debugging tool, command: scanmem, exclude: 0}
-- {category: General, pkg: sleuthkit, exclude: 0}
+- {category: Forensics, pkg: sleuthkit, exclude: 0}
 - {category: General, pkg: irssi, exclude: 0, command: irssi, name: IRC client}
 - {category: General, pkg: powertop, exclude: 0}
 - {category: General, pkg: mutt, exclude: 0}
