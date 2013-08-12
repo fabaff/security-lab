@@ -144,7 +144,7 @@
 - {category: General, command: prewikka, name: prewikka, pkg: prewikka, exclude: 1}
 - {category: General, command: prelude-manager, name: prelude-manager, pkg: prelude-manager, exclude: 1}
 - {category: General, command: picviz-gui, name: picviz-gui, pkg: picviz-gui, exclude: 1}
-- {category: Reconnaissance, command: siege, name: siege -h, pkg: siege, exclude: 0}
+- {category: Reconnaissance, command: siege -h, name: siege, pkg: siege, exclude: 0}
 - {category: Reconnanssance, command: echoping -h, name: echoping, pkg: echoping, exclude: 0}
 - {category: Reconnanssance, command: dhcping, name: dhcping, pkg: dhcping, exclude: 0}
 - {category: Reconnanssance, command: wbox, name: wbox, pkg: wbox, exclude: 0}
