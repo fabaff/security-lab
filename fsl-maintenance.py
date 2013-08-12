@@ -228,7 +228,7 @@ def menus():
     """
     pkgslist = getPackages()
     # Terminal is the standard terminal application of the Xfce desktop
-    terminal = 'Terminal'
+    terminal = 'xfce4-terminal'
 
     # Collects all files in the directory
     filelist = []
