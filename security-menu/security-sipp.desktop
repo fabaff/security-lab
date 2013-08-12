@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=sipp
-Exec=Terminal -e "su -c 'sipp; bash'"
+Exec=xfce4-terminal -e "su -c 'sipp; bash'"
 TryExec=sipp
 Type=Application
 Categories=System;Security;X-SecurityLab;X-VoIP;

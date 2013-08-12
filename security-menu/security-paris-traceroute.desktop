@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=paris-traceroute
-Exec=Terminal -e "su -c 'paris-traceroute -h; bash'"
+Exec=xfce4-terminal -e "su -c 'paris-traceroute -h; bash'"
 TryExec=paris-traceroute
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

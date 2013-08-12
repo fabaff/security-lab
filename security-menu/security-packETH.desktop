@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=packETH
-Exec=Terminal -e "su -c 'packETH; bash'"
+Exec=xfce4-terminal -e "su -c 'packETH; bash'"
 TryExec=packETH
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

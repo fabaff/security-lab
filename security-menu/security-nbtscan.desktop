@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=nbtscan
-Exec=Terminal -e "su -c 'nbtscan; bash'"
+Exec=xfce4-terminal -e "su -c 'nbtscan; bash'"
 TryExec=nbtscan
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

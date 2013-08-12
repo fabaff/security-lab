@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=SSL/TLS interception
-Exec=Terminal -e "su -c 'sslsplit -h; bash'"
+Exec=xfce4-terminal -e "su -c 'sslsplit -h; bash'"
 TryExec=sslsplit
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

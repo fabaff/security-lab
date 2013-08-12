@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Debugging tool
-Exec=Terminal -e "su -c 'scanmem; bash'"
+Exec=xfce4-terminal -e "su -c 'scanmem; bash'"
 TryExec=scanmem
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

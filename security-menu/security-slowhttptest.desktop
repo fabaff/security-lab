@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=slowhttptest
-Exec=Terminal -e "su -c 'slowhttptest -h; bash'"
+Exec=xfce4-terminal -e "su -c 'slowhttptest -h; bash'"
 TryExec=slowhttptest
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

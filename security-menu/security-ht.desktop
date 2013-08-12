@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ht
-Exec=Terminal -e "su -c 'ht; bash'"
+Exec=xfce4-terminal -e "su -c 'ht; bash'"
 TryExec=ht
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

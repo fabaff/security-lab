@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=pwgen - Password generator
-Exec=Terminal -e "su -c 'pwgen -h; bash'"
+Exec=xfce4-terminal -e "su -c 'pwgen -h; bash'"
 TryExec=pwgen
 Type=Application
 Categories=System;Security;X-SecurityLab;X-PasswordTools;

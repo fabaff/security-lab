@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=wbox
-Exec=Terminal -e "su -c 'wbox; bash'"
+Exec=xfce4-terminal -e "su -c 'wbox; bash'"
 TryExec=wbox
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnanssance;

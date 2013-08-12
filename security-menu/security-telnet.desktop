@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Telnet
-Exec=Terminal -e "su -c 'telnet --help; bash'"
+Exec=xfce4-terminal -e "su -c 'telnet --help; bash'"
 TryExec=telnet
 Type=Application
 Categories=System;Security;X-SecurityLab;X-General;

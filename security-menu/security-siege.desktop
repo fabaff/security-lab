@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=siege
-Exec=Terminal -e "su -c 'siege -h; bash'"
+Exec=xfce4-terminal -e "su -c 'siege -h; bash'"
 TryExec=siege
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=dhcping
-Exec=Terminal -e "su -c 'dhcping; bash'"
+Exec=xfce4-terminal -e "su -c 'dhcping; bash'"
 TryExec=dhcping
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnanssance;

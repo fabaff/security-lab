@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=OpenVAS Client
-Exec=Terminal -e "su -c 'openvas-client; bash'"
+Exec=xfce4-terminal -e "su -c 'openvas-client; bash'"
 TryExec=openvas-client
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

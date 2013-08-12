@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=unhide
-Exec=Terminal -e "su -c 'unhide; bash'"
+Exec=xfce4-terminal -e "su -c 'unhide; bash'"
 TryExec=unhide
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

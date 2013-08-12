@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=ssldump
-Exec=Terminal -e "su -c 'ssldump -h; bash'"
+Exec=xfce4-terminal -e "su -c 'ssldump -h; bash'"
 TryExec=ssldump
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=sectool
-Exec=Terminal -e "su -c 'sectool-gui; bash'"
+Exec=xfce4-terminal -e "su -c 'sectool-gui; bash'"
 TryExec=sectool-gui
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

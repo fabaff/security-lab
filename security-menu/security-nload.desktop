@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=nload
-Exec=Terminal -e "su -c 'nload -h; bash'"
+Exec=xfce4-terminal -e "su -c 'nload -h; bash'"
 TryExec=nload
 Type=Application
 Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

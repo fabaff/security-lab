@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Medusa Brute Force
-Exec=Terminal -e "su -c 'medusa -d; bash'"
+Exec=xfce4-terminal -e "su -c 'medusa -d; bash'"
 TryExec=medusa
 Type=Application
 Categories=System;Security;X-SecurityLab;X-PasswordTools;

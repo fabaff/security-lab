@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Physical memory manipulation
-Exec=Terminal -e "su -c 'incept --help; bash'"
+Exec=xfce4-terminal -e "su -c 'incept --help; bash'"
 TryExec=inception
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

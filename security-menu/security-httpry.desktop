@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=httpry
-Exec=Terminal -e "su -c 'httpry -h; bash'"
+Exec=xfce4-terminal -e "su -c 'httpry -h; bash'"
 TryExec=httpry
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

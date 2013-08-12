@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=xprobe
-Exec=Terminal -e "su -c 'xprobe2; bash'"
+Name=xprobe2
+Exec=xfce4-terminal -e "su -c 'xprobe2; bash'"
 TryExec=xprobe2
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

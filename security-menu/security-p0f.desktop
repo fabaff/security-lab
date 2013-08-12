@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=p0f
-Exec=Terminal -e "su -c 'p0f -h; bash'"
+Exec=xfce4-terminal -e "su -c 'p0f -h; bash'"
 TryExec=p0f
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

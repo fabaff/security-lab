@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Network traffic visualization
-Exec=Terminal -e "su -c 'trafshow -h; bash'"
+Exec=xfce4-terminal -e "su -c 'trafshow -h; bash'"
 TryExec=trafshow
 Type=Application
 Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Parallelized ping-like utility
-Exec=Terminal -e "su -c 'fping -h; bash'"
+Exec=xfce4-terminal -e "su -c 'fping -h; bash'"
 TryExec=fping
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

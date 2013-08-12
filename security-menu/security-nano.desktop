@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=nano Editor
-Exec=Terminal -e "su -c 'nano; bash'"
+Exec=xfce4-terminal -e "su -c 'nano; bash'"
 TryExec=nano
 Type=Application
 Categories=System;Security;X-SecurityLab;X-General;
