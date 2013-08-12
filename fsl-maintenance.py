@@ -196,7 +196,7 @@ def trac():
     sorted_pkgslist = sorted(pkgslistIn, key=operator.itemgetter(1))
     groups = itertools.groupby(sorted_pkgslist, key=operator.itemgetter(1))
     sorted_categories = [{'category': k, 'pkgs': [x[0] for x in v]} for k, v in groups]
-    print sorted_categories
+    #print sorted_categories
 
     yb = yum.YumBase()
     yb.conf.cache = 1
@@ -219,7 +219,7 @@ def trac():
                 entry =  part1 + " - " + part2 + " - " + part3 + " - " + part4
                 print entry
     print '<--- snap --->\nPlease copy the text between the markings to the '
-    print 'availableApps page in the Trac wiki.'
+    print 'availableApps (https://fedorahosted.org/security-spin/wiki/availableApps) page in the Trac wiki.'
 
 def menus():
     """
