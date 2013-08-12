@@ -4,7 +4,7 @@ DATADIR=$(PREFIX)/share
 SYSCONFDIR=/etc
 INSTALL=/usr/bin/install -p
 VERSION=1.2
-RELEASE=0
+RELEASE=1
 TAG=$(NAME)-$(VERSION)-$(RELEASE)
 
 all: update-po archive
