@@ -4,227 +4,132 @@
 #   A fully functional live OS based on Fedora for use in security auditing, 
 #   forensics research, and penetration testing.
 # Maintainers:
-#  Christoph Wickert <cwickert [AT] fedoraproject <dot> org>
-#  Joerg Simon <jsimon [AT] fedoraproject <dot> org>
-#  Fabian Affolter <fab [AT] fedoraproject <dot> org>
+#   Fabian Affolter <fab [AT] fedoraproject <dot> org>
+#   Joerg Simon <jsimon [AT] fedoraproject <dot> org>
+#   Christoph Wickert <cwickert [AT] fedoraproject <dot> org>
 # Acknowledgements:
-#   Fedora LiveCD Xfce Spin team - some work here was inherited, many thanks!
+#   Fedora LiveCD Xfce Spin team - some work here was and will be inherited,
+#   many thanks!
 #   Fedora LXDE Spin - Copied over stuff to make LXDE Default
-#   Luke Macken, Adam Miller for the original OpenBox Security ks and all the
-#   Security Applications! 
+#   Luke Macken and Adam Miller for the original OpenBox Security ks and all
+#   the Security Applications! 
 #   Hiemanshu Sharma <hiemanshu [AT] fedoraproject <dot> org>
-# Important!!!!
-#   Beginning with Security Stuff - we use pattern to parse the kickstart file
-#   for building the security menu - please use 
-#   # Category: Categoryname <- for new Categories
-#   # Command: Commandname <- for the given Command
-#   # rCommand: Commandname <- for a command as root
-#   # Entry: Menu-Entry <- for the MenuEntry Name (optional)
 
 %include fedora-live-base.ks
 %include fedora-live-minimization.ks
 
 %packages
-### LXDE desktop
-@lxde-desktop
-@lxde-apps
-@lxde-media
-@lxde-office
+@xfce-desktop
+@xfce-apps
+#@xfce-extra-plugins
+#@xfce-media
+#@xfce-office
 #@firefox
 
-# pam-fprint causes a segfault in LXDM when enabled
--fprintd-pam
-
-# LXDE has lxpolkit. Make sure no other authentication agents end up in the spin.
--polkit-gnome
--polkit-kde
-
-# make sure xfce4-notifyd is not pulled in
-notification-daemon
--xfce4-notifyd
-
-# make sure xfwm4 is not pulled in for firstboot
-# https://bugzilla.redhat.com/show_bug.cgi?id=643416
-metacity
-
-# dictionaries are big
--aspell-*
--hunspell-*
--man-pages-*
--words
+# Security tools (not ready at the moment)
+@security-lab
+security-menus
 
 # save some space
--sendmail
-ssmtp
+-autofs
 -acpid
+-gimp-help
+-desktop-backgrounds-basic
+-realmd                     # only seems to be used in GNOME
+-PackageKit*                # we switched to yumex, so we don't need this
+-aspell-*                   # dictionaries are big
+-man-pages-*
 
 # drop some system-config things
 -system-config-boot
-#-system-config-language
--system-config-lvm
 #-system-config-network
 -system-config-rootpassword
 #-system-config-services
 -policycoreutils-gui
--gnome-disk-utility
 
-# we need UPower for suspend and hibernate
-upower
-
-# gnome-terminal was replaced by Terminal
-Terminal
-
-# Security tools (to use as long the comps group is not ready.
-# python security-lab-maintenance.py -d
-security-menus
-afftools
-aide
-aircrack-ng
-airsnort
-argus
-bkhive
-chkrootkit
-dc3dd
-ddrescue
-dnsenum
-dnsmap
-dsniff
-etherape
-ettercap
-ettercap-gtk
-examiner
-firewalk
-firstaidkit-gui
-firstaidkit-plugin-all
-flawfinder
-foremost
-gparted
-halberd
-hexedit
-horst
-hping3
-ht
-httping
-hunt
-iftop
-iptraf-ng
-irssi
-john
-kismet
-labrea
-lbd
-lynis
-macchanger
-mc
-mcabber
-medusa
-mutt
-nano
-nbtscan
-nc
-nc6
-ncrack
-nebula
-net-snmp
-netsniff-ng
-ngrep
-nikto
-nmap
-nmap-frontend
-ntfs-3g
-ntfsprogs
-nwipe
-openvas-client
-openvas-scanner
-ophcrack
-p0f
-packETH
-pads
-pcapdiff
-powertop
-pscan
-ratproxy
-rats
-rkhunter
-samdump2
-scamper
-scanmem
-scapy
-screen
-scrub
-sectool-gui
-security-menus
-sing
-sipp
-sipsak
-skipfish
-sleuthkit
-snmpcheck
-socat
-splint
-sqlninja
-srm
-ssldump
-sslscan
-sucrack
-tcpdump
-tcpflow
-tcpick
-tcpjunk
-tcpxtract
-testdisk
-unhide
-unicornscan
-uperf
-vim-enhanced
-wavemon
-weplab
-wget
-wireshark-gnome
-xmount
-xprobe2
-yersinia
-yum-utils
+# exclude some packages to save some space
+# use './fsl-maintenance.py -l' in your security spin git folder to build
+-ArpON
+-bonesi
+-cmospwd
+-dnstop
+-hfsutils
+-honeyd
+-kismon
+-netsed
+-onesixtyone
+-pdfcrack
+-picviz-gui
+-prelude-lml
+-prelude-manager
+-prewikka
+-proxychains
+-pyrit
+-raddump
+-safecopy
+-scalpel
+-sslstrip
+-tcpreen
+-tcpreplay
+-tripwire
+-wipe
 
 %end
 
 %post
-# LXDE and LXDM configuration
+# xfce configuration
+
+# This is a huge file and things work ok without it
+rm -f /usr/share/icons/HighContrast/icon-theme.cache
 
 # create /etc/sysconfig/desktop (needed for installation)
+
 cat > /etc/sysconfig/desktop <<EOF
-PREFERRED=/usr/bin/startlxde
-DISPLAYMANAGER=/usr/sbin/lxdm
+PREFERRED=/usr/bin/startxfce4
+DISPLAYMANAGER=/usr/sbin/lightdm
 EOF
 
 cat >> /etc/rc.d/init.d/livesys << EOF
-# disable screensaver locking and make sure gamin gets started
-cat > /etc/xdg/lxsession/LXDE/autostart << FOE
-/usr/libexec/gam_server
-@lxpanel --profile LXDE
-@pcmanfm --desktop --profile LXDE
-/usr/libexec/notification-daemon
+
+mkdir -p /home/liveuser/.config/xfce4
+
+cat > /home/liveuser/.config/xfce4/helpers.rc << FOE
+MailReader=sylpheed-claws
+FileManager=Thunar
+WebBrowser=midori
 FOE
 
-# set up preferred apps 
-cat > /etc/xdg/libfm/pref-apps.conf << FOE 
-[Preferred Applications]
-WebBrowser=firefox.desktop
-MailClient=redhat-sylpheed.desktop
+# disable screensaver locking (#674410)
+cat >> /home/liveuser/.xscreensaver << FOE
+mode:           off
+lock:           False
+dpmsEnabled:    False
 FOE
 
-# set up auto-login for liveuser
-sed -i 's|# autologin=dgod|autologin=liveuser|g' /etc/lxdm/lxdm.conf
+# deactivate xfconf-migration (#683161)
+rm -f /etc/xdg/autostart/xfconf-migration-4.6.desktop || :
+
+# deactivate xfce4-panel first-run dialog (#693569)
+mkdir -p /home/liveuser/.config/xfce4/xfconf/xfce-perchannel-xml
+cp /etc/xdg/xfce4/panel/default.xml /home/liveuser/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+
+# set up lightdm autologin
+sed -i 's/^#autologin-user=.*/autologin-user=liveuser/' /etc/lightdm/lightdm.conf
+sed -i 's/^#autologin-user-timeout=.*/autologin-user-timeout=0/' /etc/lightdm/lightdm.conf
+#sed -i 's/^#show-language-selector=.*/show-language-selector=true/' /etc/lightdm/lightdm-gtk-greeter.conf
+
+# set Xfce as default session, otherwise login will fail
+sed -i 's/^#user-session=.*/user-session=xfce/' /etc/lightdm/lightdm.conf
 
 # Show harddisk install on the desktop
 sed -i -e 's/NoDisplay=true/NoDisplay=false/' /usr/share/applications/liveinst.desktop
 mkdir /home/liveuser/Desktop
 cp /usr/share/applications/liveinst.desktop /home/liveuser/Desktop
 
-# Add autostart for parcellite
-cp /usr/share/applications/fedora-parcellite.desktop /etc/xdg/autostart
+# and mark it as executable (new Xfce security feature)
+chmod +x /home/liveuser/Desktop/liveinst.desktop
 
-# this goes at the end after all other changes.
+# this goes at the end after all other changes. 
 chown -R liveuser:liveuser /home/liveuser
 restorecon -R /home/liveuser
 
