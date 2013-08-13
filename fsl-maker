@@ -20,9 +20,7 @@
 # Foundation, Inc.,
 # 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 #
-
-#KICKSTART=fedora-livecd-xfce.ks
-KICKSTART=fedora-livecd-security-xfce.ks
+KICKSTART=fedora-livecd-security.ks
 DIRECTORY=spin-kickstarts
 CACHE=/var/cache/live
 LABEL=SecurityLab
@@ -30,15 +28,6 @@ TITLE=SecurityLab-`date -I`
 #RELEASEVER=19
 RELEASEVER=rawhide
 ROOT_UID=0   
-
-# Check if the script runs as root (aka UID 0)
-#if [ "$UID" -eq "$ROOT_UID" ] 
-#    then
-#        echo "You are root, please be patient ..."
-#    else
-#        echo "You must be root to run this script. Please use su to get root."
-#    exit 0
-#fi
 
 # Check if livecd-creator is available
 if [ ! -e /usr/bin/livecd-creator ]
@@ -67,9 +56,7 @@ sudo livecd-creator \
     --fslabel=$LABEL \
     --title=$TITLE \
     --releasever=$RELEASEVER
-
 #    --cache=$CACHE \
 
 echo ""
 echo "If this script finished with no error, then the image is ready."
-#echo "qemu-kvm -m 768 -cdrom $LABEL.iso"
