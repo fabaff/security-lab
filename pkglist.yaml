@@ -163,3 +163,4 @@
 - {category: Reconnaissance, command: fping -h, name: Parallelized ping-like utility, pkg: fping, exclude: 0}
 - {category: Reconnaissance, command: bro -h, name: Network analysis framework, pkg: bro, exclude: 0}
 - {category: Reconnaissance, command: tcpcopy -h, name: tcpcopy, pkg: tcpcopy, exclude: 0}
+- {category: Reconnaissance, command: hydra -h, name: Network log-on cracker, pkg: hydra, exclude: 0}
