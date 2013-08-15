@@ -25,7 +25,7 @@
 - {category: Wireless, command: cowpatty -h, name: cowpatty, pkg: cowpatty, exclude: 0}
 - {category: Wireless, command: wavemon, name: wavemon, pkg: wavemon, exclude: 0}
 - {category: Reconnaissance, command: hping -h, name: hping, pkg: hping3, exclude: 0}
-- {category: Reconnaissance, command: ncrack -h, name: ncrack, pkg: ncrack, exclude: 0}
+- {category: PasswordTools, command: ncrack -h, name: ncrack, pkg: ncrack, exclude: 0}
 - {category: Reconnaissance, command: nmap -h, name: nmap, pkg: nmap, exclude: 0}
 - {category: Reconnaissance, command: scanssh -h, name: scanssh, pkg: sshscan, exclude: 1}
 - {category: Reconnaissance, command: zenmap-root, name: nmap, pkg: nmap-frontend, exclude: 0}
@@ -163,4 +163,4 @@
 - {category: Reconnaissance, command: fping -h, name: Parallelized ping-like utility, pkg: fping, exclude: 0}
 - {category: Reconnaissance, command: bro -h, name: Network analysis framework, pkg: bro, exclude: 0}
 - {category: Reconnaissance, command: tcpcopy -h, name: tcpcopy, pkg: tcpcopy, exclude: 0}
-- {category: Reconnaissance, command: hydra -h, name: Network log-on cracker, pkg: hydra, exclude: 0}
+- {category: PasswordTools, command: hydra -h, name: Network log-on cracker, pkg: hydra, exclude: 0}
