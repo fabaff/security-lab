@@ -164,3 +164,4 @@
 - {category: Reconnaissance, command: bro -h, name: Network analysis framework, pkg: bro, exclude: 0}
 - {category: Reconnaissance, command: tcpcopy -h, name: tcpcopy, pkg: tcpcopy, exclude: 0}
 - {category: PasswordTools, command: hydra -h, name: Network log-on cracker, pkg: hydra, exclude: 0}
+- {category: Reconnaissance, command: httrack -h, name: HTTrack Website Copier, pkg: httrack, exclude: 1}
