@@ -87,7 +87,7 @@ sudo virt-install \
     --extra-args "ks=file:fsl-testbench.ks" \
     --noautoconsole \
     --vnc \
-    --network=network:testbench \
+    --network=network:default \
     --mac=52:52:00:00:00:01
 
 rm fsl-testbench.ks
