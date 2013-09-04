@@ -263,6 +263,14 @@ def menus():
         for file in dellist:
 	        os.remove(file)
 
+def default():
+    """"""
+    pkgslist = getPackages()
+
+    # Displays the details to STDOUT
+    print '\nDetails about the packages in the Fedora Security Lab\n'
+    print 'Packages in comps               : %s' % len(pkgslist)
+    print '\nTo see all available options use -h or --help.'
 def argParsing():
     parser = argparse.ArgumentParser(
 	    description='This tool can be used for maintaining the Fedora Security Lab package list.',
@@ -292,9 +300,14 @@ def argParsing():
     parser.add_argument('-p', '--playbook',
                        action='store_true',
                        help='generate a Ansible playbook for package installation')
+
     return parser.parse_args()
 
-if __name__ == '__main__':
+def main_run(argv):
+    if len(argv) < 2:
+        default()
+        sys.exit(1)
+
     args = argParsing()
     if args.display:
         display()
@@ -314,3 +327,14 @@ if __name__ == '__main__':
         raw()
     if args.playbook:
         playbook()
+
+def main():
+    '''Main program entry point'''
+    try:
+        sys.exit(main_run(sys.argv))
+    except KeyboardInterrupt:
+        print 'Interrupted, exiting...'
+        sys.exit(1)
+
+if __name__ == '__main__':
+    main()
