@@ -119,7 +119,7 @@
 - {category: Reconnaissance, command: nmbscan, name: NMB/SMB network scanner, pkg: nmbscan, exclude: 0}
 - {category: Reconnaissance, command: slowhttptest -h, name: slowhttptest, pkg: slowhttptest, exclude: 0}
 - {category: Reconnaissance, command: httpry -h, name: httpry, pkg: httpry, exclude: 0}
-- {category: Forensics, command: binwalk -h, name: binwalk, pkg: binwalk, exclude: 0}
+- {category: Forensics, command: binwalk -h, name: binwalk, pkg: binwalk, exclude: 1}
 - {category: General, command: netsed -h, name: netsed, pkg: netsed, exclude: 1}
 - {category: General, command: dnstop, name: dnstop, pkg: dnstop, exclude: 1}
 - {category: General, command: sslstrip -h, name: sslstrip, pkg: sslstrip, exclude: 1}
