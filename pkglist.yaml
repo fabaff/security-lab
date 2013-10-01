@@ -43,7 +43,6 @@
 - {category: NetworkStatistics, command: scamper, name: scamper, pkg: scamper, exclude: 0}
 - {category: Reconnaissance, command: argus -h, name: argus, pkg: argus, exclude: 0}
 - {category: Reconnaissance, command: ettercap -C, name: ettercap, pkg: ettercap, exclude: 0}
-- {category: Reconnaissance, pkg: ettercap-gtk, exclude: 0}
 - {category: Reconnaissance, command: packETH, name: packETH, pkg: packETH, exclude: 1}
 - {category: NetworkStatistics, command: iptraf-ng, name: iptraf-ng, pkg: iptraf-ng, exclude: 0}
 - {category: NetworkStatistics, command: iperf -h, name: iperf, pkg: iperf, exclude: 0}
