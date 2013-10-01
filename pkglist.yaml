@@ -1,12 +1,12 @@
 - {category: General, pkg: security-menus, exclude: 0}
 - {category: Reconnaissance, command: xprobe2, name: xprobe2, pkg: xprobe2, exclude: 0}
 - {category: Reconnaissance, command: dsniff -h, name: dsniff, pkg: dsniff, exclude: 0}
-- {category: Reconnaissance, command: wireshark, name: wireshark, pkg: wireshark-gnome, exclude: 0}
+- {category: Reconnaissance, command: wireshark, name: Network traffic analyzer, pkg: wireshark, exclude: 0}
 - {category: PasswordTools, command: john, name: john, pkg: john, exclude: 0}
 - {category: PasswordTools, command: sucrack, name: sucrack, pkg: sucrack, exclude: 0}
 - {category: PasswordTools, command: ophcrack, name: Objectif Securite ophcrack, pkg: ophcrack, exclude: 0}
 - {category: PasswordTools, command: medusa -d, name: Medusa Brute Force, pkg: medusa, exclude: 0}
-- {category: PasswordTools, command: pwgen -h, name: pwgen - Password generator, pkg: pwgen, exclude: 0}
+- {category: PasswordTools, command: pwgen -h, name: Password generator, pkg: pwgen, exclude: 0}
 - {category: IntrusionDetection, command: chkrootkit, name: chkrootkit, pkg: chkrootkit, exclude: 0}
 - {category: IntrusionDetection, command: aide -h, name: aide, pkg: aide, exclude: 0}
 - {category: IntrusionDetection, command: pads -h, name: Passive Asset Detection System, pkg: pads, exclude: 0}
