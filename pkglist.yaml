@@ -10,7 +10,7 @@
 - {category: IntrusionDetection, command: chkrootkit, name: chkrootkit, pkg: chkrootkit, exclude: 0}
 - {category: IntrusionDetection, command: aide -h, name: aide, pkg: aide, exclude: 1}
 - {category: IntrusionDetection, command: pads -h, name: Passive Asset Detection System, pkg: pads, exclude: 1}
-- {category: IntrusionDetection, command: rkhunter, name: Root Kit Hunter, pkg: rkhunter, exclude: 0}
+- {category: IntrusionDetection, command: rkhunter, name: Root Kit Hunter, pkg: rkhunter, exclude: 1}
 - {category: IntrusionDetection, command: labrea, pkg: labrea, name: labrea, exclude: 1}
 - {category: IntrusionDetection, command: nebula, pkg: nebula, name: nebula, exclude: 1}
 - {category: CodeAnalysis, command: splint, name: splint, pkg: splint, exclude: 0}
@@ -47,7 +47,7 @@
 - {category: NetworkStatistics, command: iptraf-ng, name: iptraf-ng, pkg: iptraf-ng, exclude: 0}
 - {category: NetworkStatistics, command: iperf -h, name: iperf, pkg: iperf, exclude: 0}
 - {category: NetworkStatistics, command: nethogs -h, name: nethogs, pkg: nethogs, exclude: 0}
-- {category: Reconnaissance, command: etherape, name: etherape, pkg: etherape, exclude: 0}
+- {category: Reconnaissance, command: etherape, name: etherape, pkg: etherape, exclude: 1}
 - {category: Reconnaissance, command: lynis, name: lynis, pkg: lynis, exclude: 0}
 - {category: Reconnaissance, command: netsniff-ng -h, name: netsniff-ng, pkg: netsniff-ng, exclude: 0}
 - {category: Reconnaissance, command: tcpjunk -x, name: tcpjunk, pkg: tcpjunk, exclude: 0}
@@ -101,8 +101,8 @@
 - {category: WebApplicationTesting, command: sqlninja, name: sqlninja, pkg: sqlninja, exclude: 0}
 - {category: Reconnaissance, command: sslscan, pkg: sslscan, name: SSL port scanner, exclude: 0}
 - {category: Reconnaissance, command: snmpcheck, pkg: snmpcheck, name: SNMP enumerator, exclude: 0}
-- {category: Reconnaissance, command: samdump2, pkg: samdump2, name: syskey retriever, exclude: 0}
-- {category: Reconnaissance, command: bkhive, pkg: bkhive, name: Recover Syskey bootkey, exclude: 0}
+- {category: Reconnaissance, command: samdump2, pkg: samdump2, name: syskey retriever, exclude: 1}
+- {category: Reconnaissance, command: bkhive, pkg: bkhive, name: Recover Syskey bootkey, exclude: 1}
 - {category: NetworkStatistics, command: uperf, pkg: uperf, name: Network performance tool, exclude: 0}
 - {category: Reconnaissance, command: tcpick, pkg: tcpick, name: TCP stream sniffer, exclude: 0}
 - {category: Reconnaissance, command: tcpflow -h, pkg: tcpflow, name: Network traffic recorder, exclude: 0}
