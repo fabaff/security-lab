@@ -2,18 +2,17 @@
 - {category: Reconnaissance, command: xprobe2, name: OS fingerprinting, pkg: xprobe2, exclude: 0}
 - {category: Reconnaissance, command: dsniff -h, name: Network auditing, pkg: dsniff, exclude: 0}
 - {category: Reconnaissance, command: wireshark, name: Network traffic analyzer, pkg: wireshark, exclude: 0}
-- {category: PasswordTools, command: john, name: john, pkg: john, exclude: 0}
+- {category: PasswordTools, command: john, name: Password cracker, pkg: john, exclude: 0}
 - {category: PasswordTools, command: sucrack, name: sucrack, pkg: sucrack, exclude: 0}
 - {category: PasswordTools, command: ophcrack, name: Objectif Securite ophcrack, pkg: ophcrack, exclude: 0}
 - {category: PasswordTools, command: medusa -d, name: Medusa Brute Force, pkg: medusa, exclude: 0}
 - {category: PasswordTools, command: pwgen -h, name: Password generator, pkg: pwgen, exclude: 0}
 - {category: IntrusionDetection, command: chkrootkit, name: chkrootkit, pkg: chkrootkit, exclude: 0}
-- {category: IntrusionDetection, command: aide -h, name: aide, pkg: aide, exclude: 0}
-- {category: IntrusionDetection, command: pads -h, name: Passive Asset Detection System, pkg: pads, exclude: 0}
+- {category: IntrusionDetection, command: aide -h, name: aide, pkg: aide, exclude: 1}
+- {category: IntrusionDetection, command: pads -h, name: Passive Asset Detection System, pkg: pads, exclude: 1}
 - {category: IntrusionDetection, command: rkhunter, name: Root Kit Hunter, pkg: rkhunter, exclude: 0}
-- {category: IntrusionDetection, command: labrea, pkg: labrea, name: labrea, exclude: 0}
-- {category: IntrusionDetection, command: nebula, pkg: nebula, name: nebula, exclude: 0}
-- {category: IntrusionDetection, command: honeyd -h, name: Honeypot Daemon, pkg: honeyd, exclude: 1}
+- {category: IntrusionDetection, command: labrea, pkg: labrea, name: labrea, exclude: 1}
+- {category: IntrusionDetection, command: nebula, pkg: nebula, name: nebula, exclude: 1}
 - {category: CodeAnalysis, command: splint, name: splint, pkg: splint, exclude: 0}
 - {category: CodeAnalysis, command: pscan, name: pscan, pkg: pscan, exclude: 0}
 - {category: CodeAnalysis, command: flawfinder, name: Flawfinder, pkg: flawfinder, exclude: 0}
@@ -25,7 +24,7 @@
 - {category: Wireless, command: cowpatty -h, name: cowpatty, pkg: cowpatty, exclude: 0}
 - {category: Wireless, command: wavemon, name: wavemon, pkg: wavemon, exclude: 0}
 - {category: Reconnaissance, command: hping -h, name: hping, pkg: hping3, exclude: 0}
-- {category: PasswordTools, command: ncrack -h, name: ncrack, pkg: ncrack, exclude: 0}
+- {category: PasswordTools, command: ncrack -h, name: Network auth cracking tool, pkg: ncrack, exclude: 0}
 - {category: Reconnaissance, command: nmap -h, name: nmap, pkg: nmap, exclude: 0}
 - {category: Reconnaissance, command: scanssh -h, name: scanssh, pkg: sshscan, exclude: 1}
 - {category: Reconnaissance, command: zenmap-root, name: nmap, pkg: nmap-frontend, exclude: 0}
@@ -45,7 +44,7 @@
 - {category: Reconnaissance, command: argus -h, name: argus, pkg: argus, exclude: 0}
 - {category: Reconnaissance, command: ettercap -C, name: ettercap, pkg: ettercap, exclude: 0}
 - {category: Reconnaissance, pkg: ettercap-gtk, exclude: 0}
-- {category: Reconnaissance, command: packETH, name: packETH, pkg: packETH, exclude: 0}
+- {category: Reconnaissance, command: packETH, name: packETH, pkg: packETH, exclude: 1}
 - {category: NetworkStatistics, command: iptraf-ng, name: iptraf-ng, pkg: iptraf-ng, exclude: 0}
 - {category: NetworkStatistics, command: iperf -h, name: iperf, pkg: iperf, exclude: 0}
 - {category: NetworkStatistics, command: nethogs -h, name: nethogs, pkg: nethogs, exclude: 0}
@@ -161,8 +160,8 @@
 - {category: Reconnaissance, command: mtr -h, name: My traceroute, pkg: mtr, exclude: 0}
 - {category: Reconnaissance, command: sslsplit -h, name: SSL/TLS interception, pkg: sslsplit, exclude: 0}
 - {category: Reconnaissance, command: fping -h, name: Parallelized ping-like utility, pkg: fping, exclude: 0}
-- {category: Reconnaissance, command: bro -h, name: Network analysis framework, pkg: bro, exclude: 0}
+- {category: Reconnaissance, command: bro -h, name: Network analysis framework, pkg: bro, exclude: 1}
 - {category: Reconnaissance, command: tcpcopy -h, name: tcpcopy, pkg: tcpcopy, exclude: 0}
-- {category: PasswordTools, command: hydra -h, name: Network log-on cracker, pkg: hydra, exclude: 0}
+- {category: PasswordTools, command: hydra -h, name: Network log-on cracker, pkg: hydra, exclude: 1}
 - {category: Reconnaissance, command: httrack -h, name: HTTrack Website Copier, pkg: httrack, exclude: 1}
 - {category: Reconnaissance, command: httpie -h, name: A Curl-like tool, pkg: httpie, exclude: 1}
