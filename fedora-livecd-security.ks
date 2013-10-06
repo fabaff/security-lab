@@ -18,6 +18,9 @@
 %include fedora-live-base.ks
 %include fedora-live-minimization.ks
 
+# spin was failing to compose due to lack of space, so bumping the size.
+part / --size 10240
+
 %packages
 @xfce-desktop
 @xfce-apps
@@ -50,14 +53,25 @@ security-menus
 # exclude some packages to save some space
 # use './fsl-maintenance.py -l' in your security spin git folder to build
 -ArpON
+-aide
+-binwalk
+-bkhive
 -bonesi
+-bro
 -cmospwd
 -dnstop
+-etherape
 -hfsutils
--honeyd
+-httpie
+-httrack
+-hydra
 -kismon
+-labrea
+-nebula
 -netsed
 -onesixtyone
+-packETH
+-pads
 -pdfcrack
 -picviz-gui
 -prelude-lml
@@ -66,8 +80,11 @@ security-menus
 -proxychains
 -pyrit
 -raddump
+-rkhunter
 -safecopy
+-samdump2
 -scalpel
+-sshscan
 -sslstrip
 -tcpreen
 -tcpreplay
