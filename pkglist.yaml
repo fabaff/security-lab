@@ -165,3 +165,4 @@
 - {category: PasswordTools, command: hydra -h, name: Network log-on cracker, pkg: hydra, exclude: 1}
 - {category: Reconnaissance, command: httrack -h, name: HTTrack Website Copier, pkg: httrack, exclude: 1}
 - {category: Reconnaissance, command: httpie -h, name: A Curl-like tool, pkg: httpie, exclude: 1}
+- {category: Reconnaissance, command: goaccess, name: A web log analyzer and viewer, pkg: goaccess, exclude: 1}
