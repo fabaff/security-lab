@@ -78,6 +78,7 @@
 - {category: Forensics, pkg: afftools, name: afftools, command: afftools, exclude: 0}
 - {category: General, pkg: pcapdiff, exclude: 0}
 - {category: General, pkg: net-snmp, exclude: 0}
+- {category: General, pkg: net-snmp-utils, exclude: 0}
 - {category: General, pkg: openvas-scanner, exclude: 0}
 - {category: General, pkg: hexedit, exclude: 0}
 - {category: Forensics, pkg: scanmem, name: Debugging tool, command: scanmem, exclude: 0}
