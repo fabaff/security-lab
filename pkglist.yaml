@@ -168,3 +168,4 @@
 - {category: Reconnaissance, command: httpie -h, name: A Curl-like tool, pkg: httpie, exclude: 1}
 - {category: NetworkStatistics, command: goaccess, name: A web log analyzer and viewer, pkg: goaccess, exclude: 1}
 - {category: NetworkStatistics, command: lnav -h, name: A log viewer and analyzer, pkg: lnav, exclude: 1}
+- {category: Reconnaissance, command: subnetcalc, name: An IPv4/IPv6 Subnet Calculator, pkg: subnetcalc, exclude: 1}
