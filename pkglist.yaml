@@ -169,3 +169,4 @@
 - {category: NetworkStatistics, command: goaccess, name: A web log analyzer and viewer, pkg: goaccess, exclude: 1}
 - {category: NetworkStatistics, command: lnav -h, name: A log viewer and analyzer, pkg: lnav, exclude: 1}
 - {category: Reconnaissance, command: subnetcalc, name: An IPv4/IPv6 Subnet Calculator, pkg: subnetcalc, exclude: 1}
+- {category: General, command: ntp, name: The NTP daemon and utilities, pkg: ntp, exclude: 0}
