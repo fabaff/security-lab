@@ -171,3 +171,4 @@
 - {category: Reconnaissance, command: subnetcalc, name: An IPv4/IPv6 Subnet Calculator, pkg: subnetcalc, exclude: 1}
 - {category: General, command: ntp, name: The NTP daemon and utilities, pkg: ntp, exclude: 0}
 - {category: Reconnaissance, command: zmap -h, name: zmap, pkg: zmap, exclude: 0}
+- {category: Reconnaissance, command: masscan -h, name: masscan, pkg: masscan, exclude: 0}
