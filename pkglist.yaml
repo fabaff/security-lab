@@ -172,3 +172,4 @@
 - {category: General, command: ntp, name: The NTP daemon and utilities, pkg: ntp, exclude: 0}
 - {category: Reconnaissance, command: zmap -h, name: zmap, pkg: zmap, exclude: 0}
 - {category: Reconnaissance, command: masscan -h, name: masscan, pkg: masscan, exclude: 0}
+- {category: NetworkStatistics, command: netactview, name: netactview, pkg: netactview, exclude: 0}
