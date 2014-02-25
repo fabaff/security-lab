@@ -175,4 +175,5 @@
 - {category: NetworkStatistics, command: netactview, name: netactview, pkg: netactview, exclude: 0}
 - {category: NetworkStatistics, command: nfswatch -h, name: nfswatch, pkg: nfswatch, exclude: 0}
 - {category: NetworkStatistics, command: tcptrack -h, name: tcptrack, pkg: tcptrack, exclude: 0}
-- {category: General, command: mpstat -h, name: mpstat, pkg: sysstat, exclude: 0}
+- {category: SystemStatistics, command: mpstat -h, name: mpstat, pkg: sysstat, exclude: 0}
+- {category: SystemStatistics, command: dstat -h, name: dstat, pkg: dstat, exclude: 0}
