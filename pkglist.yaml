@@ -177,3 +177,5 @@
 - {category: NetworkStatistics, command: tcptrack -h, name: tcptrack, pkg: tcptrack, exclude: 0}
 - {category: SystemStatistics, command: mpstat -h, name: mpstat, pkg: sysstat, exclude: 0}
 - {category: SystemStatistics, command: dstat -h, name: dstat, pkg: dstat, exclude: 0}
+- {category: NetworkStatistics, command: nicstat, name: nicstat, pkg: nicstat, exclude: 0}
+- {category: SystemStatistics, command: htop -h, name: htop, pkg: htop, exclude: 0}
