@@ -77,6 +77,7 @@
 - {category: Forensics, pkg: dc3dd, name: dc3dd, command: dc3dd, exclude: 0}
 - {category: Forensics, pkg: afftools, name: afftools, command: afftools, exclude: 0}
 - {category: General, pkg: pcapdiff, exclude: 0}
+- {category: General, pkg: pcapfix, exclude: 0}
 - {category: General, pkg: net-snmp, exclude: 0}
 - {category: General, pkg: net-snmp-utils, exclude: 0}
 - {category: General, pkg: openvas-scanner, exclude: 0}
