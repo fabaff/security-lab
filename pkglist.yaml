@@ -145,7 +145,7 @@
 - {category: General, command: prewikka, name: prewikka, pkg: prewikka, exclude: 1}
 - {category: General, command: prelude-manager, name: prelude-manager, pkg: prelude-manager, exclude: 1}
 - {category: General, command: picviz-gui, name: picviz-gui, pkg: picviz-gui, exclude: 1}
-- {category: Reconnaissance, command: siege -h, name: siege, pkg: siege, exclude: 0}
+- {category: StressTesting, command: siege -h, name: siege, pkg: siege, exclude: 0}
 - {category: Reconnanssance, command: echoping -h, name: echoping, pkg: echoping, exclude: 0}
 - {category: Reconnanssance, command: dhcping, name: dhcping, pkg: dhcping, exclude: 0}
 - {category: Reconnanssance, command: wbox, name: wbox, pkg: wbox, exclude: 0}
@@ -181,3 +181,4 @@
 - {category: NetworkStatistics, command: nicstat, name: nicstat, pkg: nicstat, exclude: 0}
 - {category: SystemStatistics, command: htop -h, name: htop, pkg: htop, exclude: 0}
 - {category: SystemStatistics, command: sar -h, name: sar, pkg: sysstat, exclude: 0}
+- {category: StressTesting, command: ab -h, name: Apache Benchmark, pkg: httpd-tools, exclude: 0}
