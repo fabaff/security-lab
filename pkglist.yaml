@@ -15,8 +15,8 @@
 - {category: IntrusionDetection, command: nebula, pkg: nebula, name: nebula, exclude: 1}
 - {category: CodeAnalysis, command: splint, name: splint, pkg: splint, exclude: 0}
 - {category: CodeAnalysis, command: pscan, name: pscan, pkg: pscan, exclude: 0}
-- {category: CodeAnalysis, command: flawfinder, name: Flawfinder, pkg: flawfinder, exclude: 0}
-- {category: CodeAnalysis, command: rats, name: Rough Auditing Tool for Security, pkg: rats, exclude: 0}
+- {category: CodeAnalysis, command: flawfinder --help | more, name: Flawfinder, pkg: flawfinder, exclude: 0}
+- {category: CodeAnalysis, command: rats --help | more, name: rats - Rough Auditing Tool for Security, pkg: rats, exclude: 0}
 - {category: Wireless, command: aircrack-ng, name: aircrack-ng, pkg: aircrack-ng, exclude: 0}
 - {category: Wireless, command: airsnort, name: airsnort, pkg: airsnort, exclude: 0}
 - {category: Wireless, command: kismet, name: kismet, pkg: kismet, exclude: 0}
@@ -69,12 +69,12 @@
 - {category: General, pkg: nc, exclude: 0}
 - {category: General, pkg: mc, name: Midnight Commander, command: mc, exclude: 0}
 - {category: General, pkg: screen, exclude: 0}
-- {category: General, command: macchanger, name: MAC address changer, pkg: macchanger, exclude: 0}
+- {category: General, command: macchanger --help, name: MAC address changer, pkg: macchanger, exclude: 0}
 - {category: General, pkg: ngrep, exclude: 0}
 - {category: General, pkg: ntfs-3g, exclude: 0}
 - {category: General, pkg: ntfsprogs, exclude: 0}
 - {category: Forensics, command: xmount, name: xmount, pkg: xmount, exclude: 0}
-- {category: Forensics, pkg: dc3dd, name: dc3dd, command: dc3dd, exclude: 0}
+- {category: Forensics, pkg: dc3dd --help, name: dc3dd, command: dc3dd, exclude: 0}
 - {category: Forensics, pkg: afftools, name: afftools, command: afftools, exclude: 0}
 - {category: General, pkg: pcapdiff, exclude: 0}
 - {category: General, pkg: pcapfix, exclude: 0}
@@ -82,7 +82,7 @@
 - {category: General, pkg: net-snmp-utils, exclude: 0}
 - {category: General, pkg: openvas-scanner, exclude: 0}
 - {category: General, pkg: hexedit, exclude: 0}
-- {category: Forensics, pkg: scanmem, name: Debugging tool, command: scanmem, exclude: 0}
+- {category: Forensics, pkg: scanmem -h, name: Debugging tool, command: scanmem, exclude: 0}
 - {category: Forensics, pkg: sleuthkit, exclude: 0}
 - {category: General, pkg: irssi, exclude: 0, command: irssi, name: IRC client}
 - {category: General, pkg: powertop, exclude: 0}
