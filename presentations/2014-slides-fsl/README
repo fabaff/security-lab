@@ -1,0 +1,35 @@
+Fedora Security Lab - Slide show
+================================
+This simple presentation about the Fedora Security Lab is using the MaxImage
+javascript library (https://github.com/akv2/MaxImage). The show is designed to
+run by itself.
+
+Download
+--------
+The source is located in the git repository of the Security Spin.
+
+$ git clone git://git.fedorahosted.org/git/security-spin.git/
+
+Now change to the 'presentations/2014-slides-fsl' directory.
+
+Usage
+-----
+Open the file slideshow.html in the lastest version of a browser (eg. Firefox
+> 15, Google Chrome).
+
+Author
+------
+Fabian Affolter <fab [AT] fedoraproject.org>
+
+About Security Lab
+------------------
+Website:  https://fedorahosted.org/security-spin/
+Download: https://spins.fedoraproject.org/security/
+Source:   https://fedorahosted.org/security-spin/browser
+
+License
+-------
+This presentation is licensed under GPLv2, for more details check COPYING. 
+
+The MaxImage javascript part is dual-licensed under MIT/GPL licenses and was
+developed by Aaron Vanderzwan, https://github.com/akv2/MaxImage

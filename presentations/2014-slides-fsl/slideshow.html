@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+		<meta name='description' content='Fedora Security Lab Slide show' />
+		<meta name='author' content='Fabian Affolter' />
+		<meta name="distribution" content="global" />
+		<meta name="language" content="en" />
+		<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+		
+		<title>Fedora Security Lab Slideshow</title>
+
+		<link rel="stylesheet" href="css/jquery.maximage.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="css/screen.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+	</head>
+	<body>
+		<div id="maximage">
+			<img src="img/00-intro.png" alt="" width="1280" height="960" />
+			<img src="img/01-intro.png" alt="" width="1280" height="960" />
+			<img src="img/02-intro.png" alt="" width="1280" height="960" />
+			<img src="img/04-screenshot.png" alt="" width="1280" height="960" />
+			<img src="img/10-reconnaissance.png" alt="" width="1280" height="960" />
+			<img src="img/20-forensics.png" alt="" width="1280" height="960" />
+			<img src="img/30-intrusion-detection.png" alt="" width="1280" height="960" />
+			<img src="img/31-network-analysis.png" alt="" width="1280" height="960" />
+			<img src="img/31-network-statistics.png" alt="" width="1280" height="960" />
+			<img src="img/40-wireless.png" alt="" width="1280" height="960" />
+			<img src="img/50-password-tools.png" alt="" width="1280" height="960" />
+			<img src="img/60-code-analysis.png" alt="" width="1280" height="960" />
+			<img src="img/61-web-application-testing.png" alt="" width="1280" height="960" />
+			<img src="img/70-rescue.png" alt="" width="1280" height="960" />
+			<img src="img/80-system-statistics.png" alt="" width="1280" height="960" />
+			<img src="img/98-download.png" alt="" width="1280" height="960" />
+			<img src="img/99-end.png" alt="" width="1280" height="960" />
+		</div>
+		
+		<script src="js/jquery-2.1.0.min.js"></script>
+		<script src="js/jquery.cycle.all.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(function(){
+				// Trigger maximage
+				$('#maximage').maximage({
+					cssBackgroundSize: false, // We don't want to use background-size:cover for our custom size
+					backgroundSize: function( $item ){
+						// Landscape
+						if ($item.data('w') > $item.data('h')) {
+							if ($.Window.data('w') / $.Window.data('h') < $item.data('ar')) {
+								$item
+									.height(($.Window.data('w') / $item.data('ar')).toFixed(0))
+									.width($.Window.data('w'));
+							} else {
+								$item
+									.height($.Window.data('h'))
+									.width(($.Window.data('h') * $item.data('ar')).toFixed(0));
+							}
+						} else {
+							if ($.Window.data('w') / $.Window.data('h') < $item.data('ar')) {
+								$item
+									.height($.Window.data('h'))
+									.width(($.Window.data('h') * $item.data('ar')).toFixed(0));
+							} else {
+								$item
+									.height(($.Window.data('w') / $item.data('ar')).toFixed(0))
+									.width($.Window.data('w'));
+							}
+						}
+					},
+					onImagesLoaded: function(){
+						$('#maximage').fadeIn();
+					}
+				});
+			});
+		</script>
+  </body>
+</html>
