@@ -3,11 +3,11 @@
 - {category: Reconnaissance, command: dsniff -h, name: Network auditing, pkg: dsniff, exclude: 0}
 - {category: Reconnaissance, command: wireshark, name: Network traffic analyzer, pkg: wireshark, exclude: 0}
 - {category: PasswordTools, command: john, name: Password cracker, pkg: john, exclude: 0}
-- {category: PasswordTools, command: sucrack, name: sucrack, pkg: sucrack, exclude: 0}
+- {category: PasswordTools, command: sucrack -h, name: sucrack, pkg: sucrack, exclude: 0}
 - {category: PasswordTools, command: ophcrack, name: Objectif Securite ophcrack, pkg: ophcrack, exclude: 0}
 - {category: PasswordTools, command: medusa -d, name: Medusa Brute Force, pkg: medusa, exclude: 0}
 - {category: PasswordTools, command: pwgen -h, name: Password generator, pkg: pwgen, exclude: 0}
-- {category: IntrusionDetection, command: chkrootkit, name: chkrootkit, pkg: chkrootkit, exclude: 0}
+- {category: IntrusionDetection, command: chkrootkit -h, name: chkrootkit, pkg: chkrootkit, exclude: 0}
 - {category: IntrusionDetection, command: aide -h, name: aide, pkg: aide, exclude: 1}
 - {category: IntrusionDetection, command: pads -h, name: Passive Asset Detection System, pkg: pads, exclude: 1}
 - {category: IntrusionDetection, command: rkhunter, name: Root Kit Hunter, pkg: rkhunter, exclude: 1}
