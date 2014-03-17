@@ -12,9 +12,9 @@
 - {category: IntrusionDetection, command: pads -h, name: Passive Asset Detection System, pkg: pads, exclude: 1}
 - {category: IntrusionDetection, command: rkhunter, name: Root Kit Hunter, pkg: rkhunter, exclude: 1}
 - {category: IntrusionDetection, command: labrea, pkg: labrea, name: labrea, exclude: 1}
-- {category: IntrusionDetection, command: nebula, pkg: nebula, name: nebula, exclude: 1}
-- {category: CodeAnalysis, command: splint, name: splint, pkg: splint, exclude: 0}
-- {category: CodeAnalysis, command: pscan, name: pscan, pkg: pscan, exclude: 0}
+- {category: IntrusionDetection, command: nebula -h, pkg: nebula, name: nebula, exclude: 1}
+- {category: CodeAnalysis, command: splint -help, name: splint, pkg: splint, exclude: 0}
+- {category: CodeAnalysis, command: pscan -h, name: pscan, pkg: pscan, exclude: 0}
 - {category: CodeAnalysis, command: flawfinder --help | more, name: Flawfinder, pkg: flawfinder, exclude: 0}
 - {category: CodeAnalysis, command: rats --help | more, name: rats - Rough Auditing Tool for Security, pkg: rats, exclude: 0}
 - {category: Wireless, command: aircrack-ng, name: aircrack-ng, pkg: aircrack-ng, exclude: 0}
@@ -96,7 +96,7 @@
 - {category: General, pkg: mcabber, exclude: 0}
 - {category: General, pkg: firstaidkit-plugin-all, exclude: 0}
 - {category: WebApplicationTesting, command: halberd, name: halberd, pkg: halberd, exclude: 0}
-- {category: WebApplicationTesting, command: httping -h, name: httping, pkg: httping, exclude: 0}
+- {category: WebApplicationTesting, command: httping --help, name: httping, pkg: httping, exclude: 0}
 - {category: WebApplicationTesting, command: nikto -help, name: Nikto Websecurity Scanner, pkg: nikto, exclude: 0}
 - {category: WebApplicationTesting, command: ratproxy -h, name: ratproxy, pkg: ratproxy, exclude: 0}
 - {category: WebApplicationTesting, command: lbd, name: Load Balancing Detector, pkg: lbd, exclude: 0}
