@@ -102,7 +102,7 @@
 - {category: WebApplicationTesting, command: lbd, name: Load Balancing Detector, pkg: lbd, exclude: 0}
 - {category: WebApplicationTesting, command: skipfish -h, name: skipfish, pkg: skipfish, exclude: 0}
 - {category: WebApplicationTesting, command: sqlninja, name: sqlninja, pkg: sqlninja, exclude: 0}
-- {category: Reconnaissance, command: sslscan, pkg: sslscan, name: SSL port scanner, exclude: 0}
+- {category: Reconnaissance, command: sslscan --help | more, pkg: sslscan, name: SSL port scanner, exclude: 0}
 - {category: Reconnaissance, command: snmpcheck, pkg: snmpcheck, name: SNMP enumerator, exclude: 0}
 - {category: Reconnaissance, command: samdump2, pkg: samdump2, name: syskey retriever, exclude: 1}
 - {category: Reconnaissance, command: bkhive, pkg: bkhive, name: Recover Syskey bootkey, exclude: 1}
