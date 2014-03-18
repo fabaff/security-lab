@@ -22,7 +22,7 @@
 - {category: Wireless, command: kismet, name: kismet, pkg: kismet, exclude: 0}
 - {category: Wireless, command: weplab -h, name: Wep Key Cracker, pkg: weplab, exclude: 0}
 - {category: Wireless, command: cowpatty -h, name: cowpatty, pkg: cowpatty, exclude: 0}
-- {category: Wireless, command: wavemon, name: wavemon, pkg: wavemon, exclude: 0}
+- {category: Wireless, command: wavemon -h, name: wavemon, pkg: wavemon, exclude: 0}
 - {category: Reconnaissance, command: hping -h, name: hping, pkg: hping3, exclude: 0}
 - {category: PasswordTools, command: ncrack -h, name: Network auth cracking tool, pkg: ncrack, exclude: 0}
 - {category: Reconnaissance, command: nmap -h, name: nmap, pkg: nmap, exclude: 0}
@@ -49,7 +49,7 @@
 - {category: NetworkStatistics, command: iperf -h, name: iperf, pkg: iperf, exclude: 0}
 - {category: NetworkStatistics, command: nethogs -h, name: nethogs, pkg: nethogs, exclude: 0}
 - {category: Reconnaissance, command: etherape, name: etherape, pkg: etherape, exclude: 1}
-- {category: Reconnaissance, command: lynis, name: lynis, pkg: lynis, exclude: 0}
+- {category: Reconnaissance, command: lynis -h, name: lynis, pkg: lynis, exclude: 0}
 - {category: Reconnaissance, command: netsniff-ng -h, name: netsniff-ng, pkg: netsniff-ng, exclude: 0}
 - {category: Reconnaissance, command: tcpjunk -x, name: tcpjunk, pkg: tcpjunk, exclude: 0}
 - {category: Reconnaissance, command: ssldump -h, name: ssldump, pkg: ssldump, exclude: 0}
@@ -65,12 +65,12 @@
 - {category: Forensics, command: srm -h, name: Securely Remove Files, pkg: srm, exclude: 0}
 - {category: Forensics, command: nwipe, name: Securely erase disks, pkg: nwipe, exclude: 0}
 - {category: Forensics, command: firstaidkit -g gtk, name: First Aid Kit, pkg: firstaidkit-gui, exclude: 0}
-- {category: General, pkg: nc6, exclude: 0}
-- {category: General, pkg: nc, exclude: 0}
+- {category: General, pkg: nc6 -h, exclude: 0}
+- {category: General, pkg: nc -h, exclude: 0}
 - {category: General, pkg: mc, name: Midnight Commander, command: mc, exclude: 0}
 - {category: General, pkg: screen, exclude: 0}
 - {category: General, command: macchanger --help, name: MAC address changer, pkg: macchanger, exclude: 0}
-- {category: General, pkg: ngrep, exclude: 0}
+- {category: General, pkg: ngrep -h, exclude: 0}
 - {category: General, pkg: ntfs-3g, exclude: 0}
 - {category: General, pkg: ntfsprogs, exclude: 0}
 - {category: Forensics, command: xmount, name: xmount, pkg: xmount, exclude: 0}
@@ -81,7 +81,7 @@
 - {category: General, pkg: net-snmp, exclude: 0}
 - {category: General, pkg: net-snmp-utils, exclude: 0}
 - {category: General, pkg: openvas-scanner, exclude: 0}
-- {category: General, pkg: hexedit, exclude: 0}
+- {category: General, pkg: hexedit -h, exclude: 0}
 - {category: Forensics, pkg: scanmem -h, name: Debugging tool, command: scanmem, exclude: 0}
 - {category: Forensics, pkg: sleuthkit, exclude: 0}
 - {category: General, pkg: irssi, exclude: 0, command: irssi, name: IRC client}
@@ -93,25 +93,25 @@
 - {category: General, pkg: yum-utils, exclude: 0}
 - {category: VoIP, pkg: sipsak, command: sipsak, name: sipsak, exclude: 0}
 - {category: VoIP, pkg: sipp, command: sipp, name: sipp, exclude: 0}
-- {category: General, pkg: mcabber, exclude: 0}
+- {category: General, pkg: mcabber -h, exclude: 0}
 - {category: General, pkg: firstaidkit-plugin-all, exclude: 0}
-- {category: WebApplicationTesting, command: halberd, name: halberd, pkg: halberd, exclude: 0}
+- {category: WebApplicationTesting, command: halberd -h, name: halberd, pkg: halberd, exclude: 0}
 - {category: WebApplicationTesting, command: httping --help, name: httping, pkg: httping, exclude: 0}
 - {category: WebApplicationTesting, command: nikto -help, name: Nikto Websecurity Scanner, pkg: nikto, exclude: 0}
 - {category: WebApplicationTesting, command: ratproxy -h, name: ratproxy, pkg: ratproxy, exclude: 0}
 - {category: WebApplicationTesting, command: lbd, name: Load Balancing Detector, pkg: lbd, exclude: 0}
-- {category: WebApplicationTesting, command: skipfish, name: skipfish, pkg: skipfish, exclude: 0}
+- {category: WebApplicationTesting, command: skipfish -h, name: skipfish, pkg: skipfish, exclude: 0}
 - {category: WebApplicationTesting, command: sqlninja, name: sqlninja, pkg: sqlninja, exclude: 0}
 - {category: Reconnaissance, command: sslscan, pkg: sslscan, name: SSL port scanner, exclude: 0}
 - {category: Reconnaissance, command: snmpcheck, pkg: snmpcheck, name: SNMP enumerator, exclude: 0}
 - {category: Reconnaissance, command: samdump2, pkg: samdump2, name: syskey retriever, exclude: 1}
 - {category: Reconnaissance, command: bkhive, pkg: bkhive, name: Recover Syskey bootkey, exclude: 1}
 - {category: NetworkStatistics, command: uperf, pkg: uperf, name: Network performance tool, exclude: 0}
-- {category: Reconnaissance, command: tcpick, pkg: tcpick, name: TCP stream sniffer, exclude: 0}
+- {category: Reconnaissance, command: tcpick --help, pkg: tcpick, name: TCP stream sniffer, exclude: 0}
 - {category: Reconnaissance, command: tcpflow -h, pkg: tcpflow, name: Network traffic recorder, exclude: 0}
 - {category: Reconnaissance, command: dnsmap, pkg: dnsmap, name: Sub-domains bruteforcer, exclude: 0}
 - {category: Forensics, command: scrub, pkg: scrub, name: Disk scruber, exclude: 0}
-- {category: Forensics, command: ht, name: ht, pkg: ht, exclude: 0}
+- {category: Forensics, command: ht -h, name: ht, pkg: ht, exclude: 0}
 - {category: Wireless, command: horst -h, name: horst, pkg: horst, exclude: 0}
 - {category: NetworkStatistics, command: nload -h, pkg: nload, name: nload, exclude: 0}
 - {category: NetworkStatistics, command: ntop -h, pkg: ntop, name: ntop, exclude: 0}
