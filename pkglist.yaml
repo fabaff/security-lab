@@ -95,7 +95,7 @@
 - {category: VoIP, pkg: sipp, command: sipp, name: sipp, exclude: 0}
 - {category: General, pkg: mcabber -h, exclude: 0}
 - {category: General, pkg: firstaidkit-plugin-all, exclude: 0}
-- {category: WebApplicationTesting, command: halberd -h, name: halberd, pkg: halberd, exclude: 0}
+- {category: WebApplicationTesting, command: halberd --help, name: halberd, pkg: halberd, exclude: 0}
 - {category: WebApplicationTesting, command: httping --help, name: httping, pkg: httping, exclude: 0}
 - {category: WebApplicationTesting, command: nikto -help, name: Nikto Websecurity Scanner, pkg: nikto, exclude: 0}
 - {category: WebApplicationTesting, command: ratproxy -h, name: ratproxy, pkg: ratproxy, exclude: 0}
@@ -182,3 +182,5 @@
 - {category: SystemStatistics, command: htop -h, name: htop, pkg: htop, exclude: 0}
 - {category: SystemStatistics, command: sar -h, name: sar, pkg: sysstat, exclude: 0}
 - {category: StressTesting, command: ab -h, name: Apache Benchmark, pkg: httpd-tools, exclude: 0}
+- {category: Reconnanssance, command: nfspy -h, name: ID-spoofing NFS client, pkg: nfspy, exclude: 0}
+- {category: Reconnaissance, command: tlssled -h, pkg: tlssled, name: TLSSLed, exclude: 0}
