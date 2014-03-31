@@ -164,7 +164,7 @@
 - {category: Reconnaissance, command: fping -h, name: Parallelized ping-like utility, pkg: fping, exclude: 0}
 - {category: Reconnaissance, command: bro -h, name: Network analysis framework, pkg: bro, exclude: 1}
 - {category: Reconnaissance, command: tcpcopy -h, name: tcpcopy, pkg: tcpcopy, exclude: 0}
-- {category: PasswordTools, command: hydra -h, name: Network log-on cracker, pkg: hydra, exclude: 1}
+- {category: PasswordTools, command: hydra -h, name: Network log-on cracker, pkg: hydra, exclude: 0}
 - {category: Reconnaissance, command: httrack -h, name: HTTrack Website Copier, pkg: httrack, exclude: 1}
 - {category: Reconnaissance, command: httpie -h, name: A Curl-like tool, pkg: httpie, exclude: 1}
 - {category: NetworkStatistics, command: goaccess, name: A web log analyzer and viewer, pkg: goaccess, exclude: 1}
