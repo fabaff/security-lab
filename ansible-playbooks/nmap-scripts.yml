@@ -23,19 +23,19 @@
   - name: download nmap libraries from nmap
     get_url: url=https://svn.nmap.org/nmap/nselib/{{ item }}
              dest=/usr/share/nmap/nselib/{{ item }}
-             mode=0755
+             mode=0644
     with_items: libs
 
   - name: download nmap scripts from nmap
     get_url: url=https://svn.nmap.org/nmap/scripts/{{ item }}
              dest=/usr/share/nmap/scripts/{{ item }}
-             mode=0755
+             mode=0644
     with_items: nse
 
   - name: download nmap scripts from third party sources
     get_url: url={{ item }}
              dest=/usr/share/nmap/scripts/
-             mode=0755
+             mode=0644
     with_items: nse2
  
   - name: update nmap database
