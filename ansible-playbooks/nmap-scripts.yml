@@ -1,0 +1,32 @@
+# This playbook installs additional nmap libraries and scripts.
+#
+# Copyright (c) 2014 Fabian Affolter <fab@fedoraproject.org>
+#
+# All rights reserved.
+# This file is licensed under GPLv2, for more details check COPYING.
+# 
+# Usage: ansible-playbook nmap-scripts.yml -f 10
+
+---
+#- hosts: fsl_hosts
+- hosts: 127.0.0.1
+  connection: local
+  user: root
+  vars:
+    - libs: [tls.lua]
+    - nse: [ssl-heartbleed.nse]
+  tasks:
+  - name: download nmap libraries
+    get_url: url=https://svn.nmap.org/nmap/nselib/{{ item }}
+             dest=/usr/share/nmap/nselib/{{ item }}
+             mode=0755
+    with_items: libs
+
+  - name: download nmap scripts
+    get_url: url=https://svn.nmap.org/nmap/scripts/{{ item }}
+             dest=/usr/share/nmap/scripts/{{ item }}
+             mode=0755
+    with_items: nse
+ 
+  - name: update nmap database
+    command: /usr/bin/nmap --script-updatedb
