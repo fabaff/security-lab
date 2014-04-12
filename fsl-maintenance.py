@@ -152,7 +152,8 @@ def playbook():
   user: root
   tasks:
   - name: install {{ item }}
-    action: yum pkg={{ item }} state=installed
+    yum: pkg={{ item }}
+         state=present 
     with_items:\n""" % (datetime.date.today())
 
     # Split list of packages into eincluded and excluded packages
