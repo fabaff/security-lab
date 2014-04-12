@@ -151,8 +151,8 @@ def playbook():
 - hosts: fsl_hosts
   user: root
   tasks:
-  - name: install $item
-    action: yum pkg=$item state=installed
+  - name: install {{ item }}
+    action: yum pkg={{ item }} state=installed
     with_items:\n""" % (datetime.date.today())
 
     # Split list of packages into eincluded and excluded packages
