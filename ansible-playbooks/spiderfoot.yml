@@ -1,0 +1,28 @@
+# This playbook installs spiderfoot (http://www.spiderfoot.net/).
+#
+# Copyright (c) 2014 Fabian Affolter <fab@fedoraproject.org>
+#
+# All rights reserved.
+# This file is licensed under GPLv2, for more details check COPYING.
+# 
+# Usage: ansible-playbook spiderfoot.yml -f 10
+
+---
+#- hosts: fsl_hosts
+- hosts: 127.0.0.1
+  connection: local
+  user: root
+  tasks:
+  - name: install needed package
+    yum: pkg={{ item }}
+         state=present 
+    with_items:
+      - ruby-irb
+      - python-mako
+      - python-cherrypy
+      - python-netaddr
+      - python-dns
+
+  - name: download spiderfoot from github
+    git: repo=https://github.com/smicallef/spiderfoot.git
+         dest=/opt/spiderfoot
