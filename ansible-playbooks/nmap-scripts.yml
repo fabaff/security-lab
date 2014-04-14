@@ -19,7 +19,10 @@
     # Third party sources need the full URL
     - nse2: ['https://raw.githubusercontent.com/b4ldr/nse-scripts/master/dns-sd.nse',
              'https://raw.githubusercontent.com/b4ldr/nse-scripts/master/dns-nsec-enum.nse',
-             'https://raw.githubusercontent.com/fabaff/fsl-test-bench/master/fsl-tb-detect.nse']
+             'https://raw.githubusercontent.com/fabaff/fsl-test-bench/master/fsl-tb-detect.nse',
+             'https://raw.githubusercontent.com/SpiderLabs/Nmap-Tools/master/NSE/http-screenshot.nse',
+             'https://github.com/hkm/nmap-nse-scripts/blob/master/http-wordpress-attachment.nse']
+
   tasks:
   - name: download nmap libraries from nmap
     get_url: url=https://svn.nmap.org/nmap/nselib/{{ item }}
