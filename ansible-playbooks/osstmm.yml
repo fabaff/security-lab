@@ -1,0 +1,22 @@
+# This playbook installs the latest OSSTMM (http://www.isecom.org).
+#
+# Copyright (c) 2014 Fabian Affolter <fab@fedoraproject.org>
+#
+# All rights reserved.
+# This file is licensed under GPLv2, for more details check COPYING.
+# 
+# Usage: ansible-playbook osstemm.yml -f 10
+
+---
+#- hosts: fsl_hosts
+- hosts: 127.0.0.1
+  connection: local
+  user: root
+  tasks:
+  - name: create a folder for the osstmm
+    file: path=/opt/docs/osstmm
+          state=directory
+
+  - name: download arachni from github
+    get_url: url=http://www.isecom.org/mirror/OSSTMM.3.pdf
+             dest=/opt/docs/osstmm/
