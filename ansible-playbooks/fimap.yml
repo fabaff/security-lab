@@ -1,0 +1,28 @@
+# This playbook installs fimap (https://code.google.com/p/fimap/).
+#
+# Copyright (c) 2014 Fabian Affolter <fab@fedoraproject.org>
+#
+# All rights reserved.
+# This file is licensed under GPLv2, for more details check COPYING.
+# 
+# Usage: ansible-playbook blindelephant.yml -f 10
+
+---
+#- hosts: fsl_hosts
+- hosts: 127.0.0.1
+  connection: local
+  user: root
+  tasks:
+  - name: install needed package
+    yum: pkg={{ item }}
+         state=present 
+    with_items:
+      - python
+      - subversion
+
+  - name: download fimap
+    subversion: repo=http://fimap.googlecode.com/svn/trunk/
+                dest=/opt/fimap
+
+  - name: set permisson og the exectuable
+    command: /usr/bin/chmod +x /opt/fimap/src/fimap.py
