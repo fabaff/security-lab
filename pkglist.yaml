@@ -184,3 +184,4 @@
 - {category: StressTesting, command: ab -h, name: Apache Benchmark, pkg: httpd-tools, exclude: 0}
 - {category: Reconnanssance, command: nfspy -h, name: ID-spoofing NFS client, pkg: nfspy, exclude: 0}
 - {category: Reconnaissance, command: tlssled -h, pkg: tlssled, name: TLSSLed, exclude: 0}
+- {category: NetworkStatistics, command: sockperf -h, pkg: sockperf, name: sockperf, exclude: 0}
