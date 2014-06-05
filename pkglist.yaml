@@ -142,7 +142,6 @@
 - {category: NetworkStatistics, command: trafshow -h, name: Network traffic visualization, pkg: trafshow, exclude: 0}
 - {category: IntrusionDetection, command: tripwire, name: tripwire, pkg: tripwire, exclude: 1}
 - {category: IntrusionDetection, command: prelude-lml, name: prelude-lml, pkg: prelude-lml, exclude: 1}
-- {category: General, command: prewikka, name: prewikka, pkg: prewikka, exclude: 1}
 - {category: General, command: prelude-manager, name: prelude-manager, pkg: prelude-manager, exclude: 1}
 - {category: General, command: picviz-gui, name: picviz-gui, pkg: picviz-gui, exclude: 1}
 - {category: StressTesting, command: siege -h, name: siege, pkg: siege, exclude: 0}
