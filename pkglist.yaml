@@ -184,3 +184,4 @@
 - {category: NetworkStatistics, command: sockperf -h, pkg: sockperf, name: sockperf, exclude: 0}
 - {category: NetworkStatistics, command: captcp -h, pkg: captcp, name: sockperf, exclude: 0}
 - {category: General, command: dislocker -h, pkg: dislocker, exclude: 0}
+- {category: NetworkStatistics, command: netdisco -h, pkg: netdisco, name: netdisco, exclude: 1}
