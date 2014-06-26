@@ -239,7 +239,7 @@ def menus():
             filelist.append(files)
     # Write the .desktop files
     for pkg in pkgslist:
-        if 'command' in pkg:
+        if 'command' and 'name' in pkg:
             fileOut = open('security-' + pkg['pkg'] + '.desktop','w')
             fileOut.write('[Desktop Entry]\n')
             fileOut.write('Name=%s\n' %  pkg['name'])
