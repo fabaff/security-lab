@@ -187,5 +187,5 @@
 - {category: NetworkStatistics, command: netdisco -h, pkg: netdisco, name: netdisco, exclude: 1}
 - {category: NetworkStatistics, command: httpress -h, name: HTTP stress & benchmark utility, pkg: httpress, exclude: 0}
 - {category: IntrusionDetection, command: psad, name: psad, pkg: psad, exclude: 1}
-- {category: General, name: scap-security-guide, pkg: scap-security-guide, exclude: 0}
-- {category: General, name: scap-workbench, pkg: scap-workbench, exclude: 0}
+- {category: General, pkg: scap-security-guide, exclude: 0}
+- {category: General, pkg: scap-workbench, exclude: 0}
