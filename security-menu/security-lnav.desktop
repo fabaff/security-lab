@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=A log viewer and analyzer
+Exec=xfce4-terminal -e "su -c 'lnav -h; bash'"
+TryExec=lnav
+Type=Application
+Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

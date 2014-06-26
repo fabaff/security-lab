@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=ht
-Exec=xfce4-terminal -e "su -c 'ht -h; bash'"
-TryExec=ht
+Name=pdfcrack
+Exec=xfce4-terminal -e "su -c 'pdfcrack; bash'"
+TryExec=pdfcrack
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

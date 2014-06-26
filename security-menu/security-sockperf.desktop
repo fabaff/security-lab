@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=sockperf
+Exec=xfce4-terminal -e "su -c 'sockperf -h; bash'"
+TryExec=sockperf
+Type=Application
+Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

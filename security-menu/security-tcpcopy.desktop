@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=TCP stream sniffer
-Exec=xfce4-terminal -e "su -c 'tcpick --help; bash'"
-TryExec=tcpick
+Name=tcpcopy
+Exec=xfce4-terminal -e "su -c 'tcpcopy -h; bash'"
+TryExec=tcpcopy
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

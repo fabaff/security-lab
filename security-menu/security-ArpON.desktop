@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=TCP stream sniffer
-Exec=xfce4-terminal -e "su -c 'tcpick --help; bash'"
-TryExec=tcpick
+Name=arpon
+Exec=xfce4-terminal -e "su -c 'arpon -h; bash'"
+TryExec=ArpON
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

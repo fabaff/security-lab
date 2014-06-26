@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=ht
-Exec=xfce4-terminal -e "su -c 'ht -h; bash'"
-TryExec=ht
+Name=safecopy
+Exec=xfce4-terminal -e "su -c 'safecopy -h; bash'"
+TryExec=safecopy
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=ht
-Exec=xfce4-terminal -e "su -c 'ht -h; bash'"
-TryExec=ht
+Name=wipe
+Exec=xfce4-terminal -e "su -c 'wipe -h; bash'"
+TryExec=wipe
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Forensics;

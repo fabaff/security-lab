@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=HTTrack Website Copier
+Exec=xfce4-terminal -e "su -c 'httrack -h; bash'"
+TryExec=httrack
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

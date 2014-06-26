@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ID-spoofing NFS client
+Exec=xfce4-terminal -e "su -c 'nfspy -h; bash'"
+TryExec=nfspy
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnanssance;

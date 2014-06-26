@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=nebula
-Exec=xfce4-terminal -e "su -c 'nebula -h; bash'"
-TryExec=nebula
+Name=tripwire
+Exec=xfce4-terminal -e "su -c 'tripwire; bash'"
+TryExec=tripwire
 Type=Application
 Categories=System;Security;X-SecurityLab;X-IntrusionDetection;

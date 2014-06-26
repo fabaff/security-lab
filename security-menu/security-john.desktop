@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=john
+Name=Password cracker
 Exec=xfce4-terminal -e "su -c 'john; bash'"
 TryExec=john
 Type=Application

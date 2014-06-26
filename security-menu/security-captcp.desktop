@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=captcp
+Exec=xfce4-terminal -e "su -c 'captcp -h; bash'"
+TryExec=captcp
+Type=Application
+Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

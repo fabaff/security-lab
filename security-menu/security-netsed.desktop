@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=netsed
+Exec=xfce4-terminal -e "su -c 'netsed -h; bash'"
+TryExec=netsed
+Type=Application
+Categories=System;Security;X-SecurityLab;X-General;

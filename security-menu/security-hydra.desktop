@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=sucrack
-Exec=xfce4-terminal -e "su -c 'sucrack -h; bash'"
-TryExec=sucrack
+Name=Network log-on cracker
+Exec=xfce4-terminal -e "su -c 'hydra -h; bash'"
+TryExec=hydra
 Type=Application
 Categories=System;Security;X-SecurityLab;X-PasswordTools;

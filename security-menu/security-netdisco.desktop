@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=netdisco
+Exec=xfce4-terminal -e "su -c 'netdisco -h; bash'"
+TryExec=netdisco
+Type=Application
+Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

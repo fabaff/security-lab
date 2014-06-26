@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=htop
+Exec=xfce4-terminal -e "su -c 'htop -h; bash'"
+TryExec=htop
+Type=Application
+Categories=System;Security;X-SecurityLab;X-SystemStatistics;

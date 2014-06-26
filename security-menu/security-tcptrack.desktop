@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=tcptrack
+Exec=xfce4-terminal -e "su -c 'tcptrack -h; bash'"
+TryExec=tcptrack
+Type=Application
+Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

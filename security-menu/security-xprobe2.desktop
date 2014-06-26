@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=xprobe2
+Name=OS fingerprinting
 Exec=xfce4-terminal -e "su -c 'xprobe2; bash'"
 TryExec=xprobe2
 Type=Application

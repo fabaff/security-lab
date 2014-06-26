@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=An IPv4/IPv6 Subnet Calculator
+Exec=xfce4-terminal -e "su -c 'subnetcalc; bash'"
+TryExec=subnetcalc
+Type=Application
+Categories=System;Security;X-SecurityLab;X-Reconnaissance;

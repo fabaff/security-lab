@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=sar
+Exec=xfce4-terminal -e "su -c 'sar -h; bash'"
+TryExec=sysstat
+Type=Application
+Categories=System;Security;X-SecurityLab;X-SystemStatistics;

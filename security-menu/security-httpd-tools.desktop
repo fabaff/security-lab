@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=siege
-Exec=xfce4-terminal -e "su -c 'siege -h; bash'"
-TryExec=siege
+Name=Apache Benchmark
+Exec=xfce4-terminal -e "su -c 'ab -h; bash'"
+TryExec=httpd-tools
 Type=Application
 Categories=System;Security;X-SecurityLab;X-StressTesting;

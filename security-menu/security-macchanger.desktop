@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=MAC address changer
-Exec=xfce4-terminal -e "su -c 'macchanger; bash'"
+Exec=xfce4-terminal -e "su -c 'macchanger --help; bash'"
 TryExec=macchanger
 Type=Application
 Categories=System;Security;X-SecurityLab;X-General;

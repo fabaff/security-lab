@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=lynis
-Exec=xfce4-terminal -e "su -c 'lynis; bash'"
+Exec=xfce4-terminal -e "su -c 'lynis -h; bash'"
 TryExec=lynis
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

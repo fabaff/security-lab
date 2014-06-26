@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=SSL port scanner
-Exec=xfce4-terminal -e "su -c 'sslscan; bash'"
+Exec=xfce4-terminal -e "su -c 'sslscan --help | more; bash'"
 TryExec=sslscan
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

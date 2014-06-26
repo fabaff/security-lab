@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=nfswatch
+Exec=xfce4-terminal -e "su -c 'nfswatch -h; bash'"
+TryExec=nfswatch
+Type=Application
+Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

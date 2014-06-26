@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=TCP stream sniffer
-Exec=xfce4-terminal -e "su -c 'tcpick --help; bash'"
-TryExec=tcpick
+Name=A Curl-like tool
+Exec=xfce4-terminal -e "su -c 'httpie -h; bash'"
+TryExec=httpie
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

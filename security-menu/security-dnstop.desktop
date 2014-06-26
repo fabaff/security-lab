@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=dnstop
+Exec=xfce4-terminal -e "su -c 'dnstop; bash'"
+TryExec=dnstop
+Type=Application
+Categories=System;Security;X-SecurityLab;X-General;

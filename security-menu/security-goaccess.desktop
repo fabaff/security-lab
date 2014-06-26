@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=A web log analyzer and viewer
+Exec=xfce4-terminal -e "su -c 'goaccess; bash'"
+TryExec=goaccess
+Type=Application
+Categories=System;Security;X-SecurityLab;X-NetworkStatistics;

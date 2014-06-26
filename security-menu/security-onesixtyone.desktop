@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=TCP stream sniffer
-Exec=xfce4-terminal -e "su -c 'tcpick --help; bash'"
-TryExec=tcpick
+Name=SNMP scanner
+Exec=xfce4-terminal -e "su -c 'onesixtyone; bash'"
+TryExec=onesixtyone
 Type=Application
 Categories=System;Security;X-SecurityLab;X-Reconnaissance;

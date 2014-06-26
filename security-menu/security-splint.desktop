@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=splint
-Exec=xfce4-terminal -e "su -c 'splint; bash'"
+Exec=xfce4-terminal -e "su -c 'splint -help; bash'"
 TryExec=splint
 Type=Application
 Categories=System;Security;X-SecurityLab;X-CodeAnalysis;

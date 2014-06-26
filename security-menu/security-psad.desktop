@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=nebula
-Exec=xfce4-terminal -e "su -c 'nebula -h; bash'"
-TryExec=nebula
+Name=psad
+Exec=xfce4-terminal -e "su -c 'psad; bash'"
+TryExec=psad
 Type=Application
 Categories=System;Security;X-SecurityLab;X-IntrusionDetection;

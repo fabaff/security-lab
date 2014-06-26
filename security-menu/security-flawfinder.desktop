@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Flawfinder
-Exec=xfce4-terminal -e "su -c 'flawfinder; bash'"
+Exec=xfce4-terminal -e "su -c 'flawfinder --help | more; bash'"
 TryExec=flawfinder
 Type=Application
 Categories=System;Security;X-SecurityLab;X-CodeAnalysis;

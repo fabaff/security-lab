@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=DDoS Botnet Simulator
+Exec=xfce4-terminal -e "su -c 'bonesi; bash'"
+TryExec=bonesi
+Type=Application
+Categories=System;Security;X-SecurityLab;X-General;
