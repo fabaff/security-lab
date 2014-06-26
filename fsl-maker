@@ -55,8 +55,8 @@ sudo livecd-creator \
     --config=../$DIRECTORY/$KICKSTART \
     --fslabel=$LABEL \
     --title=$TITLE \
-    --releasever=$RELEASEVER
-#    --cache=$CACHE \
+    --releasever=$RELEASEVER \
+    --cache=$CACHE
 
 echo ""
 echo "If this script finished with no error, then the image is ready."
