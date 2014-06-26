@@ -1,0 +1,31 @@
+Fedora Security Lab Playbooks
+=============================
+The playbooks are here to create a full-blown penetration, audit, statistics, 
+or analysis hosts on top of an exisiting Fedora installations. The main purpose
+of the playbooks is to enable people to create an extented version of the 
+Fedora Security Lab. It doesn't matter if you want to setup a class/training
+room with multiple systems or a single host, the used technique is the same.
+
+None of the tools here violates the Fedora guidelines regarding licensing. 
+
+Resources
+---------
+Download     : http://spins.fedoraproject.org/security/
+Development  : https://fedorahosted.org/security-spin/
+Source       : https://fedorahosted.org/security-spin/browser
+Bugs:        : https://fedorahosted.org/security-spin/report/1
+
+Usage
+-----
+
+For local installations:
+
+$ sudo ansible-playbook [Name of the playbook].yml --connection=local
+
+Maintainer
+----------
+- Fabian Affolter <fab [AT] fedoraproject <dot> org>
+
+License
+-------
+The FSL is licensed under GPLv2, for more details check COPYING. 
