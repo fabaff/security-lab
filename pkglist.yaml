@@ -185,3 +185,4 @@
 - {category: NetworkStatistics, command: captcp -h, pkg: captcp, name: captcp, exclude: 0}
 - {category: General, command: dislocker -h, pkg: dislocker, exclude: 0}
 - {category: NetworkStatistics, command: netdisco -h, pkg: netdisco, name: netdisco, exclude: 1}
+- {category: NetworkStatistics, command: httpress -h, name: HTTP stress & benchmark utility, pkg: httpress, exclude: 0}
