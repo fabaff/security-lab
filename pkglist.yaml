@@ -186,3 +186,4 @@
 - {category: General, command: dislocker -h, pkg: dislocker, exclude: 0}
 - {category: NetworkStatistics, command: netdisco -h, pkg: netdisco, name: netdisco, exclude: 1}
 - {category: NetworkStatistics, command: httpress -h, name: HTTP stress & benchmark utility, pkg: httpress, exclude: 0}
+- {category: IntrusionDetection, command: psad, name: psad, pkg: psad, exclude: 1}
