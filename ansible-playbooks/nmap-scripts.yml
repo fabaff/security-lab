@@ -21,7 +21,9 @@
              'https://raw.githubusercontent.com/b4ldr/nse-scripts/master/dns-nsec-enum.nse',
              'https://raw.githubusercontent.com/fabaff/fsl-test-bench/master/fsl-tb-detect.nse',
              'https://raw.githubusercontent.com/SpiderLabs/Nmap-Tools/master/NSE/http-screenshot.nse',
-             'https://github.com/hkm/nmap-nse-scripts/blob/master/http-wordpress-attachment.nse']
+             'https://github.com/hkm/nmap-nse-scripts/blob/master/http-wordpress-attachment.nse',
+             'https://raw.githubusercontent.com/ileiva/Nmap/master/scripts/http-filedownload-exploiter.nse'
+            ]
 
   tasks:
   - name: download nmap libraries from nmap
