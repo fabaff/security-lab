@@ -48,7 +48,7 @@
 - {category: NetworkStatistics, command: iptraf-ng, name: iptraf-ng, pkg: iptraf-ng, exclude: 0}
 - {category: NetworkStatistics, command: iperf -h, name: iperf, pkg: iperf, exclude: 0}
 - {category: NetworkStatistics, command: nethogs -h, name: nethogs, pkg: nethogs, exclude: 0}
-- {category: Reconnaissance, command: etherape, name: etherape, pkg: etherape, exclude: 1}
+- {category: Reconnaissance, pkg: etherape, exclude: 1}
 - {category: Reconnaissance, command: lynis -h, name: lynis, pkg: lynis, exclude: 0}
 - {category: Reconnaissance, command: netsniff-ng -h, name: netsniff-ng, pkg: netsniff-ng, exclude: 0}
 - {category: Reconnaissance, command: tcpjunk -x, name: tcpjunk, pkg: tcpjunk, exclude: 0}
