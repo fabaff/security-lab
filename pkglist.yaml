@@ -5,7 +5,7 @@
 - {category: PasswordTools, command: john, name: Password cracker, pkg: john, exclude: 0}
 - {category: PasswordTools, command: sucrack -h, name: sucrack, pkg: sucrack, exclude: 0}
 - {category: PasswordTools, command: ophcrack, name: Objectif Securite ophcrack, pkg: ophcrack, exclude: 0}
-- {category: PasswordTools, command: medusa -d, name: Medusa Brute Force, pkg: medusa, exclude: 0}
+- {category: PasswordTools, command: medusa -d, name: Medusa Brute Force, pkg: medusa, exclude: 0,}
 - {category: PasswordTools, command: pwgen -h, name: Password generator, pkg: pwgen, exclude: 0}
 - {category: IntrusionDetection, command: chkrootkit -h, name: chkrootkit, pkg: chkrootkit, exclude: 0}
 - {category: IntrusionDetection, command: aide -h, name: aide, pkg: aide, exclude: 1}
@@ -187,3 +187,5 @@
 - {category: NetworkStatistics, command: netdisco -h, pkg: netdisco, name: netdisco, exclude: 1}
 - {category: NetworkStatistics, command: httpress -h, name: HTTP stress & benchmark utility, pkg: httpress, exclude: 0}
 - {category: IntrusionDetection, command: psad, name: psad, pkg: psad, exclude: 1}
+- {category: General, name: scap-security-guide, pkg: scap-security-guide, exclude: 0}
+- {category: General, name: scap-workbench, pkg: scap-workbench, exclude: 0}
