@@ -77,7 +77,7 @@ def display():
 	#    if 'exclude' in pkg:
 	#        pkgslistEx.append(pkg['pkg'])
 	#    else:
-	 #       pkgslistIn.append(pkg['pkg'])
+	#        pkgslistIn.append(pkg['pkg'])
 
     # Displays the details to STDOUT
     print '\nDetails about the packages in the Fedora Security Lab\n'
@@ -151,7 +151,7 @@ def playbook():
 - hosts: fsl_hosts
   user: root
   tasks:
-  - name: install {{ item }}
+  - name: install all packages from the FSL
     yum: pkg={{ item }}
          state=present 
     with_items:\n""" % (datetime.date.today())
@@ -184,8 +184,8 @@ def live():
 	        print '-%s' % pkg['pkg']
 
 def trac():
-    # FIXME: There are duplicates in the list !!!
-    """Generates the package overview for FSL trac instance."""
+    # FIXME: There are still duplicates in the list !!!
+    """Generates the package overview for the FSL trac instance."""
     pkgslist = getPackages()
 
     # Simplifiy the packages list, only package name and category are relevant
