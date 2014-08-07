@@ -55,7 +55,7 @@
 - {category: Reconnaissance, command: ssldump -h, name: ssldump, pkg: ssldump, exclude: 0}
 - {category: Reconnaissance, command: yersinia -G, name: Yersinia, pkg: yersinia, exclude: 0}
 - {category: Forensics, command: ddrescue -h, name: ddrescue, pkg: ddrescue, exclude: 0}
-- {category: Forensics, command: gparted, name: gParted, pkg: gparted, exclude: 0}
+- {category: Forensics, pkg: gparted, exclude: 0}
 - {category: Forensics, command: testdisk -h, name: testdisk, pkg: testdisk, exclude: 0}
 - {category: Forensics, command: foremost -h, name: Foremost Filecarver, pkg: foremost, exclude: 0}
 - {category: Forensics, command: sectool-gui, name: sectool, pkg: sectool-gui, exclude: 0}
