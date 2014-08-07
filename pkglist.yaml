@@ -140,7 +140,7 @@
 - {category: Reconnaissance, command: tcpreplay, name: tcpreplay, pkg: tcpreplay, exclude: 1}
 - {category: NetworkStatistics, command: trafshow -h, name: Network traffic visualization, pkg: trafshow, exclude: 0}
 - {category: IntrusionDetection, command: tripwire, name: tripwire, pkg: tripwire, exclude: 1}
-- {category: General, command: picviz-gui, name: picviz-gui, pkg: picviz-gui, exclude: 1}
+- {category: General, pkg: picviz-gui, exclude: 1}
 - {category: StressTesting, command: siege -h, name: siege, pkg: siege, exclude: 0}
 - {category: Reconnanssance, command: echoping -h, name: echoping, pkg: echoping, exclude: 0}
 - {category: Reconnanssance, command: dhcping, name: dhcping, pkg: dhcping, exclude: 0}
