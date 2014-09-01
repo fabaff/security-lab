@@ -126,7 +126,7 @@
 - {category: General, command: dnstop, name: dnstop, pkg: dnstop, exclude: 1}
 - {category: General, command: sslstrip -h, name: sslstrip, pkg: sslstrip, exclude: 1}
 - {category: Forensics, command: scalpel -h, name: scalpel, pkg: scalpel, exclude: 1}
-- {category: Forensics, command: pdfcrack, name: pdfcrack, pkg: pdfcrack, exclude: 1}
+- {category: Forensics, command: pdfcrack, name: PDF cracker, pkg: pdfcrack, exclude: 1}
 - {category: Reconnaissance, command: pyrit, name: pyrit, pkg: pyrit, exclude: 1}
 - {category: Forensics, command: wipe -h, name: wipe, pkg: wipe, exclude: 1}
 - {category: Forensics, command: safecopy -h, name: safecopy, pkg: safecopy, exclude: 1}
