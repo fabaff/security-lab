@@ -189,3 +189,4 @@
 - {category: IntrusionDetection, command: psad, name: psad, pkg: psad, exclude: 1}
 - {category: General, pkg: scap-security-guide, exclude: 0}
 - {category: General, pkg: scap-workbench, exclude: 0}
+- {category: Reconnaissance, command: ike-scan -h, pkg: ike-scan, name: ike-scan, exclude: 0}
