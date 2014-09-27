@@ -23,6 +23,7 @@
              'https://raw.githubusercontent.com/SpiderLabs/Nmap-Tools/master/NSE/http-screenshot.nse',
              'https://github.com/hkm/nmap-nse-scripts/blob/master/http-wordpress-attachment.nse',
              'https://raw.githubusercontent.com/ileiva/Nmap/master/scripts/http-filedownload-exploiter.nse'
+             'http://seclists.org/nmap-dev/2014/q3/att-493/http-vuln-cve-2014-6271.nse'
             ]
 
   tasks:
