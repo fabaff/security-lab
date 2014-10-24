@@ -15,7 +15,7 @@
   vars:
     # Development librarieres and script directly from nmap
     - libs: [tls.lua]
-    - nse: [ssl-heartbleed.nse]
+    - nse: [ssl-poodle.nse]
     # Third party sources need the full URL
     - nse2: ['https://raw.githubusercontent.com/b4ldr/nse-scripts/master/dns-sd.nse',
              'https://raw.githubusercontent.com/b4ldr/nse-scripts/master/dns-nsec-enum.nse',
