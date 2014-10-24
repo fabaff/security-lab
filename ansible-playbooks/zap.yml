@@ -1,0 +1,30 @@
+# This playbook installs zaproxy (https://code.google.com/p/zaproxy/).
+#
+# Copyright (c) 2014 Fabian Affolter <fab@fedoraproject.org>
+#
+# All rights reserved.
+# This file is licensed under GPLv2, for more details check COPYING.
+# 
+# Usage: ansible-playbook zap.yml -f 10
+
+---
+#- hosts: fsl_hosts
+- hosts: 127.0.0.1
+  connection: local
+  user: root
+  vars:
+    zap: 2.3.1
+  tasks:
+  - name: download the archive from the upstream website
+    get_url: url=http://downloads.sourceforge.net/project/zaproxy/{{ zap }}/ZAP_{{ zap }}_Linux.tar.gz
+             dest=/opt/ZAP_{{ zap }}_Linux.tar.gz
+             mode=0644
+
+  - name: extract artefact under /usr/local
+    unarchive: src=/opt/ZAP_{{ zap }}_Linux.tar.gz
+               dest=/opt/
+               copy=no
+
+  - name: delete the archive
+    file: path=/opt/ZAP_{{ zap }}_Linux.tar.gz
+        state=absent
