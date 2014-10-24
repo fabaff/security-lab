@@ -1,0 +1,27 @@
+# This playbook installs golismero (http://golismero-project.com/).
+#
+# Copyright (c) 2014 Fabian Affolter <fab@fedoraproject.org>
+#
+# All rights reserved.
+# This file is licensed under GPLv2, for more details check COPYING.
+# 
+# Usage: ansible-playbook golismero.yml -f 10
+
+---
+#- hosts: fsl_hosts
+- hosts: 127.0.0.1
+  connection: local
+  user: root
+  tasks:
+  tasks:
+  - name: install needed package
+    yum: pkg={{ item }}
+         state=present 
+    with_items:
+      - python-docutils
+      - python-pymongo
+      - python-simplejson
+
+  - name: download golismero from github
+    git: repo=https://github.com/golismero/golismero.git
+         dest=/opt/golismero
