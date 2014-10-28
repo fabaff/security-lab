@@ -1,0 +1,33 @@
+# This playbook installs the arachni framework (http://www.arachni-scanner.com).
+#
+# Copyright (c) 2014 Fabian Affolter <fab@fedoraproject.org>
+#
+# All rights reserved.
+# This file is licensed under GPLv2, for more details check COPYING.
+# 
+# Usage: ansible-playbook arachni.yml -f 10
+
+---
+#- hosts: fsl_hosts
+- hosts: 127.0.0.1
+  connection: local
+  vars:
+    framework: 1.0.4
+    ui: 0.5.5
+  tasks:
+  - name: download the archive from the upstream website
+    get_url: url=http://downloads.arachni-scanner.com/arachni-{{ framework }}-{{ ui }}-linux-x86_64.tar.gz
+             dest=/opt/arachni.tar.gz
+             mode=0644
+
+  - name: extract archive under /opt
+    unarchive: src=/opt/arachni.tar.gz
+               dest=/opt/
+               copy=no
+
+  - name: delete the archive
+    file: path=/opt/arachni.tar.gz
+        state=absent
+
+
+
