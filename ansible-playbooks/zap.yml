@@ -20,7 +20,7 @@
              dest=/opt/ZAP_{{ zap }}_Linux.tar.gz
              mode=0644
 
-  - name: extract artefact under /usr/local
+  - name: extract archive under /opt
     unarchive: src=/opt/ZAP_{{ zap }}_Linux.tar.gz
                dest=/opt/
                copy=no
