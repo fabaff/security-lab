@@ -190,3 +190,4 @@
 - {category: General, pkg: scap-security-guide, exclude: 0}
 - {category: General, pkg: scap-workbench, exclude: 0}
 - {category: Reconnaissance, command: ike-scan -h, pkg: ike-scan, name: ike-scan, exclude: 0}
+- {category: Reconnaissance, command: ciphertest -h, pkg: ciphertest, name: ciphertest, exclude: 0}
