@@ -35,7 +35,7 @@ text
 # Language
 lang en_US.UTF-8
 
-# Kexboard setup
+# Keyboard setup
 keyboard sg-latin1
 #keyboard us
 
