@@ -69,11 +69,12 @@ poweroff
 %packages
 @core
 chrony
-#dnf
+dnf
 bash-completion
 tar
 unzip
 git
+curl
 %end
 END_ENTRY
 
