@@ -81,6 +81,7 @@
 - {category: General, pkg: net-snmp, exclude: 0}
 - {category: General, pkg: net-snmp-utils, exclude: 0}
 - {category: General, pkg: openvas-scanner, exclude: 0}
+- {category: General, pkg: openvas-cli, exclude: 0}
 - {category: General, pkg: hexedit -h, exclude: 0}
 - {category: Forensics, pkg: scanmem -h, name: Debugging tool, command: scanmem, exclude: 0}
 - {category: Forensics, pkg: sleuthkit, exclude: 0}
