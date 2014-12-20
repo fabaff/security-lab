@@ -272,31 +272,7 @@ def default():
     print '\nTo see all available options use -h or --help.'
 
 def argParsing():
-    """Argument parsing fir all options."""
-    parser = argparse.ArgumentParser(def main_run(argv):
-    if len(argv) < 2:
-        default()
-        sys.exit(1)
-
-    args = argParsing()
-    if args.display:
-        display()
-    if args.add:
-        add(args.add)
-    if args.edit:
-        edit(args.edit)
-    if args.comps:
-        comps()
-    if args.trac:
-        trac()
-    if args.menus:
-        menus()
-    if args.live:
-        live()
-    if args.raw:
-        raw()
-    if args.playbook:
-        playbook()
+    parser = argparse.ArgumentParser(
 	    description='This tool can be used for maintaining the Fedora Security Lab package list.',
 	    epilog="Please report all bugs and comment.")
     parser.add_argument('-d', '--display',
