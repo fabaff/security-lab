@@ -172,9 +172,7 @@ def playbook():
     repo.git.push()
 
 def live():
-    """
-    Generates the exclude list for the kickstart file.
-    """
+    """Generates the exclude list for the kickstart file."""
     pkgslist = getPackages()
     # Split list of packages into eincluded and excluded packages
     sorted_pkgslist = sorted(pkgslist, key=operator.itemgetter('pkg'))
@@ -265,15 +263,40 @@ def menus():
 	        os.remove(file)
 
 def default():
-    """"""
+    """Displayed if there are no given options."""
     pkgslist = getPackages()
 
     # Displays the details to STDOUT
     print '\nDetails about the packages in the Fedora Security Lab\n'
     print 'Packages in comps               : %s' % len(pkgslist)
     print '\nTo see all available options use -h or --help.'
+
 def argParsing():
-    parser = argparse.ArgumentParser(
+    """Argument parsing fir all options."""
+    parser = argparse.ArgumentParser(def main_run(argv):
+    if len(argv) < 2:
+        default()
+        sys.exit(1)
+
+    args = argParsing()
+    if args.display:
+        display()
+    if args.add:
+        add(args.add)
+    if args.edit:
+        edit(args.edit)
+    if args.comps:
+        comps()
+    if args.trac:
+        trac()
+    if args.menus:
+        menus()
+    if args.live:
+        live()
+    if args.raw:
+        raw()
+    if args.playbook:
+        playbook()
 	    description='This tool can be used for maintaining the Fedora Security Lab package list.',
 	    epilog="Please report all bugs and comment.")
     parser.add_argument('-d', '--display',
@@ -330,7 +353,7 @@ def main_run(argv):
         playbook()
 
 def main():
-    '''Main program entry point'''
+    """Main program entry point"""
     try:
         sys.exit(main_run(sys.argv))
     except KeyboardInterrupt:
