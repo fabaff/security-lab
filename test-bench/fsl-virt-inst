@@ -3,7 +3,7 @@
 # fsl-virt-inst - Creator for a libvirt-based virtual machine for the Fedora
 # Security Lab Test bench.
 #
-# Copyright (c) 2012-2014 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2012-2015 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # 
@@ -80,10 +80,10 @@ END_ENTRY
 
 sudo virt-install \
     --name FSL-Test-bench \
-    --os-variant fedora20 \
+    --os-variant fedora21 \
     --ram 1024 \
-    --disk /var/lib/libvirt/images/fsl-tb-f20.img,size=8 \
-    --location http://mirror.switch.ch/ftp/mirror/fedora/linux/releases/20/Fedora/x86_64/os/ \
+    --disk /var/lib/libvirt/images/fsl-tb-f21.img,size=8 \
+    --location http://mirror.switch.ch/ftp/mirror/fedora/linux/releases/21/Server/x86_64/os/ \
     --initrd-inject fsl-testbench.ks \
     --extra-args "ks=file:fsl-testbench.ks" \
     --noautoconsole \
