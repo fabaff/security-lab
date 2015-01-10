@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 #
 # fsl-maker - A help script to compose the Security Lab Live media.
-# Copyright (c) 2010-2014 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2010-2015 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # 
