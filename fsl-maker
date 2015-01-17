@@ -25,7 +25,7 @@ DIRECTORY=spin-kickstarts
 CACHE=/var/cache/live
 LABEL=SecurityLab
 TITLE=SecurityLab-`date -I`
-#RELEASEVER=20
+#RELEASEVER=22
 RELEASEVER=rawhide
 ROOT_UID=0   
 
