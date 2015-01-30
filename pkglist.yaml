@@ -195,3 +195,4 @@
 - {category: NetworkStatistics, command: bmon -h, pkg: bmon, name: bmon, exclude: 0}
 - {category: Reconnaissance, command: fpdns -h, name: Fingerprint DNS servers, pkg: fpdns, exclude: 0}
 - {category: Reconnaissance, command: usbsniff -h, name: USB traffic capture and replay tool, pkg: usbsniff, exclude: 0}
+- {category: Reconnaissance, command: tcpcrypt -h, pkg: tcpcrypt, name: TCP connection encrypter, exclude: 0}
