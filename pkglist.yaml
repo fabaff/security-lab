@@ -71,11 +71,11 @@
 - {category: General, pkg: mc, name: Midnight Commander, command: mc, exclude: 0}
 - {category: General, pkg: screen, exclude: 0}
 - {category: General, command: macchanger --help, name: MAC address changer, pkg: macchanger, exclude: 0}
-- {category: General, pkg: ngrep -h, exclude: 0}
+- {category: General, pkg: ngrep -h, command: ngrep -h, exclude: 0}
 - {category: General, pkg: ntfs-3g, exclude: 0}
 - {category: General, pkg: ntfsprogs, exclude: 0}
 - {category: Forensics, command: xmount, name: xmount, pkg: xmount, exclude: 0}
-- {category: Forensics, pkg: dc3dd --help, name: dc3dd, command: dc3dd, exclude: 0}
+- {category: Forensics, pkg: dc3dd, name: dc3dd, command: dc3dd --help, exclude: 0}
 - {category: Forensics, pkg: afftools, name: afftools, command: afftools, exclude: 0}
 - {category: General, pkg: pcapdiff, exclude: 0}
 - {category: General, pkg: pcapfix, exclude: 0}
@@ -83,8 +83,8 @@
 - {category: General, pkg: net-snmp-utils, exclude: 0}
 - {category: General, pkg: openvas-scanner, exclude: 0}
 - {category: General, pkg: openvas-cli, exclude: 0}
-- {category: General, pkg: hexedit -h, exclude: 0}
-- {category: Forensics, pkg: scanmem -h, name: Debugging tool, command: scanmem, exclude: 0}
+- {category: General, pkg: hexedit, command: hexedit -h, exclude: 0}
+- {category: Forensics, pkg: scanmem, name: Debugging tool, command: scanmem -h, exclude: 0}
 - {category: Forensics, pkg: sleuthkit, exclude: 0}
 - {category: General, pkg: irssi, exclude: 0, command: irssi, name: IRC client}
 - {category: General, pkg: powertop, exclude: 0}
@@ -95,7 +95,7 @@
 - {category: General, pkg: yum-utils, exclude: 0}
 - {category: VoIP, pkg: sipsak, command: sipsak, name: sipsak, exclude: 0}
 - {category: VoIP, pkg: sipp, command: sipp, name: sipp, exclude: 0}
-- {category: General, pkg: mcabber -h, exclude: 0}
+- {category: General, pkg: mcabber, command: mcabber -h, exclude: 0}
 - {category: General, pkg: firstaidkit-plugin-all, exclude: 0}
 - {category: WebApplicationTesting, command: halberd --help, name: halberd, pkg: halberd, exclude: 0}
 - {category: WebApplicationTesting, command: httping --help, name: httping, pkg: httping, exclude: 0}
