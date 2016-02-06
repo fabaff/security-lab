@@ -200,3 +200,4 @@
 - {category: Reconnaissance, command: tcpcrypt -h, pkg: tcpcrypt, name: TCP connection encrypter, exclude: 0}
 - {category: Forensics, command: dcfldd, name: Improved dd, pkg: dcfldd, exclude: 0}
 - {category: Wireless, command: reaver -h, name: WPS Brute forcer, pkg: reaver, exclude: 0}
+- {category: Reconnaissance, command: thcsyn6, name: IPv6 pkg generator, pkg: thc-ipv6, exclude: 0}
