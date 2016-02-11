@@ -1,6 +1,6 @@
 # This playbook installs zaproxy (https://code.google.com/p/zaproxy/).
 #
-# Copyright (c) 2014-2015 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2014-2016 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # This file is licensed under GPLv2, for more details check COPYING.
@@ -13,7 +13,7 @@
   connection: local
   user: root
   vars:
-    zap: 2.4.0
+    zap: 2.4.3
   tasks:
   - name: download the archive from the upstream website
     get_url: url=http://downloads.sourceforge.net/project/zaproxy/{{ zap }}/ZAP_{{ zap }}_Linux.tar.gz
