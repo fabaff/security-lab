@@ -1,6 +1,6 @@
 # This playbook installs spiderfoot (http://www.spiderfoot.net/).
 #
-# Copyright (c) 2014 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2014-2016 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # This file is licensed under GPLv2, for more details check COPYING.
@@ -26,3 +26,4 @@
   - name: download spiderfoot from github
     git: repo=https://github.com/smicallef/spiderfoot.git
          dest=/opt/spiderfoot
+         force=yes
