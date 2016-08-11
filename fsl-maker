@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 #
 # fsl-maker - A help script to compose the Security Lab Live media.
-# Copyright (c) 2010-2015 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2010-2016 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # 
@@ -33,7 +33,7 @@ ROOT_UID=0
 if [ ! -e /usr/bin/livecd-creator ]
     then
         echo "livecd-creator is not installed. Installation starts now ..."
-        sudo yum -y install livecd-tools
+        sudo dnf -y install livecd-tools
 fi
 
 # Check if the spin-kickstarts directory is present
