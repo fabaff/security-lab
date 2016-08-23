@@ -1,0 +1,21 @@
+Topics for Flock 2017
+---------------------
+
+- Menu -> Xfce/Gnome
+- Tools for EPEL
+- FSL Test Bench
+- Reviews/Integration in FSL
+- Wishlist -> 'attractive tools'
+- IoT, BlueTooth, and alike
+
+Tools for SELinux information/analysis/summary/etc
+- seaudit
+- sptrack
+- Live media for auditing
+
+
+- Fedora Atomic
+- Networking -> Cockpit for management
+- Docker images for various services
+  - Webserver/FTP/SSH/etc -> Fingerprinting
+  - Vuln. web applications
