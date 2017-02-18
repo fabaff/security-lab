@@ -1,5 +1,4 @@
 - {category: General, pkg: security-menus, exclude: 0}
-- {category: Reconnaissance, command: xprobe2, name: OS fingerprinting, pkg: xprobe2, exclude: 0}
 - {category: Reconnaissance, command: dsniff -h, name: Network auditing, pkg: dsniff, exclude: 0}
 - {category: Reconnaissance, pkg: wireshark, exclude: 0}
 - {category: Reconnaissance, pkg: wireshark-gnome, exclude: 0}
