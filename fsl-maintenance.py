@@ -35,16 +35,16 @@ import os
 try:
     import columnize
 except ImportError:
-    print 'Please install pycolumnize first -> sudo yum -y install pycolumnize'
+    print 'Please install pycolumnize first -> sudo dnf -y install pycolumnize'
 import yum
 try:
     import git
 except ImportError:
-    print 'Please install GitPython first -> sudo yum -y install GitPython'
+    print 'Please install GitPython first -> sudo dnf -y install GitPython'
 try:
     import yaml
 except ImportError:
-    print 'Please install PyYAML first -> sudo yum -y install PyYAML'
+    print 'Please install PyYAML first -> sudo dnf -y install PyYAML'
 
 repo = git.Repo(os.getcwd())
 
@@ -152,7 +152,7 @@ def playbook():
   user: root
   tasks:
   - name: install all packages from the FSL
-    yum: pkg={{ item }}
+    dnf: pkg={{ item }}
          state=present 
     with_items:\n""" % (datetime.date.today())
 
@@ -217,7 +217,7 @@ def trac():
                 part4 = '[https://admin.fedoraproject.org/pkgdb/acls/bugs/%s Bug Reports]' % detail.name
                 entry =  part1 + " - " + part2 + " - " + part3 + " - " + part4
                 print entry
-    print '<--- snap --->\nPlease copy the text between the markings to the '
+    print'<--- snap --->\nPlease copy the text between the markings to the '
     print 'availableApps (https://fedorahosted.org/security-spin/wiki/availableApps) page in the Trac wiki.'
 
 def menus():
