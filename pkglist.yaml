@@ -1,7 +1,7 @@
 - {category: General, pkg: security-menus, exclude: 0}
 - {category: Reconnaissance, command: dsniff -h, name: Network auditing, pkg: dsniff, exclude: 0}
 - {category: Reconnaissance, pkg: wireshark, exclude: 0}
-- {category: Reconnaissance, pkg: wireshark-gnome, exclude: 0}
+- {category: Reconnaissance, pkg: wireshark-gtk, exclude: 0}
 - {category: PasswordTools, command: john, name: Password cracker, pkg: john, exclude: 0}
 - {category: PasswordTools, command: sucrack -h, name: sucrack, pkg: sucrack, exclude: 0}
 - {category: PasswordTools, command: ophcrack, name: Objectif Securite ophcrack, pkg: ophcrack, exclude: 0}
