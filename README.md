@@ -21,6 +21,25 @@ https://pagure.io/security-lab/raw/master/f/branding/security-wp.png
 - Fabian Affolter - fab@fedoraproject.org
 - Joerg Simon - jsimon@fedoraproject.org
 
+## Major sub-projects
+
+- Fedora Security Lab Test bench
+- Playbooks
+- Compliance Killer
+- OpenDEEM - Open Dynamic Efficiency Evaluation Methodology
+
+## Help us (aka Contribute)
+
+There are many ways to help.
+
+- Pick a task at the Wishlist or do a Package Review. For that just follow the ​Tracker bug!
+- Add relevant information sources to the Documentation page.
+- Artwork
+- Test the nightly builds of Fedora Security Lab.
+- When we are getting close to a new release, please help with testing.
+
+Further Questions? How to contribute? Contact Joerg or Fabian.
+
 ## Acknowledgements
 
 - Fedora LiveCD Xfce Spin team - some work here was inherited, many thanks!
