@@ -1,4 +1,4 @@
-# Fedora Security Spin
+# Fedora Security Lab
 
 The Fedora Security Lab provides a safe test environment to work on security auditing, forensics, system rescue and teaching security testing methodologies
 in universities and other organizations.
