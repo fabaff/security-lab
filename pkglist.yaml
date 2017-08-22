@@ -64,6 +64,7 @@
 - {category: Forensics, command: srm -h, name: Securely Remove Files, pkg: srm, exclude: 0}
 - {category: Forensics, command: nwipe, name: Securely erase disks, pkg: nwipe, exclude: 0}
 - {category: Forensics, command: firstaidkit -g gtk, name: First Aid Kit, pkg: firstaidkit-gui, exclude: 0}
+- {category: Forensics, command: extundelete --help, name: extundelete, pkg: extundelete, exclude: 0}
 - {category: General, pkg: nc6, command: nc6 -h, exclude: 0}
 - {category: General, pkg: nc, command: nc -h, exclude: 0}
 - {category: General, pkg: inxi, command: inxi -Fxxplu, exclude: 0}
