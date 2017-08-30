@@ -19,7 +19,7 @@ https://pagure.io/security-lab/raw/master/f/branding/security-wp.png
 
 ## Maintainers
 - Fabian Affolter - fab@fedoraproject.org
-- Joerg Simon - jsimon@fedoraproject.org
+- (Joerg Simon - jsimon@fedoraproject.org)
 
 ## Major sub-projects
 
@@ -32,13 +32,13 @@ https://pagure.io/security-lab/raw/master/f/branding/security-wp.png
 
 There are many ways to help.
 
-- Pick a task at the Wishlist or do a Package Review. For that just follow the ​Tracker bug!
-- Add relevant information sources to the Documentation page.
+- Pick a [task](https://pagure.io/security-lab/issues) or do a [Package Review](https://bugzilla.redhat.com/show_bug.cgi?id=563471).
+- Add relevant information sources to the [Documentation](https://pagure.io/security-lab/blob/master/f/doc) page.
 - Artwork
 - Test the [nightly builds](https://alt.fedoraproject.org/) of Fedora Security Lab.
 - When we are getting close to a new release, please help with testing.
 
-Further Questions? How to contribute? Contact Joerg or Fabian.
+Further Questions? How to contribute? Contact [Fabian](fab@fedoraproject.org).
 
 ## Acknowledgements
 
