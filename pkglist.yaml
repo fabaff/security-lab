@@ -73,6 +73,7 @@
 - {category: General, command: macchanger --help, name: MAC address changer, pkg: macchanger, exclude: 0}
 - {category: General, pkg: ngrep -h, command: ngrep -h, exclude: 0}
 - {category: General, pkg: ntfs-3g, exclude: 0}
+- {category: General, pkg: hans, command: hans -h, name: hans, exclude: 0}
 - {category: General, pkg: ntfsprogs, exclude: 0}
 - {category: Forensics, command: xmount, name: xmount, pkg: xmount, exclude: 0}
 - {category: Forensics, pkg: dc3dd, name: dc3dd, command: dc3dd --help, exclude: 0}
