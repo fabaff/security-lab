@@ -34,12 +34,12 @@ import os
 try:
     import columnize
 except ImportError:
-    print("Please install pycolumnize first -> sudo dnf -y install pycolumnize")
+    print("Please install pycolumnize first -> sudo dnf -y install python3-columnize")
 import dnf
 try:
     import git
 except ImportError:
-    print("Please install GitPython first -> sudo dnf -y install GitPython")
+    print("Please install GitPython first -> sudo dnf -y install python3-GitPython")
 try:
     import yaml
 except ImportError:
