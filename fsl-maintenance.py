@@ -151,7 +151,7 @@ def playbook():
 
     part1 = """# This playbook installs all Fedora Security Lab packages.
 #
-# Copyright (c) 2013-2017 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2013-2018 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # This file is licensed under GPLv2, for more details check COPYING.
