@@ -181,7 +181,7 @@ def playbook():
 
     # Commit the changed file to the repository
     repo.git.add('ansible-playbooks/fsl-packages.yml')
-    repo.git.commit(m='update playbook')
+    repo.git.commit(m='Update playbook')
     repo.git.push()
 
 
