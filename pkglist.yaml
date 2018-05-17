@@ -36,7 +36,7 @@
 - {category: General, command: macchanger --help, name: MAC address changer, pkg: macchanger, exclude: 0}
 - {category: General, command: netsed -h, name: netsed, pkg: netsed, exclude: 1}
 - {category: General, command: ntp, name: The NTP daemon and utilities, pkg: ntp, exclude: 0}
-- {category: General, command: proxychains, name: proxychains, pkg: proxychains, exclude: 1}
+- {category: General, command: proxychains-ng, name: proxychains-ng, pkg: proxychains-ng, exclude: 1}
 - {category: General, command: ssh, name: SSH client, pkg: openssh, exclude: 0}
 - {category: General, command: sslstrip -h, name: sslstrip, pkg: sslstrip, exclude: 1}
 - {category: General, command: telnet --help, name: Telnet, pkg: telnet, exclude: 0}
