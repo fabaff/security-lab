@@ -24,6 +24,7 @@
 - {category: Forensics, command: unhide, name: unhide, pkg: unhide, exclude: 0}
 - {category: Forensics, command: wipe -h, name: wipe, pkg: wipe, exclude: 1}
 - {category: Forensics, command: xmount, name: xmount, pkg: xmount, exclude: 0}
+- {category: Forensics, command: ewfinfo, name: EWF tools, pkg: ewftools, exclude: 0}
 - {category: Forensics, pkg: afftools, name: afftools, command: afftools, exclude: 0}
 - {category: Forensics, pkg: dc3dd, name: dc3dd, command: dc3dd --help, exclude: 0}
 - {category: Forensics, pkg: gparted, exclude: 0}
