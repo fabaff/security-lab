@@ -196,49 +196,6 @@ def live():
         if pkg['exclude'] == 1:
             print("- ", pkg['pkg'])
 
-
-# # FIXME: There are still duplicates in the list !!!
-# # FIXME: Update for https://pagure.io/
-# def trac():
-#     """Generate the package overview for the FSL trac instance."""
-#
-#     pkgslist = getPackages()
-#
-#     # Simplifiy the packages list, only package name and category are relevant
-#     # for the Trac wiki page
-#     pkgslistIn = []
-#     for pkg in pkgslist:
-#         pkgslistIn.append((pkg['pkg'], pkg['category']))
-#
-#     sorted_pkgslist = sorted(pkgslistIn, key=operator.itemgetter(1))
-#     groups = itertools.groupby(sorted_pkgslist, key=operator.itemgetter(1))
-#     sorted_categories = [{'category': k, 'pkgs': [x[0] for x in v]} for k, v in groups]
-#     #print sorted_categories
-#
-#     yb = dnf.Base()
-#     yb.conf.cache = 1
-#     print("<--- snip --->")
-#     for cat in sorted_categories:
-#         if cat['category'] != 'VoIP':
-#             elements = re.findall('[A-Z][^A-Z]*', cat['category'])
-#             category_name = ' '.join(elements)
-#         else:
-#             category_name = cat['category']
-#         print("== %s ==", category_name)
-#         for pkg in cat['pkgs']:
-#             pkgData = yb.pkgSack.searchNevra(pkg)
-#             for detail in pkgData:
-# #                print detail.name, detail.url
-#                 part1 = '* [%s %s]' % (detail.url, detail.name)
-#                 part2 = detail.summary
-#                 part3 = '[https://admin.fedoraproject.org/pkgdb/acls/name/%s Fedora Package Database]' % detail.name
-#                 part4 = '[https://admin.fedoraproject.org/pkgdb/acls/bugs/%s Bug Reports]' % detail.name
-#                 entry =  part1 + " - " + part2 + " - " + part3 + " - " + part4
-#                 print(entry)
-#     print("<--- snap --->\nPlease copy the text between the markings to the ")
-#     #print("availableApps (https://fedorahosted.org/security-spin/wiki/availableApps) page in the Trac wiki.")
-
-
 @output.command('menus')
 def menus():
     """Generate the .desktop files which are used for the menu structure."""
