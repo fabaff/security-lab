@@ -53,7 +53,7 @@
 - {category: General, pkg: nc, command: nc -h, exclude: 0}
 - {category: General, pkg: net-snmp, exclude: 0}
 - {category: General, pkg: net-snmp-utils, exclude: 0}
-- {category: General, pkg: ngrep -h, command: ngrep -h, exclude: 0}
+- {category: General, pkg: ngrep, command: ngrep -h, exclude: 0}
 - {category: General, pkg: ntfs-3g, exclude: 0}
 - {category: General, pkg: ntfsprogs, exclude: 0}
 - {category: General, pkg: openvas-cli, exclude: 0}
