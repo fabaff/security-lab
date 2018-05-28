@@ -137,11 +137,11 @@ def comps():
     </packagelist>
     """
     pkgslist = getPackages()
-
     # Split list of packages into eincluded and excluded packages
     sorted_pkgslist = sorted(pkgslist, key=operator.itemgetter('pkg'))
     for pkg in sorted_pkgslist:
-        print('      <packagereq type="default">%s</packagereq>', pkg['pkg'])
+        entry = '      <packagereq type="default">{}</packagereq>'.format(pkg['pkg'])
+        print(entry)
 
 
 @output.command('playbook')
@@ -240,3 +240,4 @@ def menus():
 
 if __name__ == '__main__':
     cli()
+
