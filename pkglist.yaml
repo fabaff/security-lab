@@ -114,6 +114,7 @@
 - {category: Reconnaissance, command: bkhive, pkg: bkhive, name: Recover Syskey bootkey, exclude: 1}
 - {category: Reconnaissance, command: bro -h, name: Network analysis framework, pkg: bro, exclude: 1}
 - {category: Reconnaissance, command: ciphertest -h, pkg: ciphertest, name: ciphertest, exclude: 0}
+- {category: Reconnaissance, command: testssl, pkg: testssl, name: testssl, exclude: 0}
 - {category: Reconnaissance, command: dnsenum -h, name: dnsenum, pkg: dnsenum, exclude: 0}
 - {category: Reconnaissance, command: dnsmap, pkg: dnsmap, name: Sub-domains bruteforcer, exclude: 0}
 - {category: Reconnaissance, command: dsniff -h, name: Network auditing, pkg: dsniff, exclude: 0}
