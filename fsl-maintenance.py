@@ -3,7 +3,7 @@
 # fsl-maintenance - A helper script to maintain the Security Lab package list
 # and other relevant maintenance tasks.
 #
-# Copyright (c) 2012-2018 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2012-2019 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # 
