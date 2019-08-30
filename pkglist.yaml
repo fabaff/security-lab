@@ -788,11 +788,6 @@
   pkg: yersinia
   exclude: 0
 - category: Reconnaissance
-  command: umit
-  name: umit
-  pkg: umit
-  exclude: 0
-- category: Reconnaissance
   command: zmap -h
   name: zmap
   pkg: zmap
