@@ -266,15 +266,6 @@
   pkg: ntfsprogs
   exclude: 0
 - category: General
-  pkg: openvas-cli
-  exclude: 0
-- category: General
-  pkg: openvas-gsa
-  exclude: 0
-- category: General
-  pkg: openvas-scanner
-  exclude: 0
-- category: General
   pkg: pcapdiff
   exclude: 0
 - category: General
