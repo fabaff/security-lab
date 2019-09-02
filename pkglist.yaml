@@ -584,11 +584,6 @@
   name: ike-scan
   exclude: 0
 - category: Reconnaissance
-  command: incept --help
-  name: Physical memory manipulation
-  pkg: inception
-  exclude: 0
-- category: Reconnaissance
   command: lynis -h
   name: lynis
   pkg: lynis
