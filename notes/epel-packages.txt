@@ -3,8 +3,7 @@ aircrack-ng
 airsnort
 arp-scan
 binwalk
-bonesi   
-captcp
+bonesi
 chkrootkitnbtscan
 cmospwd 
 cowpatty
