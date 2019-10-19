@@ -24,7 +24,6 @@ horst
 ht
 httperf
 hunt
-ike-scan
 john  
 kismet
 kismon
