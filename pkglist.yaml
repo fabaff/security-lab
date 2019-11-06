@@ -804,11 +804,6 @@
   pkg: echoping
   exclude: 0
 - category: Reconnanssance
-  command: nfspy -h
-  name: ID-spoofing NFS client
-  pkg: nfspy
-  exclude: 0
-- category: Reconnanssance
   command: swaks
   name: SMTP transaction tester
   pkg: swaks
