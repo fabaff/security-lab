@@ -28,7 +28,6 @@ kismet
 kismon
 labrea
 macchanger
-masscan
 mausezahn
 mcabber
 nc6
