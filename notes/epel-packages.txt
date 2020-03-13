@@ -7,7 +7,6 @@ bonesi
 chkrootkitnbtscan
 cmospwd 
 cowpatty
-dnstracer
 driftnet
 dstat
 echoping
