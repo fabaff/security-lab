@@ -33,8 +33,7 @@ mcabber
 nc6
 netactview
 netdisco
-nethogs 
-netsniff-ng
+nethogs
 nfspy
 nfswatch
 nicstat
