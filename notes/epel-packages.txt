@@ -34,7 +34,6 @@ nc6
 netactview
 netdisco
 nethogs
-nfspy
 nfswatch
 nicstat
 ophcrack
