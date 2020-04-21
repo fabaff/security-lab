@@ -169,6 +169,11 @@
   pkg: dnstop
   exclude: 1
 - category: General
+  command: aiodnsbrute
+  name: DNS asynchronous brute force utility
+  pkg: aiodnsbrute
+  exclude: 1
+- category: General
   command: dnstracer -h
   name: DNS tracer
   pkg: dnstracer
