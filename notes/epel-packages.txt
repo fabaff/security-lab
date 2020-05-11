@@ -4,7 +4,6 @@ airsnort
 arp-scan
 binwalk
 bonesi   
-bro
 captcp
 chkrootkitnbtscan
 cmospwd 
@@ -70,4 +69,3 @@ tcptrack
 uperf 
 wipe
 xprobe2 
-#end
