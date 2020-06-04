@@ -864,6 +864,11 @@
   pkg: nikto
   exclude: 0
 - category: WebApplicationTesting
+  command: wapiti -help
+  name: Web application vulnerability scanner
+  pkg: wapiti
+  exclude: 0
+- category: WebApplicationTesting
   command: ratproxy -h
   name: ratproxy
   pkg: ratproxy
