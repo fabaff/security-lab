@@ -64,6 +64,11 @@
   pkg: foremost
   exclude: 0
 - category: Forensics
+  command: terrier -h
+  name: Image and Container analysis tool
+  pkg: terrier
+  exclude: 0
+- category: Forensics
   command: hfsutils
   name: hfsutils
   pkg: hfsutils
