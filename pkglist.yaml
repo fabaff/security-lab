@@ -774,6 +774,11 @@
   pkg: zmap
   exclude: 0
 - category: Reconnaissance
+  command: subfinder -h
+  name: subfinder
+  pkg: subfinder
+  exclude: 0
+- category: Reconnaissance
   pkg: argus-clients
   exclude: 1
 - category: Reconnaissance
