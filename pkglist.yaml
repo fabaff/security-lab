@@ -864,6 +864,11 @@
   pkg: httping
   exclude: 0
 - category: WebApplicationTesting
+  command: webanalyze
+  name: webanalyze
+  pkg: webanalyze
+  exclude: 0
+- category: WebApplicationTesting
   command: lbd
   name: Load Balancing Detector
   pkg: lbd
