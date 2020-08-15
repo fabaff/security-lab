@@ -986,3 +986,8 @@
   name: Analysis tool for Android applications
   pkg: androguard
   exclude: 1
+- category: MobileTesting
+  command: androwarn
+  name: Static code analyzer for Android applications
+  pkg: androwarn
+  exclude: 1
