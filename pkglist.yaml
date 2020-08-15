@@ -976,3 +976,8 @@
   name: goloris
   pkg: goloris
   exclude: 1
+- category: MobileTesting
+  command: andriller
+  name: Android Forensic Tools
+  pkg: andriller
+  exclude: 1
