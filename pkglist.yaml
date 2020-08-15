@@ -981,3 +981,8 @@
   name: Android Forensic Tools
   pkg: andriller
   exclude: 1
+- category: MobileTesting
+  command: androguard
+  name: Analysis tool for Android applications
+  pkg: androguard
+  exclude: 1
