@@ -814,6 +814,11 @@
   pkg: echoping
   exclude: 0
 - category: Reconnanssance
+  command: asnip -h
+  name: ASN detail retriever
+  pkg: asnip
+  exclude: 0
+- category: Reconnanssance
   command: swaks
   name: SMTP transaction tester
   pkg: swaks
