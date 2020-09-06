@@ -824,6 +824,11 @@
   pkg: httpd-tools
   exclude: 0
 - category: StressTesting
+  command: hulk -h
+  name: DoS tool
+  pkg: hulk
+  exclude: 0
+- category: StressTesting
   command: siege -h
   name: siege
   pkg: siege
