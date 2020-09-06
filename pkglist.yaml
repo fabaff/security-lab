@@ -819,6 +819,11 @@
   pkg: wbox
   exclude: 0
 - category: Reconnanssance
+  command: httprobe
+  name: Probing tool for working HTTP and HTTPS servers
+  pkg: httprobe
+  exclude: 0
+- category: Reconnanssance
   command: httpdump
   name: Capture and parse HTTP traffic
   pkg: httpdump
