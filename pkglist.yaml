@@ -818,6 +818,11 @@
   name: wbox
   pkg: wbox
   exclude: 0
+- category: Reconnanssance
+  command: httpdump
+  name: Capture and parse HTTP traffic
+  pkg: httpdump
+  exclude: 0
 - category: StressTesting
   command: ab -h
   name: Apache Benchmark
