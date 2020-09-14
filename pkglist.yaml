@@ -170,6 +170,11 @@
   pkg: chisel
   exclude: 1
 - category: General
+  command: shellz
+  name: Utility for shells and tunnels
+  pkg: shellz
+  exclude: 1
+- category: General
   command: dislocker -h
   pkg: dislocker
   exclude: 0
