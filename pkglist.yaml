@@ -914,6 +914,11 @@
   pkg: httping
   exclude: 0
 - category: WebApplicationTesting
+  command: snallygaster --help
+  name: Tool to scan for secret files on HTTP servers
+  pkg: snallygaster
+  exclude: 0
+- category: WebApplicationTesting
   command: gitjacker --help
   name: Leak git repositories
   pkg: gitjacker
