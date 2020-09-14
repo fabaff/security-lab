@@ -854,6 +854,11 @@
   pkg: wbox
   exclude: 0
 - category: Reconnanssance
+  command: socialscan
+  name: Scan for user names
+  pkg: socialscan
+  exclude: 0
+- category: Reconnanssance
   command: httprobe
   name: Probing tool for working HTTP and HTTPS servers
   pkg: httprobe
