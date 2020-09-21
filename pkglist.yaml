@@ -951,3 +951,8 @@
   name: webtech
   pkg: webtech
   exclude: 1
+- category: WebApplicationTesting
+  command: goloris
+  name: goloris
+  pkg: goloris
+  exclude: 1
