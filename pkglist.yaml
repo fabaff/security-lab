@@ -599,6 +599,11 @@
   pkg: httrack
   exclude: 1
 - category: Reconnaissance
+  command: fuzza -h
+  name: TCP fuzzing tool
+  pkg: fuzza
+  exclude: 1
+- category: Reconnaissance
   command: hunt
   name: Hunt
   pkg: hunt
