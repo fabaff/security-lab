@@ -549,6 +549,11 @@
   name: Sub-domains bruteforcer
   exclude: 0
 - category: Reconnaissance
+  command: dnsprobe
+  pkg: dnsprobe
+  name: Tool to perform multiple DNS queries
+  exclude: 0
+- category: Reconnaissance
   command: dsniff -h
   name: Network auditing
   pkg: dsniff
