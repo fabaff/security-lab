@@ -214,6 +214,11 @@
   pkg: proxychains-ng
   exclude: 1
 - category: General
+  command: credslayer
+  name: Tool to xtract credentials
+  pkg: credslayer
+  exclude: 1
+- category: General
   command: ssh
   name: SSH client
   pkg: openssh
@@ -299,9 +304,7 @@
 - category: General
   pkg: picviz-gui
   exclude: 1
-- category: General
-  pkg: powertop
-  exclude: 0
+hans
 - category: General
   pkg: scap-security-guide
   exclude: 0
