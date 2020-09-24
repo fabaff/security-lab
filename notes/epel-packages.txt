@@ -18,7 +18,6 @@ firstaidkit-plugin-all
 flawfinder
 foremost
 hfsutils
-horst
 ht
 httperf
 hunt
