@@ -612,6 +612,11 @@ hans
   pkg: fuzza
   exclude: 1
 - category: Reconnaissance
+  command: wfuzz -h
+  name: Web fuzzing tool
+  pkg: wfuzz
+  exclude: 1
+- category: Reconnaissance
   command: hunt
   name: Hunt
   pkg: hunt
