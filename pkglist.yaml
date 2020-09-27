@@ -160,6 +160,11 @@
   pkg: bonesi
   exclude: 1
 - category: General
+  command: badchars
+  name: HEX bad char generator
+  pkg: badchars
+  exclude: 1
+- category: General
   command: dislocker -h
   pkg: dislocker
   exclude: 0
