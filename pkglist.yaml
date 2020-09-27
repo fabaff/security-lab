@@ -165,6 +165,11 @@
   pkg: badchars
   exclude: 1
 - category: General
+  command: chisel
+  name: TCP tunnel over HTTP
+  pkg: chisel
+  exclude: 1
+- category: General
   command: dislocker -h
   pkg: dislocker
   exclude: 0
