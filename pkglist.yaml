@@ -617,6 +617,11 @@ hans
   pkg: wfuzz
   exclude: 1
 - category: Reconnaissance
+  command: goddi
+  name: Dumper for AD information
+  pkg: goddi
+  exclude: 0
+- category: Reconnaissance
   command: hunt
   name: Hunt
   pkg: hunt
