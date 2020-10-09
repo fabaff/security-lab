@@ -242,6 +242,11 @@
   name: hans
   exclude: 0
 - category: General
+  pkg: goaltdns
+  command: goaltdns -h
+  name: Permutation generation tool
+  exclude: 0
+- category: General
   pkg: hexedit
   command: hexedit -h
   exclude: 0
