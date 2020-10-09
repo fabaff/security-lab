@@ -647,6 +647,11 @@ hans
   pkg: masscan
   exclude: 0
 - category: Reconnaissance
+  command: naabu -h
+  name: Fast port scanner
+  pkg: naabu
+  exclude: 0
+- category: Reconnaissance
   command: mausezahn -h
   name: A packet generator
   pkg: mausezahn
