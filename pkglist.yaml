@@ -879,6 +879,11 @@
   pkg: aircrack-ng
   exclude: 0
 - category: Wireless
+  command: whsniff
+  name: whsniff
+  pkg: whsniff
+  exclude: 0
+- category: Wireless
   command: airsnort
   name: airsnort
   pkg: airsnort
