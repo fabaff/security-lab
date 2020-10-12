@@ -478,6 +478,11 @@
   name: sucrack
   pkg: sucrack
   exclude: 0
+- category: PasswordTools
+  command: xortool -h
+  name: xortool
+  pkg: xortool
+  exclude: 0
 - category: Reconnaissance
   command: argus -h
   name: argus
