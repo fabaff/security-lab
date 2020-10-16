@@ -337,6 +337,11 @@
   command: curl -h
   name: curl File downloader
   exclude: 0
+- category: General
+  pkg: pwncat
+  command: pwncat -h
+  name: TCP/UDP communication suite
+  exclude: 0
 - category: IntrusionDetection
   command: aide -h
   name: aide
