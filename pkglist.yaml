@@ -309,7 +309,6 @@
 - category: General
   pkg: picviz-gui
   exclude: 1
-hans
 - category: General
   pkg: scap-security-guide
   exclude: 0
