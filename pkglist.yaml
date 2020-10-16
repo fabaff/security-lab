@@ -332,6 +332,11 @@
   command: wget -h
   name: wget File downloader
   exclude: 0
+- category: General
+  pkg: curl
+  command: curl -h
+  name: curl File downloader
+  exclude: 0
 - category: IntrusionDetection
   command: aide -h
   name: aide
