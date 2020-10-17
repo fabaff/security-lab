@@ -637,6 +637,11 @@ hans
   name: ike-scan
   exclude: 0
 - category: Reconnaissance
+  command: netscanner -h
+  name: TCP/UDP scanner
+  pkg: netscanner
+  exclude: 0
+- category: Reconnaissance
   command: lynis -h
   name: lynis
   pkg: lynis
