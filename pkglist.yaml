@@ -647,6 +647,11 @@ hans
   pkg: lynis
   exclude: 0
 - category: Reconnaissance
+  command: onionscan -h
+  name: Tool for investigating the Dark Web
+  pkg: onionscan
+  exclude: 0
+- category: Reconnaissance
   command: masscan -h
   name: masscan
   pkg: masscan
