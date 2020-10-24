@@ -348,11 +348,6 @@
   pkg: aide
   exclude: 1
 - category: IntrusionDetection
-  command: labrea
-  pkg: labrea
-  name: labrea
-  exclude: 1
-- category: IntrusionDetection
   command: nebula -h
   pkg: nebula
   name: nebula
@@ -387,7 +382,7 @@
   exclude: 0
 - category: NetworkStatistics
   command: captcp -h
-  pkg: captcp
+  pkg: 
   name: captcp
   exclude: 0
 - category: NetworkStatistics
