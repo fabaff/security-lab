@@ -566,6 +566,11 @@
   pkg: dnsenum
   exclude: 0
 - category: Reconnaissance
+  command: massdns -h
+  name: High-performance DNS stub resolver
+  pkg: massdns
+  exclude: 0
+- category: Reconnaissance
   command: dnsmap
   pkg: dnsmap
   name: Sub-domains bruteforcer
