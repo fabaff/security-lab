@@ -571,6 +571,11 @@
   pkg: massdns
   exclude: 0
 - category: Reconnaissance
+  command: shuffledns -h
+  name: Wrapper for massdns
+  pkg: shuffledns
+  exclude: 0
+- category: Reconnaissance
   command: dnsmap
   pkg: dnsmap
   name: Sub-domains bruteforcer
