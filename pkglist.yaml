@@ -636,6 +636,11 @@
   pkg: httpry
   exclude: 0
 - category: Reconnaissance
+  command: mass3 -h
+  name: Buckets enumerator
+  pkg: mass3
+  exclude: 0
+- category: Reconnaissance
   command: httrack -h
   name: HTTrack Website Copier
   pkg: httrack
