@@ -616,6 +616,11 @@
   pkg: ldapdomaindump
   exclude: 0
 - category: Reconnaissance
+  command: ldeep -h
+  name: LDAP enumeration utility
+  pkg: ldeep
+  exclude: 0
+- category: Reconnaissance
   command: hping -h
   name: hping
   pkg: hping3
