@@ -716,6 +716,11 @@
   pkg: netsniff-ng
   exclude: 0
 - category: Reconnaissance
+  command: ohmybackup -h
+  name: Scan for backup parts
+  pkg: ohmybackup
+  exclude: 0
+- category: Reconnaissance
   command: nmap -h
   name: nmap
   pkg: nmap
