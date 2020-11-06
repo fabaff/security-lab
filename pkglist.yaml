@@ -706,6 +706,11 @@
   pkg: mtr
   exclude: 0
 - category: Reconnaissance
+  command: pypykatz -h
+  name: Python implementation of Mimikatz
+  pkg: pypykatz
+  exclude: 0
+- category: Reconnaissance
   command: nbtscan
   name: nbtscan
   pkg: nbtscan
