@@ -904,6 +904,11 @@
   pkg: webanalyze
   exclude: 0
 - category: WebApplicationTesting
+  command: crlfuzz
+  name: Tool to scan CRLF vulnerability
+  pkg: crlfuzz
+  exclude: 0
+- category: WebApplicationTesting
   command: lbd
   name: Load Balancing Detector
   pkg: lbd
