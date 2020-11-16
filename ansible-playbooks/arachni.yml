@@ -1,6 +1,6 @@
 # This playbook installs the arachni framework (http://www.arachni-scanner.com).
 #
-# Copyright (c) 2014-2015 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2014-2020 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # This file is licensed under GPLv2, for more details check COPYING.
@@ -16,7 +16,7 @@
     ui: 0.5.6
   tasks:
   - name: download the archive from the upstream website
-    get_url: url=http://downloads.arachni-scanner.com/arachni-{{ framework }}-{{ ui }}-linux-x86_64.tar.gz
+    get_url: url=https://downloads.arachni-scanner.com/arachni-{{ framework }}-{{ ui }}-linux-x86_64.tar.gz
              dest=/opt/arachni.tar.gz
              mode=0644
 
