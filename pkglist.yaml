@@ -914,6 +914,11 @@
   pkg: gitjacker
   exclude: 0
 - category: WebApplicationTesting
+  command: gobuster -h
+  name: Directory/File, DNS and VHost busting tool
+  pkg: gobuster
+  exclude: 0
+- category: WebApplicationTesting
   command: webanalyze
   name: webanalyze
   pkg: webanalyze
