@@ -909,6 +909,11 @@
   pkg: httping
   exclude: 0
 - category: WebApplicationTesting
+  command: gitjacker --help
+  name: Leak git repositories
+  pkg: gitjacker
+  exclude: 0
+- category: WebApplicationTesting
   command: webanalyze
   name: webanalyze
   pkg: webanalyze
