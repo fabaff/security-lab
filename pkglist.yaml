@@ -916,4 +916,8 @@
   name: wad
   pkg: wad
   exclude: 1
-  
+- category: WebApplicationTesting
+  command: webtech
+  name: webtech
+  pkg: webtech
+  exclude: 1
