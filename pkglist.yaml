@@ -906,4 +906,8 @@
 - category: Wireless
   pkg: kismon
   excflude: 1
-
+- category: Reconnaissance
+  command: bettercap
+  name: bettercap
+  pkg: bettercap
+  exclude: 0
