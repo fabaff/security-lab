@@ -911,3 +911,9 @@
   name: bettercap
   pkg: bettercap
   exclude: 0
+- category: WebApplicationTesting
+  command: wad -h
+  name: wad
+  pkg: wad
+  exclude: 1
+  
