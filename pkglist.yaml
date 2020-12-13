@@ -457,7 +457,7 @@
   command: medusa -d
   name: Medusa Brute Force
   pkg: medusa
-  exclude: 0,}
+  exclude: 0
 - category: PasswordTools
   command: ncrack -h
   name: Network auth cracking tool
