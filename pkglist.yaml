@@ -844,11 +844,6 @@
   name: sipsak
   exclude: 0
 - category: WebApplicationTesting
-  command: halberd --help
-  name: halberd
-  pkg: halberd
-  exclude: 0
-- category: WebApplicationTesting
   command: httping --help
   name: httping
   pkg: httping
