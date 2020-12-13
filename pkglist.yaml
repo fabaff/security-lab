@@ -649,11 +649,6 @@
   pkg: raddump
   exclude: 1
 - category: Reconnaissance
-  command: samdump2
-  pkg: samdump2
-  name: syskey retriever
-  exclude: 1
-- category: Reconnaissance
   command: scanssh -h
   name: scanssh
   pkg: sshscan
