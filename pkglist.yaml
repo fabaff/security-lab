@@ -554,7 +554,7 @@
   pkg: hping3
   exclude: 0
 - category: Reconnaissance
-  command: httpie -h
+  command: http -h
   name: A Curl-like tool
   pkg: httpie
   exclude: 1
