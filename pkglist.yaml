@@ -504,11 +504,6 @@
   name: Recover Syskey bootkey
   exclude: 1
 - category: Reconnaissance
-  command: bro -h
-  name: Network analysis framework
-  pkg: bro
-  exclude: 1
-- category: Reconnaissance
   command: ciphertest -h
   pkg: ciphertest
   name: ciphertest
