@@ -869,11 +869,6 @@
   pkg: ratproxy
   exclude: 0
 - category: WebApplicationTesting
-  command: skipfish -h
-  name: skipfish
-  pkg: skipfish
-  exclude: 0
-- category: WebApplicationTesting
   command: sqlninja
   name: sqlninja
   pkg: sqlninja
