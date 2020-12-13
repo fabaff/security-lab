@@ -909,11 +909,6 @@
   pkg: wavemon
   exclude: 0
 - category: Wireless
-  command: weplab -h
-  name: Wep Key Cracker
-  pkg: weplab
-  exclude: 0
-- category: Wireless
   pkg: kismon
   excflude: 1
 
