@@ -841,7 +841,7 @@
 - category: SystemStatistics
   command: sar -h
   name: sar
-  pkg: sysstat
+  pkg: sar
   exclude: 0
 - category: VoIP
   pkg: sipp
