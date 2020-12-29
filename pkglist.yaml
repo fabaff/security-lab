@@ -189,6 +189,11 @@
   pkg: aiodnsbrute
   exclude: 1
 - category: General
+  command: dnstwist
+  name: Domain name permutation engine
+  pkg: dnstwist
+  exclude: 1
+- category: General
   command: dnstracer -h
   name: DNS tracer
   pkg: dnstracer
