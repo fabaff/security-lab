@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 #
 # fsl-maker - A help script to compose the Security Lab Live media.
-# Copyright (c) 2010-2020 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2010-2021 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # 
@@ -25,7 +25,7 @@ DIRECTORY=spin-kickstarts
 CACHE=/var/cache/live
 LABEL=SecurityLab
 TITLE=SecurityLab-`date -I`
-#RELEASEVER=33
+#RELEASEVER=34
 RELEASEVER=rawhide
 ROOT_UID=0   
 
