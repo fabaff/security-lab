@@ -3,7 +3,7 @@
 # fsl-tb-inst - This script create a full working Fedora Security Lab Test
 # bench as libvirt-based virtual machine on your local machine.
 #
-# Copyright (c) 2013-2015 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2013-2021 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # 
