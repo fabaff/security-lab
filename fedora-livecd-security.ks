@@ -6,10 +6,9 @@
 # Maintainers:
 #   Fabian Affolter <fab [AT] fedoraproject <dot> org>
 #   Joerg Simon <jsimon [AT] fedoraproject <dot> org>
-#   Christoph Wickert <cwickert [AT] fedoraproject <dot> org>
 # Acknowledgements:
 #   Fedora LiveCD Xfce Spin team - some work here was and will be inherited,
-#   many thanks!
+#   many thanks, especially to Christoph Wickert!
 #   Fedora LXDE Spin - Copied over stuff to make LXDE Default
 #   Luke Macken and Adam Miller for the original OpenBox Security ks and all
 #   the Security Applications! 
@@ -22,32 +21,35 @@
 part / --size 10240
 
 %packages
-@xfce-desktop
-@xfce-apps
-#@xfce-extra-plugins
-#@xfce-media
-#@xfce-office
-#@firefox
+# install env-group to resolve RhBug:1891500
+@^xfce-desktop-environment
 
-# Security tools (not ready at the moment)
+@xfce-apps
+
+# Security tools
 @security-lab
 security-menus
+
+# unlock default keyring. FIXME: Should probably be done in comps
+gnome-keyring-pam
 
 # save some space
 -autofs
 -acpid
 -gimp-help
 -desktop-backgrounds-basic
--realmd                     # only seems to be used in GNOME
--PackageKit*                # we switched to yumex, so we don't need this
+-PackageKit*                # we switched to dnfdragora, so we don't need this
 -aspell-*                   # dictionaries are big
+-gnumeric
+-foomatic-db-ppds
+-foomatic
+-stix-fonts
+-ibus-typing-booster
+-xfce4-sensors-plugin
 -man-pages-*
 
 # drop some system-config things
--system-config-boot
-#-system-config-network
 -system-config-rootpassword
-#-system-config-services
 -policycoreutils-gui
 
 # exclude some packages to save some space
@@ -73,10 +75,6 @@ security-menus
 -packETH
 -pads
 -pdfcrack
--picviz-gui
--prelude-lml
--prelude-manager
--prewikka
 -proxychains
 -pyrit
 -raddump
@@ -84,20 +82,17 @@ security-menus
 -safecopy
 -samdump2
 -scalpel
--sshscan
 -sslstrip
 -tcpreen
 -tcpreplay
 -tripwire
 -wipe
+-zmap
 
 %end
 
 %post
 # xfce configuration
-
-# This is a huge file and things work ok without it
-rm -f /usr/share/icons/HighContrast/icon-theme.cache
 
 # create /etc/sysconfig/desktop (needed for installation)
 
