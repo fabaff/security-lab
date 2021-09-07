@@ -1123,3 +1123,8 @@
   name: Static code analyzer for Android applications
   pkg: androwarn
   exclude: 1
+- category: Reconnaissance
+  command: mdns-scan
+  name: Scan for mDNS/DNS-SD services published on the local network
+  pkg: mdns-scan
+  exclude: 0
