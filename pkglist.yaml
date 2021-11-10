@@ -956,9 +956,9 @@
   pkg: shodan
   exclude: 0
 - category: Reconnanssance
-  command: hashid -h
-  name: Tool to identify different types of hashes
-  pkg: hashid
+  command: nth
+  name: The Modern Hash Identification System
+  pkg: python3-name-that-hash
   exclude: 0
 - category: StressTesting
   command: ab -h
