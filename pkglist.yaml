@@ -525,6 +525,11 @@
   name: xortool
   pkg: xortool
   exclude: 0
+- category: PasswordTools
+  command: hashcat -h
+  name: Advanced password recovery utility
+  pkg: hashcat
+  exclude: 1
 - category: Reconnaissance
   command: argus -h
   name: argus
