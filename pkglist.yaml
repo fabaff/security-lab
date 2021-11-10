@@ -950,10 +950,15 @@
   name: Capture and parse HTTP traffic
   pkg: httpdump
   exclude: 0
-  - category: Reconnanssance
+- category: Reconnanssance
   command: shodan
   name: Shodan is a search engine for Internet-connected devices.
   pkg: shodan
+  exclude: 0
+- category: Reconnanssance
+  command: hashid -h
+  name: Tool to identify different types of hashes
+  pkg: hashid
   exclude: 0
 - category: StressTesting
   command: ab -h
