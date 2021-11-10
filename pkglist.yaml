@@ -958,7 +958,7 @@
 - category: Reconnanssance
   command: nth
   name: The Modern Hash Identification System
-  pkg: python3-name-that-hash
+  pkg: python-name-that-hash
   exclude: 0
 - category: StressTesting
   command: ab -h
