@@ -945,6 +945,11 @@
   name: Capture and parse HTTP traffic
   pkg: httpdump
   exclude: 0
+  - category: Reconnanssance
+  command: shodan
+  name: Shodan is a search engine for Internet-connected devices.
+  pkg: shodan
+  exclude: 0
 - category: StressTesting
   command: ab -h
   name: Apache Benchmark
