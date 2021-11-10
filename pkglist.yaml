@@ -952,7 +952,7 @@
   exclude: 0
 - category: Reconnanssance
   command: shodan
-  name: Shodan is a search engine for Internet-connected devices.
+  name: CLI tool for Shodan
   pkg: shodan
   exclude: 0
 - category: Reconnanssance
@@ -1062,7 +1062,7 @@
   exclude: 0
 - category: WebApplicationTesting
   command: parsero
-  name: A Python based Robots.txt audit tool
+  name: Robots.txt audit tool
   pkg: parsero
   exclude: 0
 - category: Wireless
