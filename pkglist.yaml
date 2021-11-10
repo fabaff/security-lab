@@ -1050,6 +1050,11 @@
   name: sqlninja
   pkg: sqlninja
   exclude: 0
+- category: WebApplicationTesting
+  command: parsero
+  name: A Python based Robots.txt audit tool
+  pkg: parsero
+  exclude: 0
 - category: Wireless
   command: aircrack-ng
   name: aircrack-ng
