@@ -80,10 +80,10 @@ END_ENTRY
 
 sudo virt-install \
     --name FSL-Test-bench \
-    --os-variant fedora21 \
+    --os-variant fedora35 \
     --ram 1024 \
-    --disk /var/lib/libvirt/images/fsl-tb-f34.img,size=8 \
-    --location http://mirror.switch.ch/ftp/mirror/fedora/linux/releases/34/Server/x86_64/os/ \
+    --disk /var/lib/libvirt/images/fsl-tb-f35.img,size=8 \
+    --location http://mirror.switch.ch/ftp/mirror/fedora/linux/releases/35/Server/x86_64/os/ \
     --initrd-inject fsl-testbench.ks \
     --extra-args "ks=file:fsl-testbench.ks" \
     --noautoconsole \
