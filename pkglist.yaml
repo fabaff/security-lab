@@ -525,6 +525,11 @@
   name: xortool
   pkg: xortool
   exclude: 0
+- category: PasswordTools
+  command: hashcat -h
+  name: Advanced password recovery utility
+  pkg: hashcat
+  exclude: 1
 - category: Reconnaissance
   command: argus -h
   name: argus
@@ -945,6 +950,16 @@
   name: Capture and parse HTTP traffic
   pkg: httpdump
   exclude: 0
+- category: Reconnanssance
+  command: shodan
+  name: CLI tool for Shodan
+  pkg: shodan
+  exclude: 0
+- category: Reconnanssance
+  command: nth
+  name: The Modern Hash Identification System
+  pkg: python-name-that-hash
+  exclude: 0
 - category: StressTesting
   command: ab -h
   name: Apache Benchmark
@@ -1044,6 +1059,11 @@
   command: sqlninja
   name: sqlninja
   pkg: sqlninja
+  exclude: 0
+- category: WebApplicationTesting
+  command: parsero
+  name: Robots.txt audit tool
+  pkg: parsero
   exclude: 0
 - category: Wireless
   command: aircrack-ng
