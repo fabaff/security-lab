@@ -9,11 +9,11 @@ Nowadays, there is more than just a Live media under the umbrella of the Fedora 
 
 ## Resources
 
-- Download : https://labs.fedoraproject.org/en/security/
-- Development : https://pagure.io/security-lab
+- Download: https://labs.fedoraproject.org/en/security/
+- Development: https://pagure.io/security-lab
 - Source: https://pagure.io/security-lab/tree/master
-- Bugs : https://pagure.io/security-lab/new_issue
-- Mailing list : https://admin.fedoraproject.org/mailman/listinfo/spins
+- Bugs: https://pagure.io/security-lab/new_issue
+- Mailing list: https://admin.fedoraproject.org/mailman/listinfo/spins
 
 ## Maintainers
 - Fabian Affolter - fab@fedoraproject.org
