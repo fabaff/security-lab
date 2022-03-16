@@ -7,7 +7,7 @@ The development of the **Fedora Security Lab (FSL)** (former known as **Fedora S
 
 Nowadays, there is more than just a Live media under the umbrella of the Fedora Security Lab. There is the [Fedora Security Lab Test bench](http://fedora-security-lab-test-bench.readthedocs.io/en/latest/), [Ansible playbooks](https://pagure.io/security-lab/blob/master/f/ansible-playbooks) for package installations, and a comps groups.
 
-https://pagure.io/security-lab/raw/master/f/branding/security-wp.png
+![Background](https://pagure.io/security-lab/raw/master/f/branding/security-wp.png)
 
 ## Resources
 
