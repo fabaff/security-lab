@@ -21,10 +21,11 @@ Nowadays, there is more than just a Live media under the umbrella of the Fedora 
 
 ## Major sub-projects
 
-- Fedora Security Lab Test bench
-- Playbooks
-- Compliance Killer
-- OpenDEEM - Open Dynamic Efficiency Evaluation Methodology
+- Fedora Security Lab Test bench (GPLv2, CC BY 3.0)
+- Playbooks (GPLv2, CC BY 3.0)
+- Security menu (GPLv2)
+- Compliance Killer (CC BY-ND 4.0)
+- [OpenDEEM - Open Dynamic Efficiency Evaluation Methodology](https://docs.pagure.org/security-lab/opendeem.html) (CC BY-ND 4.0)
 
 ## Help us (aka Contribute)
 
