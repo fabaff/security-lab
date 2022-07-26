@@ -6,6 +6,7 @@
 # Maintainers:
 #   Fabian Affolter <fab [AT] fedoraproject <dot> org>
 #   Joerg Simon <jsimon [AT] fedoraproject <dot> org>
+#   JT Pennington <jt [AT] fedoraproject <dor> org>
 # Acknowledgements:
 #   Fedora LiveCD Xfce Spin team - some work here was and will be inherited,
 #   many thanks, especially to Christoph Wickert!
