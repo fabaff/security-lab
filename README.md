@@ -18,6 +18,7 @@ Nowadays, there is more than just a Live media under the umbrella of the Fedora 
 ## Maintainers
 - Fabian Affolter - fab@fedoraproject.org
 - (Joerg Simon - jsimon@fedoraproject.org)
+- JT Pennington - jt@fedoraproject.org
 
 ## Major sub-projects
 
