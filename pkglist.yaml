@@ -836,11 +836,6 @@
   name: TCP stream sniffer
   exclude: 0
 - category: Reconnaissance
-  command: tcpjunk -x
-  name: tcpjunk
-  pkg: tcpjunk
-  exclude: 0
-- category: Reconnaissance
   command: tcpreen
   name: tcpreen
   pkg: tcpreen
