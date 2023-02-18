@@ -9,8 +9,8 @@ Applications featuring "X-SecurityLab" in the Categories field of their
 security-menus is part of the development of the Fedora Security Lab (aka
 Fedora Security Spin).
 
-Website/Bugs : https://fedorahosted.org/security-spin/
-Download     : https://fedorahosted.org/releases/s/e/security-spin/
+Website/Bugs : https://pagure.io/security-lab/
+Download     : https://pagure.io/security-lab/releases
 RPM package  : https://admin.fedoraproject.org/pkgdb/name/security-menus
 
 Authors
