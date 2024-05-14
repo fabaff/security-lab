@@ -3,7 +3,7 @@
 # fsl-virt-inst - Creator for a libvirt-based virtual machine for the Fedora
 # Security Lab Test bench.
 #
-# Copyright (c) 2012-2021 Fabian Affolter <fab@fedoraproject.org>
+# Copyright (c) 2012-2024 Fabian Affolter <fab@fedoraproject.org>
 #
 # All rights reserved.
 # 
