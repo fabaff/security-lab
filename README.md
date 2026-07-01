@@ -5,14 +5,14 @@ in universities and other organizations.
 
 The development of the **Fedora Security Lab (FSL)** (former known as **Fedora Security Spin**) provides a media which can be used as a live system.
 
-Nowadays, there is more than just a Live media under the umbrella of the Fedora Security Lab. There is the [Fedora Security Lab Test bench](http://fedora-security-lab-test-bench.readthedocs.io/en/latest/), [Ansible playbooks](https://pagure.io/security-lab/blob/master/f/ansible-playbooks) for package installations, and a comps groups.
+Nowadays, there is more than just a Live media under the umbrella of the Fedora Security Lab. There is the [Fedora Security Lab Test bench](http://fedora-security-lab-test-bench.readthedocs.io/en/latest/), [Ansible playbooks](https://github.com/fabaff/security-lab/tree/master/ansible-playbooks) for package installations, and a comps groups.
 
 ## Resources
 
 - Download: https://labs.fedoraproject.org/en/security/
-- Development: https://pagure.io/security-lab
-- Source: https://pagure.io/security-lab/tree/master
-- Bugs: https://pagure.io/security-lab/new_issue
+- Development: https://github.com/fabaff/security-lab (previously at https://pagure.io/security-lab)
+- Source: https://github.com/fabaff/security-lab
+- Issue: https://github.com/fabaff/security-lab/issues
 - Mailing list: https://admin.fedoraproject.org/mailman/listinfo/spins
 
 ## Maintainers
@@ -32,8 +32,8 @@ Nowadays, there is more than just a Live media under the umbrella of the Fedora 
 
 There are many ways to help.
 
-- Pick a [task](https://pagure.io/security-lab/issues) or do a [Package Review](https://bugzilla.redhat.com/show_bug.cgi?id=563471).
-- Add relevant information sources to the [Documentation](https://pagure.io/security-lab/blob/master/f/doc) page.
+- Pick a [task](https://github.com/fabaff/security-lab/issues) or do a [Package Review](https://bugzilla.redhat.com/show_bug.cgi?id=563471).
+- Add relevant information sources to the documentation page.
 - Artwork
 - Test the [nightly builds](https://alt.fedoraproject.org/) of Fedora Security Lab.
 - When we are getting close to a new release, please help with testing.
