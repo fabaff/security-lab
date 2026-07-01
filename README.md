@@ -22,7 +22,7 @@ Nowadays, there is more than just a Live media under the umbrella of the Fedora 
 
 ## Major sub-projects
 
-- Fedora Security Lab Test bench (GPLv2, CC BY 3.0)
+- [Fedora Security Lab Test bench](https://github.com/fabaff/fsl-test-bench) (GPLv2, CC BY 3.0)
 - Playbooks (GPLv2, CC BY 3.0)
 - Security menu (GPLv2)
 - Compliance Killer (CC BY-ND 4.0)
